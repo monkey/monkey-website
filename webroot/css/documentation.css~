@@ -1,0 +1,287 @@
+/* SVN FILE: $Id: cake.generic.css 7945 2008-12-19 02:16:01Z gwoo $ */
+/**
+ *
+ * PHP versions 4 and 5
+ *
+ * CakePHP(tm) :  Rapid Development Framework (http://www.cakephp.org)
+ * Copyright 2005-2008, Cake Software Foundation, Inc. (http://www.cakefoundation.org)
+ *
+ * Licensed under The MIT License
+ * Redistributions of files must retain the above copyright notice.
+ *
+ * @filesource
+ * @copyright     Copyright 2005-2008, Cake Software Foundation, Inc. (http://www.cakefoundation.org)
+ * @link          http://www.cakefoundation.org/projects/info/cakephp CakePHP(tm) Project
+ * @package       cake
+ * @subpackage    cake.app.webroot.css
+ * @since         CakePHP(tm)
+ * @version       $Revision: 7945 $
+ * @modifiedby    $LastChangedBy: gwoo $
+ * @lastmodified  $Date: 2008-12-18 18:16:01 -0800 (Thu, 18 Dec 2008) $
+ * @license       http://www.opensource.org/licenses/mit-license.php The MIT License
+ */
+
+
+* {
+	margin:0;
+	padding:0;
+}
+
+/* General Style Info */
+body {
+	background: #fff;
+	color: #000;
+	font-family:'lucida grande',verdana,helvetica,arial,sans-serif;
+	font-size: 90%;
+	margin: 0;
+}
+a {
+	color: #e38000;
+	text-decoration: none;
+	font-weight: normal;
+}
+a img {
+	border:none;
+}
+h1, h2, h3, h4 {
+	font-weight: normal;
+}
+h1 {
+	background: transparent;
+	color: #d97000;
+	font-size: 150%;
+	padding-top: 10px;
+	margin: 0.1em 1em 1em 0;
+	font-weight: bold;
+}
+h2 {
+	background:#fff;
+	color: #6f6f6f;
+	font-family:'Gill Sans','lucida grande',helvetica, arial, sans-serif;
+	font-size: 125%;
+	font-weight: bold;
+	margin: 0.5em 0.6em 0 0;
+	padding-top: 0.5em;
+}
+h3 {
+	color: #993;
+	font-family:'Gill Sans','lucida grande',helvetica, arial, sans-serif;
+	font-size: 120%;
+	padding-top: 1.5em;
+}
+h4 {
+	color: #993;
+	font-weight: normal;
+	padding-top: 1.5em;
+}
+ul, li {
+        font-size: 120%;
+        margin-top: 0;
+        margin-left: 1em;
+        margin-bottom: 1em;
+        margin-right: 1em;
+}
+
+ul li pre.programlisting {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background: #e1e1e1;
+}
+
+#copyright {
+	color: #6f6f6f;
+	font-size: 70%;
+	margin-right: 20px;
+}
+/* Layout */
+#container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 770px;
+}
+
+#premenu {
+	font-size: 70%;
+	text-align: right;
+	margin-right: 5px;
+	padding: 5px;
+}
+
+#premenu a {
+	color: #6f6f6f;
+	margin-right: 20px;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+#menu {
+	padding: 12px 0px 0px 20px;
+	margin: -5px 0px 0px 4px;
+	background: url('../img/menu_background.png') no-repeat left;
+	height: 25px;
+}
+
+#menu a {
+	color: #fff;
+	font-weight: bold;
+	font-size: 75%;
+	background: transparent;
+	text-decoration: none;
+	margin-right: 25px;
+}
+
+#header{
+	padding: 0px;
+}
+#header h1 {
+	background: #003d4c url('../img/cake.icon.gif') no-repeat left;
+	color: #fff;
+	padding: 0px 30px;
+}
+
+#header h1 a {
+	color: #fff;
+	background: #003d4c;
+	font-weight: normal;
+	text-decoration: none;
+}
+#header h1 a:hover {
+	color: #fff;
+	background: #003d4c;
+	text-decoration: underline;
+}
+#content{
+	background: #fff;
+	clear: both;
+	color: #333;
+	padding: 7px 20px 40px 20px;
+	overflow: auto;
+}
+
+#content p {
+	font-size: 90%;
+	padding-top: 5px;
+	padding-bottom: 10px;
+        margin-left: 1em;
+}
+
+#content pre.programlisting {
+    margin-left: 1em;
+    padding: 1em;
+}
+
+#content ul li {
+	font-size: 80%;
+	padding-top: 0px;
+}
+
+#content ul li p {
+    padding: 0.2em;
+}
+
+#footer {
+	clear: both;
+	padding: 6px 10px;
+	text-align: right;
+}
+
+/* Tables */
+table {
+	background: #fff;
+	border:0px;
+	border-right:0;
+	clear: both;
+	color: #333;
+	margin-bottom: 2px;
+	font-size: 100%;
+}
+th {
+	color: #ed5215;
+	border:0px;
+	font-weight: none;
+	font-size: 80%;
+	text-align: center;
+	padding-bottom: 10px;
+}
+th a {
+	background:#f2f2f2;
+	display: block;
+	padding: 2px 4px;
+	text-decoration: none;
+}
+th a:hover {
+	background: #ccc;
+	color: #333;
+	text-decoration: none;
+}
+table tr td {
+	background: #fff;
+	font-size: 90%;
+	padding: 4px;
+	text-align: center;
+	vertical-align: top;
+}
+table tr.altrow td {
+	background: #f4f4f4;
+}
+
+/* Scaffold View */
+dl {
+	line-height: 1.4em;
+}
+
+dl.altrow {
+	background: #f4f4f4;
+}
+dt {
+	font-weight: normal;
+	padding-left: 4px;
+	padding-top: 0px;
+}
+dd {
+	margin-left: 2em;
+}
+
+div.chapter h1 {
+	font-size: 110%;
+}
+
+pre.programlisting {
+    padding: 0;
+    margin: 2px;
+    border: 0;
+    background: #e1e1e1;
+}
+
+pre.programlisting b.command {
+    padding: 0em;
+    margin: 0;
+    font-weight: normal;
+}
+
+
+.variablelist dl dt {
+    margin-top: 1.5em;
+    margin-left: 0.8em;
+}
+
+.variablelist dl dd pre.programlisting {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 2em;
+}
+
+.sect3 h3 {
+    margin: 0;
+}
+
+.sect3 {
+   margin-left: 1em;
+}
+
+.sect3 p, pre.programlisting {
+   margin-left: 0.5em;
+}

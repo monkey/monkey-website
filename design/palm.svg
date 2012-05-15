@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="palm.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:export-filename="/home/edsiper/public_html/cake/monkey/design/palm.png"
+   inkscape:export-xdpi="135.80835"
+   inkscape:export-ydpi="135.80835">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow2Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Lstart"
+       style="overflow:visible">
+      <path
+         id="path3365"
+         style="font-size:12.0;fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) translate(1,0)" />
+    </marker>
+    <linearGradient
+       id="linearGradient3173">
+      <stop
+         style="stop-color:#6e1900;stop-opacity:1;"
+         offset="0"
+         id="stop3175" />
+      <stop
+         style="stop-color:#b42800;stop-opacity:1;"
+         offset="1"
+         id="stop3177" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3165">
+      <stop
+         style="stop-color:#000a5c;stop-opacity:1;"
+         offset="0"
+         id="stop3167" />
+      <stop
+         style="stop-color:#000f8f;stop-opacity:0.51327431;"
+         offset="1"
+         id="stop3169" />
+    </linearGradient>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3173"
+       id="linearGradient3179"
+       x1="342.44171"
+       y1="370.50922"
+       x2="342.44171"
+       y2="409.90518"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(33.918782,-138.78679)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3165"
+       id="linearGradient3195"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(37.247168,74.646868)"
+       x1="391.93918"
+       y1="424.0473"
+       x2="393.9595"
+       y2="462.37219" />
+    <inkscape:perspective
+       id="perspective4219"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="33.285713"
+       height="30.285715"
+       patternTransform="translate(299.53488,139.19371)"
+       id="pattern4227">
+      <image
+         xlink:href="/home/edsiper/docs/presentaciones/eon-6.0/imgs/firefox.jpg"
+         sodipodi:absref="/home/edsiper/docs/presentaciones/eon-6.0/imgs/firefox.jpg"
+         width="33.285713"
+         height="30.285715"
+         id="image4225"
+         x="0"
+         y="0" />
+    </pattern>
+    <inkscape:perspective
+       id="perspective5030"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective5080"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="381.62442"
+     inkscape:cy="635.60465"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1440"
+     inkscape:window-height="825"
+     inkscape:window-x="0"
+     inkscape:window-y="26" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#dae61a;fill-opacity:0.50442475;stroke:none;stroke-width:0.69999999;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3239"
+       width="468.71072"
+       height="171.72592"
+       x="183.42134"
+       y="218.00412"
+       ry="36.292995" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.66840577;stroke-linecap:butt;stroke-linejoin:miter;marker-start:url(#Arrow2Lstart);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 541.90961,299.03655 L 491.52694,254.17616"
+       id="path3342" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.00962234;stroke-linecap:butt;stroke-linejoin:miter;marker-start:url(#Arrow2Lstart);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 291.76316,301.2296 L 330.90272,240.54172"
+       id="path10657"
+       inkscape:transform-center-x="-11.428571" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.42728329;stroke-linecap:butt;stroke-linejoin:miter;marker-start:url(#Arrow2Lstart);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 421.96547,301.44472 L 421.77449,260.05421"
+       id="path10659" />
+    <rect
+       style="fill:url(#linearGradient3179);fill-opacity:1;stroke:none;stroke-width:0.69999999;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2383"
+       width="240.41631"
+       height="38.385796"
+       x="295.54828"
+       y="232.73257"
+       ry="13.365153" />
+    <text
+       xml:space="preserve"
+       style="font-size:28.94984245px;font-style:normal;font-weight:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="308.98282"
+       y="290.46423"
+       id="text3155"
+       transform="scale(1.1185981,0.8939761)"><tspan
+         sodipodi:role="line"
+         id="tspan3157"
+         x="308.98282"
+         y="290.46423">Big Palm</tspan></text>
+    <rect
+       style="fill:#95b6d7;fill-opacity:1;stroke:none;stroke-width:0.69999999;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3213"
+       width="470.77737"
+       height="134.63533"
+       x="182.70424"
+       y="417.70065"
+       ry="20.689011" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.28360069;stroke-linecap:butt;stroke-linejoin:miter;marker-start:url(#Arrow2Lstart);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 426.79822,469.75928 L 426.40576,502.5485"
+       id="path10685" />
+    <rect
+       style="fill:url(#linearGradient3195);fill-opacity:1;stroke:none;stroke-width:0.69999999;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3189"
+       width="240.41631"
+       height="38.385796"
+       x="299.79547"
+       y="498.63324"
+       ry="13.365153" />
+    <text
+       xml:space="preserve"
+       style="font-size:25.56230354px;font-style:normal;font-weight:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="330.55664"
+       y="521.04376"
+       id="text3191"
+       transform="scale(0.9877064,1.0124466)"><tspan
+         sodipodi:role="line"
+         id="tspan3193"
+         x="330.55664"
+         y="521.04376">Monkey Server</tspan></text>
+    <rect
+       style="fill:#e64d1a;fill-opacity:1;stroke:none;stroke-width:0.69999999;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3326"
+       width="93.944191"
+       height="66.670067"
+       x="224.40834"
+       y="304.04074"
+       ry="6.9742041" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.5460434;stroke-linecap:butt;stroke-linejoin:miter;marker-start:url(#Arrow2Lstart);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 420.55758,374.60298 L 421.97542,435.0917"
+       id="path10689" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.88380289;stroke-linecap:butt;stroke-linejoin:miter;marker-start:url(#Arrow2Lstart);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 533.24149,373.65492 L 504.4735,435.23598"
+       id="path10691" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.71139002;stroke-linecap:butt;stroke-linejoin:miter;marker-start:url(#Arrow2Lstart);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 313.38141,378.61955 L 352.53614,435.61452"
+       id="path10687" />
+    <rect
+       style="fill:#e64d1a;fill-opacity:1;stroke:none;stroke-width:0.69999999;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3336"
+       width="215.16249"
+       height="36.365494"
+       x="313.01517"
+       y="432.44928"
+       ry="3.8041112" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="212.85715"
+       y="48.076469"
+       id="text4134"><tspan
+         sodipodi:role="line"
+         id="tspan4136"
+         x="212.85715"
+         y="48.076469" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24.09856033px;font-style:normal;font-weight:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="203.15144"
+       y="385.63043"
+       id="text10120"
+       transform="scale(1.1663745,0.8573575)"><tspan
+         sodipodi:role="line"
+         id="tspan10122"
+         x="203.15144"
+         y="385.63043">Palm</tspan><tspan
+         sodipodi:role="line"
+         x="203.15144"
+         y="415.75363"
+         id="tspan10124">(CGI)</tspan></text>
+    <rect
+       style="fill:#e64d1a;fill-opacity:1;stroke:none;stroke-width:0.69999999;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect10641"
+       width="93.944191"
+       height="66.670067"
+       x="373.25137"
+       y="302.82898"
+       ry="6.9742041" />
+    <text
+       xml:space="preserve"
+       style="font-size:24.09856033px;font-style:normal;font-weight:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="330.76331"
+       y="384.2171"
+       id="text10643"
+       transform="scale(1.1663745,0.8573575)"><tspan
+         sodipodi:role="line"
+         id="tspan10645"
+         x="330.76331"
+         y="384.2171">Palm</tspan><tspan
+         sodipodi:role="line"
+         x="330.76331"
+         y="414.3403"
+         id="tspan10647">(PHP)</tspan></text>
+    <rect
+       style="fill:#e64d1a;fill-opacity:1;stroke:none;stroke-width:0.69999999;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect10649"
+       width="93.944191"
+       height="66.670067"
+       x="518.21082"
+       y="302.82901"
+       ry="6.9742041" />
+    <text
+       xml:space="preserve"
+       style="font-size:21.64704704px;font-style:normal;font-weight:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="555.62372"
+       y="312.49841"
+       id="text10651"
+       transform="scale(0.9437,1.0596588)"><tspan
+         sodipodi:role="line"
+         id="tspan10653"
+         x="555.62372"
+         y="312.49841">   Palm</tspan><tspan
+         sodipodi:role="line"
+         x="555.62372"
+         y="339.55722"
+         id="tspan10655">(Python)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:21.07456207px;font-style:normal;font-weight:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="348.93256"
+       y="472.31549"
+       id="text10681"
+       transform="scale(1.031978,0.9690129)"><tspan
+         sodipodi:role="line"
+         id="tspan10683"
+         x="348.93256"
+         y="472.31549">Palm Switch</tspan></text>
+  </g>
+</svg>

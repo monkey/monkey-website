@@ -1,0 +1,204 @@
+/* SVN FILE: $Id: cake.generic.css 7945 2008-12-19 02:16:01Z gwoo $ */
+/**
+ *
+ * PHP versions 4 and 5
+ *
+ * CakePHP(tm) :  Rapid Development Framework (http://www.cakephp.org)
+ * Copyright 2005-2008, Cake Software Foundation, Inc. (http://www.cakefoundation.org)
+ *
+ * Licensed under The MIT License
+ * Redistributions of files must retain the above copyright notice.
+ *
+ * @filesource
+ * @copyright     Copyright 2005-2008, Cake Software Foundation, Inc. (http://www.cakefoundation.org)
+ * @link          http://www.cakefoundation.org/projects/info/cakephp CakePHP(tm) Project
+ * @package       cake
+ * @subpackage    cake.app.webroot.css
+ * @since         CakePHP(tm)
+ * @version       $Revision: 7945 $
+ * @modifiedby    $LastChangedBy: gwoo $
+ * @lastmodified  $Date: 2008-12-18 18:16:01 -0800 (Thu, 18 Dec 2008) $
+ * @license       http://www.opensource.org/licenses/mit-license.php The MIT License
+ */
+
+div.BOOK {
+    width: 100%;
+}
+
+div.TOC { 
+    width: 100%;
+}
+
+div.TOC a {
+    color: #ab5900;
+}
+
+div.TITLEPAGE h1 {
+    color: #a95700;
+}
+
+div.chapter h1 {
+    margin-bottom: 1em;
+    color: #a95700;
+}
+
+div.preface h1 {
+    color: #ab5900;
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+div.preface p {
+    margin-bottom: 5px;
+}
+
+h1.title a {
+    color: #ab5900;
+    font-size: 1.0em;
+    font-weight: bold;
+    align: center;
+}
+
+h3.corpauthor {
+    
+    color: #aaa;
+}
+
+div.NAVHEADER hr {
+    margin-bottom: 0.8em;
+    background-color: #a95700;
+    border: 1px;
+    height: 1px;
+}
+
+div.NAVHEADER table {
+    border: 0;
+    background: #fff;
+    padding: 0;
+    cellspace: 0;
+}
+
+div.NAVHEADER table th {
+    background: #fff;
+    border: 0px;
+    color: #ab5900;
+    padding-bottom: 15px;
+}
+
+div.NAVHEADER table tr td {
+    background: #fff;
+    border: 0;
+    font-size: 0.9em;
+}
+
+div.NAVHEADER table tr td a {
+    color: #ab5900;
+}
+
+div.NAVFOOTER table {
+    border: 0;
+    background: #fff;
+    padding: 0;
+    cellspace: 0;
+}
+
+div.NAVFOOTER table th {
+    background: #fff;
+    border: 0px;
+    color: #ab5900;
+    padding-bottom: 15px;
+}
+
+div.NAVFOOTER table tr td {
+    background: #fff;
+    border: 0;
+    font-size: 0.9em;
+}
+
+div.NAVFOOTER table tr td a {
+    font-size: 1em;
+    color: #ab5900;
+}
+
+div.NAVFOOTER hr {
+    margin-top: 0.8em;
+    background-color: #a95700;
+    border: 1px;
+    height: 1px;
+}
+
+div.sect1 a {
+    color: #a95700;
+    font-size: 1.1em;
+}
+
+div.sect1 h1 a {
+    color: #a95700;
+    font-size: 1.2em;
+    padding-top: 0.5em;
+}
+
+div.sect2 h2 a {
+    color: #a95700;
+    font-size: 1.2em;
+}
+
+div.chapter h1 {
+	font-size: 110%;
+}
+
+dl {
+    padding: 0;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+dd { 
+  margin:0; 
+  padding-left: 1em;
+  text-align: left; 
+  width: 100%;
+}
+
+dt {
+    clear: both;
+    font-weight: normal; 
+}
+
+pre.programlisting {
+    border: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
+    background: #ececec;
+}
+
+pre.programlisting b.command {
+    padding: 0em;
+    margin: 0;
+    font-weight: normal;
+}
+
+
+.variablelist dl dt {
+    margin-top: 1.5em;
+    margin-left: 0.8em;
+}
+
+.variablelist dl dd pre.programlisting {
+    padding-top: 0.55em;
+    padding-bottom: 0.5em;
+    padding-left: 2em;
+}
+
+.sect3 h3 {
+    margin: 0;
+}
+
+.sect3 {
+   margin-left: 1em;
+}
+
+.sect3 p, pre.programlisting {
+   margin-left: 0.5em;
+}
