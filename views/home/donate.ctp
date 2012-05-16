@@ -1,10 +1,12 @@
-<h1>We are accepting donations !</h1>
+<div class="hero-unit">
+<h2>Donate!, We are accepting donations !</h2>
 
 <p>
 Monkey HTTP Daemon Project is looking for people who would like to support
 our work making a monetary donation. This donation will have as destination pay
-web services as DNS, hosting, merchandising and others. 
+web services as DNS, hosting, merchandising and others.
 </p>
+</div>
 <p>
 Donations are being accepted through Paypal services, please click the following
 button if you want to make Monkey's happy:

@@ -33,7 +33,7 @@
 	<?php
 		echo $html->meta('icon');
 		echo $html->css('bootstrap');
-//echo $html->css('bootstrap-responsive');
+                echo $html->css('bootstrap-responsive');
 
 		echo $scripts_for_layout;
 	?>
