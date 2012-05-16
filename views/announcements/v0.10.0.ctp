@@ -1,21 +1,9 @@
-<div class="gsoc">
+<div class="hero-unit">
 
-<h1>Announcements</h1>
-<? /*
-<div class="gsoc_menu">
-	<p>
-	<?=$html->link('GSoC Main', array('controller' => 'GSoC2010', 'action' => 'Welcome'));?>
-	&nbsp;&nbsp;
-	<?=$html->link('Project Ideas', array('controller' => 'GSoC2010', 'action' => 'Ideas'));?>
-	&nbsp;&nbsp;
-	<?=$html->link('Students Template', array('controller' => 'GSoC2010', 'action' => 'StudentTemplate'));?>
-	</p>
-</div>
- */
-?>
 <h2>Monkey HTTP Daemon v0.10.0 has been released</h2>
+
 <p>
-Monkey HTTP Daemon is a very Fast and Lightweight Web Server for Linux. It has been designed to be very scalable with low memory and CPU consumption, the perfect solution for embedded and high production environments.  
+Monkey HTTP Daemon is a very Fast and Lightweight Web Server for Linux. It has been designed to be very scalable with low memory and CPU consumption, the perfect solution for embedded and high production environments.
 </p>
 <p>
 The project was started in 2001, internally it used to work with forking and threading networking models to attend clients, now, our current release 0.10.0 is one of our major milestone, we have a new web server working in asyncronous mode, fixed threads and with an excellent performance.
@@ -23,8 +11,10 @@ The project was started in 2001, internally it used to work with forking and thr
 <p>
 This version  has been in development for the last two years, we have rewritten almost 85% of the old code and we have met our goals in a very stable product :)
 </p>
+</div>
 
-<h2>What is new ?</h2>
+<h3>What is new ?</h3>
+<ul>
 
 <li>Asynchronous Server: No more blocking calls.</li>
 <li>New Pipelining request support</li>
@@ -36,26 +26,27 @@ This version  has been in development for the last two years, we have rewritten 
 <li>Worker logger: A new worker is in charge to register the log entries, it helps to reduce the I/O</li>
 <li>Configuration Files: The configuration structure has changed, now we have a more organized configuration for global variables and virtual hosts directives.</li>
 <li>A lot of minor bug fixes</li>
- 
-<h2>Contributors</h2>
+</ul>
+
+<h3>Contributors</h3>
 <p>
 We would like recognize the contribution and help provided by the following volunteers:
 </p>
-
+<ul>
 <li> Carlos Ghan</li>
 <li> Thorsten Schmale</li>
 <li> Niedobryjasiu</li>
 <li> Jonathan Gonzalez</li>
 <li> [[GreenFox]]</li>
 <li> Felipe Astroza</li>
-
-<h2>Join us!</h2>
+</ul>
+<h3>Join us!</h3>
 
 We want to hear about you, our community is growing and you can be part of it!, you can met us in:
 </p>
-<br><br>
+
+<ul>
 <li>Mailing list: http://groups.google.com/group/monkeyd</li>
-
 <li>IRC: irc.freenode.net #monkeyd</li>
+</ul>
 
-</div>

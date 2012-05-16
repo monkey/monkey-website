@@ -32,54 +32,78 @@
 	</title>
 	<?php
 		echo $html->meta('icon');
-
-		echo $html->css('cake.generic');
-                echo $html->css('documentation');
+		echo $html->css('bootstrap');
+//echo $html->css('bootstrap-responsive');
 
 		echo $scripts_for_layout;
 	?>
 </head>
 <body>
-        <div id="header">
-                  asdkjaksdj
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+         <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+
+          <div class="row-fluid">
+              <div class="span1" style="padding-top: 0.3em;">
+                  <? echo $html->image('monkey_head.png'); ?>
+              </div>
+              <div class="span10">
+                  <? echo $html->link('Monkey',
+                                      array('controller' => '/'),
+                                      array('class' => 'brand', 'style' => 'color: #eae8d2;'));
+                  ?>
+
+                  <div class="nav-collapse collapse">
+                  <ul class="nav">
+                  <li class="">
+                  <? echo $html->link('About', array('controller' => 'home', 'action' => 'about')); ?>
+                  </li>
+                  <li class="">
+                  <? echo $html->link('Documentation', array('controller' => 'documentation')); ?>
+                  </li>
+
+                  <li class="">
+                  <? echo $html->link('Community', array('controller' => 'home',
+                                                         'action' => 'community'));
+                  ?>
+                  </li>
+                  <li class="">
+                  <? echo $html->link('Announcements', array('controller' => 'Announcements',
+                                                             'action' => 'Welcome'));
+                  ?>
+                  </li>
+                  <li class="">
+                  <? echo $html->link('Embedded', array('controller' => 'home',
+                                                        'action' => 'embedded'));
+                  ?>
+                  </li>
+                  <li class="divider-vertical"></li>
+
+                  <li class="active">
+                  <? echo $html->link('Donate - support us!', array('controller' => 'Donate')); ?>
+                  </li>
+                  </ul>
+             </div> <!-- end span8 -->
+          </div> <!-- end row fluid -->
+
         </div>
-	<div id="container">
-		<div id="heaaaader">
-                        asdkjaskdjas
-			<div id="premenu">
-			<?
-				//echo $html->link('Donate', array('controller' => 'home', 'action' => 'donate'));
-				echo $html->link('Donate - Support Monkeys!', array('controller' => 'Donate'));
-			?>
-			</div>
-			<?=$html->image('header.png');?>
-		</div>
-		<div id="menu">
-			<?
-				echo $html->link('Home', array('controller' => '/'));
-				echo $html->link('About', array('controller' => 'home', 'action' => 'about'));
-				echo $html->link('Downloads', array('controller' => 'home', 'action' => 'downloads'));
-				echo $html->link('Docs', array('controller' => 'documentation', 'action' => 'index'));
-				echo $html->link('Community', array('controller' => 'home', 'action' => 'community'));
-				//echo $html->link('Developers', array('controller' => 'home', 'action' => 'developers'));
-				echo $html->link('Announcements', array('controller' => 'Announcements', 'action' => 'Welcome'));
-                                echo $html->link('Embedded', array('controller' => 'home', 'action' => 'embedded'));
-                                echo $html->link('Google Summer of Code 2012', array('controller' => 'gsoc2012', 'action' => 'index'));
-			?>
-		</div>
-		<div id="content">
+      </div>
+    </div>
+   </div>
 
-			<?php $session->flash(); ?>
+   <div class="container">
+      <?php $session->flash(); ?>
+      <?php echo $content_for_layout; ?>
+    <hr>
+    <footer>
+        <p>&copy; Copyright 2001 – 2012 / Monkey HTTP Daemon development group</p>
+      </footer>
+   </div> <!-- /container -->
 
-			<?php echo $content_for_layout; ?>
-
-		</div>
-		<div id="footer">
-			<div id="copyright">
-			     	Copyright © 2001 – 2011 by Monkey HTTP Daemon development group
-			</div>
-		</div>
-
-	</div>
 </body>
 </html>

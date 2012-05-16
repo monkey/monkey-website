@@ -5,6 +5,8 @@ class HomeController extends AppController {
 	var $components = array('Feed');
 	var $uses = array();
 
+        function testcss() {}
+
 	function index(){
           $mode = 0; /* Production = 1 ; Development = 0; */
 

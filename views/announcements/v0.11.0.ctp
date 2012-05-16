@@ -1,23 +1,22 @@
-<div class="gsoc">
-
-<h1>Announcements</h1>
+<div class="hero-unit">
 
 <h2>Monkey HTTP Daemon v0.11.0 has been released</h2>
 <p>
-Monkey HTTP Daemon is a very Fast and Lightweight Web Server for Linux. It has been designed to be very scalable with low memory and CPU consumption, the perfect 
-solution for embedded and high production environments.  
+Monkey HTTP Daemon is a very Fast and Lightweight Web Server for Linux. It has been designed to be very scalable with low memory and CPU consumption, the perfect
+solution for embedded and high production environments.
 </p>
 <p>
-The project was started in 2001, internally it used to work with forking and threading networking models to attend clients, now, our current branch 0.11 is the second major milestone, 
+The project was started in 2001, internally it used to work with forking and threading networking models to attend clients, now, our current branch 0.11 is the second major milestone,
 we have a new web server working in asynchronous mode, fixed threads, stable API, indented configuration mode and with an excellent performance.
 </p>
+</div>
 
-<h2>Introduction</h2>
+<h3>Introduction</h3>
 <p>
 Monkey HTTP Daemon Team, is proud to announce the second major release on this next generation web server '0.11.0'.
 </p>
 
-<h2>What is new ?</h2>
+<h3>What is new ?</h3>
 <p>
 <ul>
         <li>Indented Configuration mode</li>
@@ -35,7 +34,7 @@ Monkey HTTP Daemon Team, is proud to announce the second major release on this n
 </ul>
 </p>
 
-<h2>Contributors</h2>
+<h3>Contributors</h3>
 <p>
 We would like to thanks to the following person who have been involved doing code and bug fixes contributions on this release:
 </p>
@@ -50,9 +49,8 @@ Also thanks for take some time to help the project being sysadmin and maintainin
 <p>
 We want to hear about you, our community is growing and you can be part of it!, you can met us in:
 </p>
-<br>
-<li>Mailing list: http://lists.monkey-project.com</li>
 
+<ul>
+<li>Mailing list: http://lists.monkey-project.com</li>
 <li>IRC: irc.freenode.net #monkeyd</li>
-<br><br>
-</div>
+</ul>

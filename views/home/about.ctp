@@ -1,15 +1,20 @@
-<h1>About</h1>
-
+<div class="hero-unit">
+<h2>About <small> monkey web server</small> </h2>
 <p>
-Monkey HTTP Daemon, is a very Small, Fast and Lightweight open source Web Server for GNU/Linux. It has been designed 
-to be very scalable with low memory and CPU consumption, the perfect solution for embedded and high 
-production environments.
+   Monkey is a small, fast and lightweight open source Web Server for GNU/Linux. It has been designed
+   with focus in embedded devices, therefore its scalable by nature having a low memory and CPU
+   consumption and an excellent performance.
 </p>
+<p>
+   Monkey is properly supported on ARM, x86 and x64, being able to work in any architecture and device
+   capable to run a Linux Kernel.
+</p>
+</div>
 
-<h2>Features</h2>
+<h3>Features <small></small></h3>
 <p>
 <ul>
-	<li>HTTP/1.1</li>
+	<li>HTTP/1.1 compliant</li>
 	<li>Virtual Hosts</li>
         <li>Asynchronous networking model (event-driven)</li>
 	<li>Indented configuration</li>
@@ -27,69 +32,83 @@ production environments.
 </ul>
 </p>
 
-<h2>How it Works</h2>
+<br>
+<h3>How it Works <small>internal architecture</small></h3>
 <p>
-Monkey uses an hybrid network model based on posix threads and the Epoll() Linux system call. Each thread is capable
-to handle an average of 200 concurrent request at same time as minimum thanks to an asynchronous mecanism.
+   Monkey uses an hybrid mechanism composed by a fixed number of threads being each one capable
+   to attend thousands of clients thanks to the event-driven model based in asyncrhonous sockets.
+</p>
+<p>
+   The interaction between the scheduler and each worker thread is lock free, avoiding race conditions
+   and exposing a huge performance compared to other available options. It also takes the most of the
+   Linux Kernel to optimize the work using specific system calls based on zero-copy strategy.
 </p>
 
-<h2>Plugins</h2>
+<br>
+<h3>Plugins <small>extending the core features</small></h3>
 <p>
-A good and flexible architecture is one of our goals. Monkey have been designed to keep most of the HTTP 
-functionalities in the core and make it extensible through external plugins. The current list of available
-plugins distributed are:
+A good and flexible architecture is one of our goals. Monkey have been designed to keep most of the HTTP
+functionalities in the core and make it extensible through external plugins. Its core is small, depending of the
+compiler version used, the binary size could be around 60KB and 300KB in runtime. The current plugins are distributed
+with the sources:
 
 <ul>
         <li>Liana: networking communication layer</li>
 	<li>Cheetah! Shell: Yes!, Monkey has a shell!</li>
 	<li>Directory Listing</li>
-	<li>Security</li>
+        <li>Security: access restriction to the service by network address, subnets and request filters</li>
 	<li>Palm</li>
 </ul>
 </p>
 
-<h2>Just for Linux</h2>
+<br>
+<h3>Just for Linux <small>kernel dependent</small></h3>
 <p>
-Write a portable piece of software involves to dedicate extra time and focus on each platform features and 
-problems. Linux as a fast and stable operative system also provides specific system calls which helps to improve the 
-performance for high demand servers, that's why Monkey development is focused in Linux environment and all it's specific
-features, most of them are not found in other systems. Monkey requires Linux Kernel >= 2.6.28.
+Write a portable piece of software involves to dedicate extra time and focus on each platform features and
+problems. Linux is a fast and stable operative system which provides specific and unique system calls to improve the
+performance of high demand server softwares, so Monkey development is focused in Linux Kernel to take the most of
+it specific features. Monkey only requires Linux >= 2.6.29.
 </p>
 
-<h2>Palm applications Server</h2>
+<br>
+<h3>Benchmarks <small>againts other web servers</small></h3>
 <p>
-Nowadays the most used scripting languages are PHP, Python and Ruby. Since Monkey 0.10.x, the server just focus on serving
-static content, for dynamic content, Monkey project includes an applications server called Palm, so when Monkey receives 
-a dynamic page request, it will parse it and forward the request using the Palm protocol to the Palm server which will serve
-the request and Monkey sent back to the client the page generated.
+   Monkey have demostrated consume less memory and CPU than other web servers available, as well have a better performance
+   due to it design. More information will be shared soon.
 </p>
 
-<h2>Sponsors</h2>
-<p>
-<table cellpadding="2" cellspacing="2" style="border:1px #fff;">
-<td style="border: 1px #fff;" valign="top">
-    <a href="http://www.osuosl.org"><img src="osuosl.png" border="0"></a>
-</td>
-<td align="left" style="text-align: left; border: 1px #fff;">
-    <p>
-    <a href="http://monkey-project.com">Monkey Project </a>could not be possible without the infraestructure provided 
-    by the <a href="http://www.osuosl.org">Open Source Lab</a> from the <a href="http://www.osuosl.org">Oregon State University</a>, 
+<br>
+<h3>Sponsors <small>who support us</small></h3>
+<div class="row">
+    <div class="span12">
+      <p>
+        Monkey is build by volunteers around the world and getting an extra support from OSUOSL.
+      </p>
+    </div>
+</div>
+<div class="row">
+    <div class="span2">
+         <a href="http://www.osuosl.org"><img src="osuosl.png" border="0"></a>
+    </div>
+    <div class="span10">
+    <a href="http://monkey-project.com">Monkey Project </a>could not be possible without the infraestructure provided
+    by the <a href="http://www.osuosl.org">Open Source Lab</a> from the <a href="http://www.osuosl.org">Oregon State University</a>,
     well known as <a href="http://www.osuosl.org">OSUOSL</a>, we really appreciate all support provided!
-    </p>
-</td>
-</table>
-</p>
+    </div>
+</div>
 
-<h2>License</h2>
+<br>
+<h3>License <small>legal</small></h3>
 <p>
   Monkey HTTP Daemon is licensed under the <a href="http://www.gnu.org/licenses/gpl-2.0.html">GNU Public License v2 (GPL2)</a>.
 </p>
 <p>
-  In brief: This program is free software; you can redistribute it and/or modify  it under the terms of the GNU General Public 
+  In brief: This program is free software; you can redistribute it and/or modify  it under the terms of the GNU General Public
   License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
 </p>
 
-<h2>About our Logo</h2>
+<br>
+<h3>Logo Copyright</h3>
 <p>
 Our Monkey Logo is under the Creative Commons License, you are just allowed to use it to promote Monkey HTTP Daemon project
 without any commercial purpose. FLOSS communities looking for merchandising can write us to require special permissions.

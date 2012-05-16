@@ -18,7 +18,7 @@ $versions = array('0.33.0' => '0.33',
                   '0.11.1' => '0.11',
                   '0.11.0' => '0.11',
                   '0.10.3' => '0.10',
-                  '0.10.2' => '0.10', 
+                  '0.10.2' => '0.10',
                   '0.10.1' => '0.10',
                   '0.10.0' => '0.10');
 
@@ -28,15 +28,20 @@ foreach($versions as $latest => $dir) {
 
 function release_line($version, $dir)
 {
-        $site = "http://www.monkey-project.com/";
+        $site = "http://monkey-project.com/";
         ?>
-	<li>
+	<tr>
+            <td>
+                v<?=$version?>
+            </td>
+            <td>
 		<a href="<?=$site."releases/".$dir?>/monkey-<?=$version?>.tar.gz">monkey-<?=$version?>.tar.gz</a>
-		[ <a href="<?=$site?>Announcements/v<?=$version?>">announcement</a> | 
-                  <a href="<?=$site?>releases/<?=$dir?>/ChangeLog-<?=$version?>">changelog</a> |
-                  <a href="<?=$site?>releases/<?=$dir?>/monkey-<?=$version?>.tar.gz.md5">md5</a>
-		]
-	</li>
+            <code><a href="<?=$site?>Announcements/v<?=$version?>">Announcement</a></code>
+                  <code><a href="<?=$site?>releases/<?=$dir?>/ChangeLog-<?=$version?>">Changelog</a></code>
+                  <code><a href="<?=$site?>releases/<?=$dir?>/monkey-<?=$version?>.tar.gz.md5">MD5</a></code>
+
+	    </td>
+        </tr>
         <?
 }
 
@@ -45,7 +50,7 @@ function release_line($version, $dir)
 <h1>Downloads</h1>
 
 <p>
-The latest stable release version is Monkey <?=$latest?>. If you are already using Monkey, we encourage you to upgrade you version to the latest one 
+The latest stable release version is Monkey <?=$latest?>. If you are already using Monkey, we encourage you to upgrade you version to the latest one
 available.
 </p>
 <p>
@@ -68,16 +73,19 @@ If you are looking for fun, we would suggest you our development version which i
 </p>
 
 <h2>Older Releases</h2>
-<p>
-<ul>
-<?
-  foreach($versions as $version => $dir){
-      if($version == $latest) {
-          continue;
+<div class="row">
+  <div class="span6">
+     <table class="table">
+     <?
+       foreach($versions as $version => $dir){
+           if($version == $latest) {
+               continue;
+           }
+           release_line($version, $dir);
       }
-      release_line($version, $dir);
-  }
-?>
-</ul>
-</p>
+      ?>
+      </table>
+  </div>
+</div>
+
 <br><br>
