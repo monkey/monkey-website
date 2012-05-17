@@ -64,7 +64,7 @@
                   <? echo $html->link('About', array('controller' => 'home', 'action' => 'about')); ?>
                   </li>
                   <li class="">
-                  <? echo $html->link('Documentation', array('controller' => 'documentation')); ?>
+                  <? echo $html->link('Documentation', array('controller' => 'documentation/')); ?>
                   </li>
 
                   <li class="">
