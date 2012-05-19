@@ -35,13 +35,12 @@
 	Router::connect('/about', array('controller' => 'home', 'action' => 'about'));
 	Router::connect('/downloads', array('controller' => 'home', 'action' => 'downloads'));
 	Router::connect('/community', array('controller' => 'home', 'action' => 'community'));
-//	Router::connect('/documentation', array('controller' => 'home', 'action' => 'documentation'));
-	Router::connect('/developers', array('controller' => 'home', 'action' => 'developers'));	
+	Router::connect('/documentation', array('controller' => 'documentation', 'action' => 'index'));
+	Router::connect('/developers', array('controller' => 'home', 'action' => 'developers'));
 /**
  * ...and connect the rest of 'Pages' controller's urls.
  */
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
-	Router::connect('/documentation/*', array('controller' => 'documentation', 'action' => 'display'));
 	Router::connect('/documentationdev/*', array('controller' => 'documentationdev', 'action' => 'display'));
 	Router::connect('/maintainance', array('controller' => 'home', 'action' => 'maintainance'));
 	Router::connect('/GSoC2010/*', array('controller' => 'gsoc2010', 'action' => 'display'));

@@ -31,46 +31,105 @@
 	</title>
 	<?php
 		echo $html->meta('icon');
-		echo $html->css('documentation');
+		echo $html->css('bootstrap');
+                echo $html->css('bootstrap-responsive');
 
 		echo $scripts_for_layout;
 	?>
 </head>
 <body>
-	<div id="container">
-		<div id="header">
-			<div id="premenu">
-			<?
-				echo $html->link('Donate', array('controller' => 'home', 'action' => 'donate'));
-				echo $html->link('Contact', array('controller' => 'home', 'action' => 'contact'));
-			?>
-			</div>
-			<?=$html->image('header.png');?>
-		</div>
-		<div id="menu">
-			<?
-				echo $html->link('Home', array('controller' => '/'));
-				echo $html->link('About', array('controller' => 'home', 'action' => 'about'));
-				echo $html->link('Downloads', array('controller' => 'home', 'action' => 'downloads'));
-				echo $html->link('Documentation', array('controller' => 'home', 'action' => 'documentation'));
-				echo $html->link('Community', array('controller' => 'home', 'action' => 'community'));
-				//echo $html->link('Developers', array('controller' => 'home', 'action' => 'developers'));
-				echo $html->link('< Google Summer of Code 2010 >', array('controller' => 'GSoC2010', 'action' => 'Welcome'));
-			?>
-		</div>
-		<div id="content">
+    <div class="navbar navbar-inner">
+      <div class="navbar-inner">
+        <div class="container">
+         <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
 
-			<?php $session->flash(); ?>
+          <div class="row-fluid">
+              <div class="span1" style="padding-top: 0.3em;">
+                  <? echo $html->image('monkey_head.png'); ?>
+              </div>
+              <div class="span8">
+                  <? echo $html->link('Monkey',
+                                      array('controller' => '/'),
+                                      array('class' => 'brand', 'style' => 'color: #eae8d2;'));
+                  ?>
 
-			<?php echo $content_for_layout; ?>
+                  <div class="nav-collapse collapse">
+                  <ul class="nav">
+                  <li class="">
+                  <? echo $html->link('About', array('controller' => 'home', 'action' => 'about')); ?>
+                  </li>
+                  <li class="">
+                  <? echo $html->link('Documentation', array('controller' => 'documentation/')); ?>
+                  </li>
 
-		</div>
-		<div id="footer">
-			<div id="copyright">
-				Copyright © 2001 – 2010 by Eduardo Silva P. 
-			</div>
-		</div>
-	</div>
-	<?php echo $cakeDebug; ?>
+                  <li class="">
+                  <? echo $html->link('Community', array('controller' => 'home',
+                                                         'action' => 'community'));
+                  ?>
+                  </li>
+                  <li class="">
+                  <? echo $html->link('Announcements', array('controller' => 'Announcements',
+                                                             'action' => 'Welcome'));
+                  ?>
+                  </li>
+                  <li class="">
+                  <? echo $html->link('Embedded', array('controller' => 'home',
+                                                        'action' => 'embedded'));
+                  ?>
+                  </li>
+                  <li class="divider-vertical"></li>
+
+                  <li class="active">
+                  <? echo $html->link('Donate - support us!', array('controller' => 'Donate')); ?>
+                  </li>
+                  </ul>
+             </div> <!-- end span8 -->
+          </div> <!-- end row fluid -->
+
+        </div>
+      </div>
+    </div>
+   </div>
+
+   <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span2">
+           <!-- Left menu -->
+           <ul class="nav nav-list">
+               <li class="nav-header">
+                  ADMINISTRATION
+               </li>
+               <li>
+                  <?=$html->link('Installation', array('action' => 'installation'));?>
+               </li>
+               <li class="nav-header">
+                  Tutorials & FAQ
+               </li>
+               <li>
+                  <?=$html->link('Basic Authentication', array('action' => 'basic_authentication'));?>
+               </li>
+               <li>
+                  <?=$html->link('Cheetah! Shell', array('action' => 'cheetah_shell'));?>
+               </li>
+               <li>
+                  <?=$html->link('Debian & Ubuntu Packages', array('action' => 'debian_ubuntu'));?>
+               </li>
+             </ul>
+      </div>
+      <div class="span7">
+          <?php $session->flash(); ?>
+          <?php echo $content_for_layout; ?>
+      </div>
+    </div>
+    <hr>
+    <footer>
+        <p>&copy; Copyright 2001 – 2012 / Monkey HTTP Daemon development group</p>
+      </footer>
+   </div> <!-- container -->
+
 </body>
 </html>
