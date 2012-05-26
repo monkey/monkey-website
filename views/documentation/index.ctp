@@ -20,6 +20,7 @@
       <li><?=$html->link('Basic Authentication', array('action' => 'basic_authentication'));?> </li>
       <li><?=$html->link('Cheetah! Shell', array('action' => 'cheetah_shell'));?>       </li>
       <li><?=$html->link('Debian and Ubuntu Packages', array('action' => 'debian_ubuntu'));?>     </li>
+      <li><?=$html->link('IPv6', array('action' => 'ipv6'));?>     </li>
    </ul>
    </p>
 </div>

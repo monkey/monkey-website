@@ -11,6 +11,9 @@ class DocumentationController extends AppController {
         function installation() {
         }
 
+        function ipv6() {
+        }
+
         function basic_authentication() {
         }
 

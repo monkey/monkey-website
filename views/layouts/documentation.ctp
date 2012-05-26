@@ -118,6 +118,9 @@
                <li>
                   <?=$html->link('Debian & Ubuntu Packages', array('action' => 'debian_ubuntu'));?>
                </li>
+               <li>
+                  <?=$html->link('IPv6', array('action' => 'ipv6'));?>
+               </li>
              </ul>
       </div>
       <div class="span7">
