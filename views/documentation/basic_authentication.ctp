@@ -30,20 +30,20 @@
 </pre></p>
 
    <li>Once the plugin is loaded you want to have a list of users who will access the virtual host. The <b>Auth</b> plugin distribute
-       a tool named <u>mkpasswd</u> which manage users in a static file. This tool is pretty similar to htpasswd from Apache but the
+       a tool named <u>mk_passwd</u> which manage users in a static file. This tool is pretty similar to htpasswd from Apache but the
        format to store the users is different.</li>
    <p></p>
    <p>Create an initial users file with one user:</p>
-   <pre>$ mkpasswd -c -b /etc/monkey/plugins/auth/users.mk  myuser mypassword</pre>
+   <pre>$ mk_passwd -c -b /etc/monkey/plugins/auth/users.mk  myuser mypassword</pre>
    <p>
    Now you will have a <i>users.mk</i> file containing the new user, the file content should looks like:
    </p>
    <pre>$ cat users.mk
 myuser:{SHA1}kd/Z3bQZiv/FwZTNjObTOP3kcOI=</pre>
    <p>
-   You can add subsequent users with the same command but omitting the '-c' flag as this instruct mkpasswd to create a new file, e.g:
+   You can add subsequent users with the same command but omitting the '-c' flag as this instruct mk_passwd to create a new file, e.g:
    </p>
-   <pre>$ mkpasswd -b /etc/monkey/plugins/auth/users.mk  my_second_user some_password
+   <pre>$ mk_passwd -b /etc/monkey/plugins/auth/users.mk  my_second_user some_password
 $ cat users.mk
 myuser:{SHA1}kd/Z3bQZiv/FwZTNjObTOP3kcOI=
 my_second_user:{SHA1}cWX21AfcL9aFKNpjJgqRPnFiPoY=</pre>
