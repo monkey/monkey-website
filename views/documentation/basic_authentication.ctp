@@ -19,7 +19,7 @@
 <h3>Steps</h3>
 <ul>
 
-   <li>Make sure the <b>Auth</b> plugin is enabled in your Monkey configuration, open your conf/plugins.load configuration file
+   <li>Make sure <b>Auth</b> plugin is enabled in your Monkey configuration, open your conf/plugins.load configuration file
    and find a similar entry like this:</li>
    <p>
    <pre>[PLUGINS]
