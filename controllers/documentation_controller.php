@@ -32,6 +32,10 @@ class DocumentationController extends AppController {
           $this->pageTitle = 'Mandril Security';
         }
 
+        function virtual_hosts() {
+          $this->pageTitle = 'Virtual Hosts';
+        }
+
         function beforeFilter() {
           parent::beforeFilter();
 

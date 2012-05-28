@@ -125,6 +125,9 @@
                <li>
                   <?=$html->link('Mandril Security Plugin', array('action' => 'mandril'));?>
                </li>
+               <li>
+                  <?=$html->link('Virtual Hosts', array('action' => 'virtual_hosts'));?>
+               </li>
              </ul>
       </div>
       <div class="span7">

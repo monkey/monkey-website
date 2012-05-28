@@ -22,6 +22,7 @@
       <li><?=$html->link('Debian and Ubuntu Packages', array('action' => 'debian_ubuntu'));?>     </li>
       <li><?=$html->link('IPv6', array('action' => 'ipv6'));?>     </li>
       <li><?=$html->link('Mandril Security Plugin', array('action' => 'mandril'));?></li>
+      <li><?=$html->link('Virtual Hosts', array('action' => 'virtual_hosts'));?></li>
    </ul>
    </p>
 </div>
