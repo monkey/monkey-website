@@ -122,6 +122,9 @@
                <li>
                   <?=$html->link('IPv6', array('action' => 'ipv6'));?>
                </li>
+               <li>
+                  <?=$html->link('Mandril Security Plugin', array('action' => 'mandril'));?>
+               </li>
              </ul>
       </div>
       <div class="span7">

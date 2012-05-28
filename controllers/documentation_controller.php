@@ -28,6 +28,10 @@ class DocumentationController extends AppController {
           $this->pageTitle = 'Debian & Ubuntu packages';
         }
 
+        function mandril() {
+          $this->pageTitle = 'Mandril Security';
+        }
+
         function beforeFilter() {
           parent::beforeFilter();
 

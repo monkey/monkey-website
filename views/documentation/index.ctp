@@ -21,6 +21,7 @@
       <li><?=$html->link('Cheetah! Shell', array('action' => 'cheetah_shell'));?>       </li>
       <li><?=$html->link('Debian and Ubuntu Packages', array('action' => 'debian_ubuntu'));?>     </li>
       <li><?=$html->link('IPv6', array('action' => 'ipv6'));?>     </li>
+      <li><?=$html->link('Mandril Security Plugin', array('action' => 'mandril'));?></li>
    </ul>
    </p>
 </div>
