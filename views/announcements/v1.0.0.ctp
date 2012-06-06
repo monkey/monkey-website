@@ -84,6 +84,8 @@ We would like to thanks to the following people who have been involved doing cod
   <li>Jean-Paul Bonnet</li>
   <li>Kay</li>
   <li>Flaushy</li>
+  <li>Felipe Reyes</li>
+  <li>Aldrin Martoq (Brayatan)</li>
   <li>Jonathan Gonzalez</li>
 
 </ul>
