@@ -11,6 +11,9 @@
 
 <table class='table'>
 <tr><td>
+ <?=$html->link('[2012/06/01] Monkey HTTP Daemon v1.0.0', array('controller' => 'Announcements', 'action' => 'v1.0.0'))?>
+</td></tr>
+<tr><td>
  <?=$html->link('[2012/02/20] Monkey HTTP Daemon v0.33.0', array('controller' => 'Announcements', 'action' => 'v0.33.0'))?>
 </td></tr>
 <tr><td>

@@ -22,7 +22,7 @@ $FILES =  "http://monkey-project.com/releases/1.0/";
   web server for embedded devices taking the most of Linux Kernel to hit great performance with low resources usage.
 </p>
 <p>
-  This version is faster than previous ones, many optimization and improvements has been made in the scheduler, memory management and
+  This version is faster than previous ones, many optimizations and improvements have been made in the scheduler, memory management and
   in the core in general.
 </p>
 <br>

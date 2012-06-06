@@ -20,9 +20,9 @@
           <div class="row-fluid">
             <div class="span6" style="text-align:center">
                   <a class="btn btn-warning btn-large"
-                     href="http://monkey-project.com/releases/0.33/monkey-0.33.0.tar.gz">
+                     href="http://monkey-project.com/releases/1.0/monkey-1.0.0.tar.gz">
                   <i class="icon-white icon-download-alt"></i>
-                     Download Monkey (v.0.33.0)
+                     Download Monkey I/O (v1.0.0)
                   </a>
             </div>
             <div class="span6" style="text-align:center">
@@ -50,14 +50,14 @@
 
       <div class="row">
           <div class="span12">
-                  <h2>Latest release: v0.33.0 <small>on Monday, 20 Feb 2012</small> </h2>
+                 <h2>Latest release: v1.0.0 / codename Monkey I/O <small>on Wednesday, 06 Jun 2012</small> </h2>
                   <p></p>
 	          <p>
                        Monkey project team, is proud to announce the availability of our major
-                       release <i>Monkey HTTP Daemon 0.33</i>.
+                       release <i>Monkey HTTP Daemon v1.0.0</i>.
  	          </p>
                   <p>
-     For more details about the release, please refer to the <?=$html->link('official announcement', array('controller' => 'Announcements', 'action' => 'v0.33.0'));?>
+     For more details about the release, please refer to the <?=$html->link('official announcement', array('controller' => 'Announcements', 'action' => 'v1.0.0'));?>
 	or go directly to the <?=$html->link('downloads section', array('controller' => 'downloads'));?>
 	</p>
         <br>
@@ -75,9 +75,9 @@
         </div>
       <div class="span7">
       <pre>
-$ wget http://monkey-project.com/releases/0.33/monkey-0.33.0.tar.gz
-$ tar zxfv monkey-0.33.0.tar.gz
-$ cd monkey-0.33.0
+$ wget http://monkey-project.com/releases/1.0/monkey-1.0.0.tar.gz
+$ tar zxfv monkey-1.0.0.tar.gz
+$ cd monkey-1.0.0
 $ ./configure
 $ make
 $ bin/monkey</pre>
