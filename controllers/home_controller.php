@@ -8,7 +8,7 @@ class HomeController extends AppController {
         function testcss() {}
 
 	function index(){
-          $mode = 1; /* Production = 1 ; Development = 0; */
+          $mode = 0; /* Production = 1 ; Development = 0; */
 
           /* news */
           $url = "http://blog.monkey-project.com/?feed=rss";

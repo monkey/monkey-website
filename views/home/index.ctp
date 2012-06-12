@@ -64,6 +64,20 @@
           </div>
       </div>
 
+      <div class="row">
+          <div class="span12">
+                 <h2>Benchmarks</h2>
+                  <p></p>
+	          <p>
+                  The Monkey team is doing different of benchmarks of the server in different platforms against different web servers, please check
+                  the list of Benchmarks done at the moment:
+                  <ul>
+                     <li><?=$html->link('Monkey v/s NginX on a Raspberry PI', array('controller' => 'benchmarks', 'action' => 'raspberry_pi_monkey_nginx'));?></li>
+                  </ul>
+ 	          </p>
+          </div>
+      </div>
+      <p></p>
       <!-- Quick start -->
       <div class="row">
         <div class="span12">
