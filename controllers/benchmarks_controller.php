@@ -20,6 +20,10 @@ class BenchmarksController extends AppController {
           $this->pageTitle = 'Raspberry Pi: Monkey v/s BusyBox';
         }
 
+        function x86_64_monkey_gwan() {
+          $this->pageTitle = 'x86_64: Monkey v/s GWan';
+        }
+
         function beforeRender() {
           $this->set('title_for_layout', $this->pageTitle);
         }
