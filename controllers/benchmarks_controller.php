@@ -16,6 +16,10 @@ class BenchmarksController extends AppController {
           $this->pageTitle = 'Raspberry Pi: Monkey v/s NginX';
         }
 
+        function raspberry_pi_monkey_busybox() {
+          $this->pageTitle = 'Raspberry Pi: Monkey v/s BusyBox';
+        }
+
         function beforeRender() {
           $this->set('title_for_layout', $this->pageTitle);
         }
