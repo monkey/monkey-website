@@ -11,7 +11,7 @@
              Monkey is a lightweight and powerful web server for GNU/Linux.
           </p>
           <p>
- It has been designed to
+            It has been designed to
              be very scalable with low memory and CPU consumption, the perfect solution for embedded
              devices. Made for ARM, x86 and x64.
              <br><br>
@@ -50,14 +50,14 @@
 
       <div class="row">
           <div class="span12">
-                 <h2>Latest release: v1.0.0 / codename Monkey I/O <small>on Wednesday, 06 Jun 2012</small> </h2>
+                 <h2>Latest release: v1.0.1 / codename Monkey I/O <small>on Friday, Jun 15th 2012</small> </h2>
                   <p></p>
 	          <p>
                        Monkey project team, is proud to announce the availability of our major
-                       release <i>Monkey HTTP Daemon v1.0.0</i>.
+                       release <i>Monkey HTTP Daemon v1.0.1</i>.
  	          </p>
                   <p>
-     For more details about the release, please refer to the <?=$html->link('official announcement', array('controller' => 'Announcements', 'action' => 'v1.0.0'));?>
+        For more details about the release, please refer to the <?=$html->link('official announcement', array('controller' => 'Announcements', 'action' => 'v1.0.1'));?>
 	or go directly to the <?=$html->link('downloads section', array('controller' => 'downloads'));?>
 	</p>
         <br>
