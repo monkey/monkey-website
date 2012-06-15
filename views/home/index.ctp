@@ -20,9 +20,9 @@
           <div class="row-fluid">
             <div class="span6" style="text-align:center">
                   <a class="btn btn-warning btn-large"
-                     href="http://monkey-project.com/releases/1.0/monkey-1.0.0.tar.gz">
+                     href="http://monkey-project.com/releases/1.0/monkey-1.0.1.tar.gz">
                   <i class="icon-white icon-download-alt"></i>
-                     Download Monkey I/O (v1.0.0)
+                     Download Monkey I/O (v1.0.1)
                   </a>
             </div>
             <div class="span6" style="text-align:center">
