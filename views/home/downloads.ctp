@@ -1,6 +1,7 @@
 <?
 /* release  => directory */
-$versions = array('1.0.1'  => '1.0',
+$versions = array('1.1.0'  => '1.1',
+                  '1.0.1'  => '1.0',
                   '1.0.0'  => '1.0',
                   '0.33.0' => '0.33',
                   '0.32.0' => '0.32',
@@ -48,8 +49,9 @@ function release_line($version, $dir)
 }
 
 ?>
-
+<div class="hero-unit">
 <h1>Downloads</h1>
+</div>
 
 <p>
 The latest stable release version is Monkey <?=$latest?>. If you are already using Monkey, we encourage you to upgrade you version to the latest one
