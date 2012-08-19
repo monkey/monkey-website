@@ -20,9 +20,9 @@
           <div class="row-fluid">
             <div class="span6" style="text-align:center">
                   <a class="btn btn-warning btn-large"
-                     href="http://monkey-project.com/releases/1.1/monkey-1.1.0.tar.gz">
+                     href="http://monkey-project.com/releases/1.1/monkey-1.1.1.tar.gz">
                   <i class="icon-white icon-download-alt"></i>
-                     Download Monkey Summer (v1.1.0)
+                     Download Monkey Summer (v1.1.1)
                   </a>
             </div>
             <div class="span6" style="text-align:center">
@@ -50,14 +50,14 @@
 
       <div class="row">
           <div class="span12">
-                 <h2>Latest release: v1.1.0 / codename Monkey Summer <small>on Friday, Aug 17th 2012</small> </h2>
+                 <h2>Latest release: v1.1.1 / codename Monkey Summer <small>on Saturday, Aug 18th 2012</small> </h2>
                   <p></p>
 	          <p>
                        Monkey project team, is proud to announce the availability of our major
-                       release <i>Monkey HTTP Daemon v1.1.0</i>.
+                       release <i>Monkey HTTP Daemon v1.1.1</i>.
  	          </p>
                   <p>
-        For more details about the release, please refer to the <?=$html->link('official announcement', array('controller' => 'Announcements', 'action' => 'v1.1.0'));?>
+        For more details about the release, please refer to the <?=$html->link('official announcement', array('controller' => 'Announcements', 'action' => 'v1.1.1'));?>
 	or go directly to the <?=$html->link('downloads section', array('controller' => 'downloads'));?>
 	</p>
         <br>

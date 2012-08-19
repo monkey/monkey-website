@@ -1,5 +1,5 @@
 <?
-$VERSION = "1.1.0";
+$VERSION = "1.1.1";
 $FILES =  "http://monkey-project.com/releases/1.1/";
 ?>
 
@@ -7,7 +7,7 @@ $FILES =  "http://monkey-project.com/releases/1.1/";
 
 <h1>Release Notes</h1>
 
-<h2>Monkey HTTP Daemon v<?=$VERSION?> <small>2012-08-17</small></h2>
+<h2>Monkey HTTP Daemon v<?=$VERSION?> <small>2012-08-18</small></h2>
 
 <p>
  Monkey HTTP Daemon is a very Fast and Lightweight Web Server for GNU/Linux. It has been designed to be very
@@ -22,27 +22,17 @@ $FILES =  "http://monkey-project.com/releases/1.1/";
   web server for embedded devices taking the most of Linux Kernel to hit great performance with low resources usage.
 </p>
 <p>
-  Thanks to the community and specially to the <a href="http://code.google.com/soc">Google Summer of Code</a> students, this version is faster than previous ones, many optimizations and improvements have been made in the scheduler, memory management and
-  in the core in general.
+  This is a minor release who fix the broken build system delivered on v1.1, no changes at web server core or plugins levels.
 </p>
 <br>
   <h3>What is new ? What has changed  ?</h3>
 <p>
-  Here is a list of the most relevant changes on Monkey v1.1:
+  Here is a list of the most relevant changes on Monkey v1.1.1:
 <ul>
-  <li>CGI: New CGI plugin</li>
-  <li>Scheduler: register new incoming sockets with MK_EPOLL_READ (improve performance)</li>
-  <li>Utils: speed up mk_utils_utime2gmt non-cache path by 25%</li>
-  <li>Epoll: new MK_EPOLL_DISABLE mode</li>
-  <li>Epoll: new epoll states mechanism</li>
-  <li>Core: usage of GCC built-ins: prefetch/[un]likely</li>
-  <li>HTTP: Unset cork flag when mk_http_send_file is done</li>
-  <li>TCP: Do not enable TCP_NODELAY in mk_conn_read</li>
-  <li>API: do not export mk_api</li>
-  <li>QA: new validator scripts for host:port headers</li>
-  <li>IOV: fixed initial zeroing of offset entries</li>
-  <li>Configure: improve plugin detection</li>
-  <li>Several code cleanups and optimizations</li>
+  <li>Configure: fix installer on plugins Makefile</li>
+  <li>Configure: fix broken builder</li>
+  <li>Dirlisting: define plugin as optional</li>
+  <li>Logger: define plugin as mandatory</li>
 </ul>
 
 </p>
@@ -55,8 +45,8 @@ $FILES =  "http://monkey-project.com/releases/1.1/";
 We would like to thanks to the following people who have been involved doing code and bug fixes contributions on this release:
 </p>
 <ul>
-  <li>Lauri Kasanen</li>
-  <li>Sonny Karlsson</li>
+  <li>Christian Stankowic (CRUX Linux package maintainer)</li>
+  <li>Anthony G. Basile (Gentoo package maintainer)</li>
 
 </ul>
 
