@@ -91,9 +91,9 @@
         </div>
       <div class="span7">
       <pre>
-$ wget http://monkey-project.com/releases/1.0/monkey-1.0.0.tar.gz
-$ tar zxfv monkey-1.0.0.tar.gz
-$ cd monkey-1.0.0
+$ wget http://monkey-project.com/releases/1.1/monkey-1.1.1.tar.gz
+$ tar zxfv monkey-1.1.1.tar.gz
+$ cd monkey-1.1.1
 $ ./configure
 $ make
 $ bin/monkey</pre>
