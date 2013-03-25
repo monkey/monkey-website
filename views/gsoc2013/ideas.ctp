@@ -42,7 +42,7 @@
 <li> <strong>Difficulty</strong> High</li>
 <li> <strong>Description</strong>
       this project aims to extend the core behavior adding support for the <a href="http://dev.chromium.org/spdy/">SPDY protocol</a>. Even Monkey
-      server is originally written for HTTP, we aim to extend to new protocols as far they improve performance between the communication between clients and servers.
+      server is originally written for HTTP, we aim to extend to new protocols as far they improve communication performance between clients and servers.
   <br/><br/>
   <p>
       The target version is SPDY v3, and it must be written from scratch, the only external dependencies allowed are libc and pthreads. Merging this changes into Monkey
@@ -244,5 +244,3 @@ This project aims to extend the development environment capabilities in two main
 
 
 </div>
-
-
