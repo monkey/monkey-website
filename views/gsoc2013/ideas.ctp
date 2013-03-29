@@ -64,7 +64,7 @@
 
     <br/>
   <p>
-    This project involve the following tasks but NOT restricted to:
+    This project involve the following non-exclusive tasks:
     <ul>
       <li>Create logical layer for HTTP, this separation will allow the inclusion of new protocols.</li>
       <li>Create a standalone SPDY server. It must be very basic mostly to handle the protocol requirements, it will only allow to work with a few multiple connections same time.</li>
@@ -75,6 +75,9 @@
     </ul>
   </p>
 
+  <p>
+    <span class="label label-info">Skills required</span> High knowledge of C and Networking and be familiar with communication protocols.
+  </p>
 
 </li>
 </ul>
@@ -88,12 +91,12 @@
 <p>
 <ul>
 <li> <strong>Keys</strong> C, Networking</li>
-<li> <strong>Difficulty</strong> High</li>
+<li> <strong>Difficulty</strong> Medium</li>
 <li> <strong>Description</strong>
 the Monkey core expose a friendly API for plugins creation and for hence extend the server features. The HTTP cycle is split into stages, the STAGE_30 behave like a content handler, so every time a request hits this stage, the plugins handler pass this request to every plugin hooked on that stage, on that moment every plugin determinate if it should manage the request (own it) or just pass. The problem with this design, is that for a simple connection it can pass around each loaded plugin generating overhead. Do not exist a way to instruct the server from a configuration point of view to say which plugin should manage which request.
 
 <br/><br/>
-This project focus in a solution to the problem described. A new core functionality is proposed to solve this implementing a mechanism to assign type of requests based in URI Location to specific plugins handlers based in configuration. On this way the plugins are not longer in charge to determinate if they should manage the requests or not, everything is handled from the configuration plus reducing the server overhead in the plugin handlers in an order from O(n) to O(1).
+The project idea is focusing in a solution to the problem described. A new core functionality is proposed to solve this through implementing a mechanism to assign type of requests based in URI Location to specific plugins handlers based in configuration rules. On this way the plugins are not longer in charge to determinate if they should manage the requests or not, everything is handled from the configuration plus reducing the server overhead in the plugin handlers in an order from O(n) to O(1).
 <br/><br/>
 <p>
 Some tasks involved are (but not restricted to):
@@ -103,8 +106,13 @@ Some tasks involved are (but not restricted to):
   <li>Create a test-case plugin that hooks on STAGE_30 and works in the new design mechanism</li>
   <li>Adapt the plugins handler to support the new model</li>
   <li>Do performance benchmarks so we can realize how the new design is behaving</li>
-     <li>Migrate all base plugins to this new model</li>
+  <li>Migrate all base plugins to this new model</li>
+  <li>Write the Quality Assurance (QA) scripts to verify right behavior and avoid regressions in future releases</li>
 </ul>
+<br>
+  <p>
+    <span class="label label-info">Skills required</span> Good knowledge of C and shared libraries
+  </p>
 </div>
 
 <br/>
@@ -115,7 +123,7 @@ Some tasks involved are (but not restricted to):
 <li> <strong>Keys</strong> C, Networking, Events</li>
 <li> <strong>Difficulty</strong> High</li>
 <li> <strong>Description</strong>
-In a HTTP context, a proxy reverse is a server feature that allow to redirect incoming connections to backend servers. This project aims to develop a proxy-reverse plugin using the Monkey API. The plugin must understand redirection rules based in a new configuration file and schema to be designed, besides redirection it must support smart connections balancing algorithms that uses as rules and criteria the following entries: workers load, URI type and Virtual Host.
+In HTTP, a proxy reverse is a server feature that allow to redirect incoming connections to backend servers. This project aims to develop a proxy-reverse plugin using the Monkey API. The plugin must understand redirection rules based in a new configuration file and schema to be designed, besides redirection it must support smart connections balancing algorithms that uses as rules and criteria the following entries: workers load, URI type and Virtual Host.
 <br/><br/>
 <p>
 An important security aspect to take in consideration when doing the implementation, is that new connections should not be redirected without perform protocol parsing and validations first. As well for large requests it must be able to queue the received requests and handle the asynchronous events properly, non-blocking is a must.
@@ -127,7 +135,13 @@ Some tasks involved are (but not restricted to):
   <li>Design a new configuration schema to define proxy reverse rules</li>
   <li>Make the plugin read the configuration and setup internal structures</li>
   <li>Start proxying back connection balancing</li>
+  <li>Smart memory management when proxying back large requests</li>
 </ul>
+<br/>
+  <p>
+    <span class="label label-info">Skills required</span> High knowledge of C and Networking and be familiar with communication protocols.
+  </p>
+
 </div>
 
 
@@ -137,7 +151,7 @@ Some tasks involved are (but not restricted to):
 <p>
 <ul>
 <li> <strong>Keys</strong> C, Networking, MySQL, PostgreSQL </li>
-<li> <strong>Difficulty</strong> High</li>
+<li> <strong>Difficulty</strong> Medium</li>
 <li> <strong>Description</strong>
 the web services framework Duda I/O already support the following databases extensions: Redis, Memcache and SQLite. In order to scale the database support and scope of the framework this project aims to implement extensions (packages) to incorporate native C API to connect to MySQL/MariaDB and PostgreSQL relational databases.
 <br/><br/>
@@ -148,10 +162,10 @@ A Duda package is an extension loaded by the web service on-demand, talking abou
 One of the technical difficulties to face is to handle the asynchronous events properly, this depends of a good understanding of database libraries APIs and evaluate which one of them suits better for the project. The implementation must be fault tolerant and be able to add debugging methods to be used through the web service console.
 </p>
 <p>
-Some tasks involved are (but not restricted to):
+    This project involve the following non-exclusive tasks:
 </p>
 <ul>
-  <li>Evaluate MySQL/MariaDB C libraries available. They must be fully supported by their core developers and works properly in asyncrhonous mode.</li>
+  <li>Evaluate MySQL/MariaDB C libraries available. They must be fully supported by their core developers and work properly in asyncrhonous mode.</li>
   <li>Implement a basic Duda package and web service to understand how they interact each other</li>
   <li>Create a basic web service using the Redis Duda API to see how the callbacks are related to the events</li>
   <li>Implement the MySQL/MariaDB package with dynamic linking of the chosen library</li>
@@ -160,6 +174,11 @@ Some tasks involved are (but not restricted to):
   <li>Create a demo web service that uses PostgreSQL packafe to insert and query data</li>
   <li>Create documentation articles type 'How To' explaining how to create web services using the packages in question</li>
 </ul>
+
+<br/>
+  <p>
+    <span class="label label-info">Skills required</span> Good knowledge of C, experience with MySQL and PostgreSQL databases.
+  </p>
 </div>
 
 
@@ -169,9 +188,9 @@ Some tasks involved are (but not restricted to):
 <p>
 <ul>
 <li> <strong>Keys</strong> C, Algorithms, Memory </li>
-<li> <strong>Difficulty</strong> High</li>
+<li> <strong>Difficulty</strong> Medium</li>
 <li> <strong>Description</strong>
-most of web servers around implements different caching mechanisms and we can see that the logic implementation is hard coded together with the server core. This common scenario expose some limitations from a system administrator point of view: the cache size cannot be changed on fly, its not possible to query the cached data, cannot perform delete operations based on dates, etc.
+most of web servers around implements different caching mechanisms and we can see that the logic implemented is hard coded together with the server core. This common scenario expose some limitations from a system administrator point of view: the cache size cannot be changed on fly, its not possible to query the cached data, cannot perform delete operations based on dates, etc.
 <br/><br/>
 <p>
 In order to solve the problems described and propose an agnostic solution, this project aims to contribute in the implementation of a virtual (caching) filesystem based in FUSE. The main goal is to allow to mount a virtual filesystem which re-map an existent directory content, so the web server configures its virtual host document root to this new mount point. Having this virtual file system between the web server document root and the target file system, allows to add a cache layer that can expose an agnostic mechanism to handle cache sizes and collect stats that helps to optimize for different environments and loads.
@@ -179,20 +198,28 @@ In order to solve the problems described and propose an agnostic solution, this 
 
 <p>
 This project will not only benefit Monkey, it will do for all other Linux based web servers and optionally any user-space applications that requires a fast and extendable cache implementation. Please refer to the following diagram of the architecture:
-
-  FIXME
+<br/><br />
+  <?=$html->image('caching_filesystem.png')?>
 </p>
 
 
 <p>
-Some tasks involved are (but not restricted to):
+This project involve the following non-exclusive tasks:
 </p>
 <ul>
-    <li>FIXME</li>
+    <li>Research caching algorithms</li>
+    <li>Implement basic caching implementation based in a fast-memory allocator (e.g: Tmalloc)</li>
+    <li>Create a FUSE program to mount a virtual host directory and trap the file system calls such as open, read, readdir,  getattr, etc</li>
+    <li>When serving the first file content, start caching the data</li>
+    <li>Implement interface to query the cache content</li>
+    <li>Create a Monkey plugin to gather cache statistics and render them into a HTML page</li>
 </ul>
-refs: For more details here: ​https://github.com/edsiper/monkey-fs
-</div>
 
+<br/>
+  <p>
+    <span class="label label-info">Skills required</span> Good knowledge of C and Algorithms, basic understanding of Linux VFS and FUSE.
+  </p>
+</div>
 
 
 <br/>
@@ -207,7 +234,7 @@ Our software stack is intentionally Linux dependent and for hence some system ca
 <br/><br/>
 
 <p>
-This project aims to port the complete Monkey stack (including Duda) to OSX maintaining C as the primary language. We look this port just from a development perspective, so OSX users can develop Monkey extensions or Duda web services in their native environment and perform direct deployments in the target Linux hosts.
+This project aims to port the complete Monkey stack (including Duda) to OSX maintaining C as the primary language. We look this port just from a development perspective, so OSX users can develop Monkey extensions and Duda web services in their native environment performing direct deployments in the target Linux hosts.
 </p>
 
 <p>Some technical challenges includes</p>
@@ -219,6 +246,11 @@ This project aims to port the complete Monkey stack (including Duda) to OSX main
     timeout. As well it must support the sleep feature where a specific file descriptor can be turned off manually until is waked up again (without removing it from the list).</li>
   <li>Implement cross-compiling Bash or Python scripts that allows to use a cross tool to compile the core, extension and web services for a Linux host. It must also support full deployment of the same dev environment for Linux.</li>
 </ul>
+
+<br/>
+  <p>
+    <span class="label label-info">Skills required</span> Good knowledge of C, system calls of Linux/OSX and toolchains for cross compiling.
+  </p>
 </div>
 
 
@@ -227,19 +259,28 @@ This project aims to port the complete Monkey stack (including Duda) to OSX main
 <h3><a name="id7">Direct deployment of web services into Raspberry Pi</a></h3>
 <p>
 <ul>
-<li> <strong>Keys</strong> Debian Packaging, Python, C</li>
-<li> <strong>Difficulty</strong> High</li>
+<li> <strong>Keys</strong> ARM, Debian Packaging, Python, C</li>
+<li> <strong>Difficulty</strong> Medium</li>
 <li> <strong>Description</strong>
-Our web services C framework can be deployed in any Linux flavor machine or device and Embedded Linux is our main goal. Due to the huge adoption of the Raspberry Pi and internal interest shared about Monkey stack, this project aims to make life easier for who uses the stack for the Raspberry Pi board.
+Our Monkey stacks provides a web services C framework that can be deployed on any machine or device based on Embedded Linux. Due to the huge adoption of the Raspberry Pi and internal interest shared about our software components by the community, this project aims to make life easier for developers using the stack into the Raspberry Pi board (based on Raspbian).
 <br/><br/>
 
 <p>
-This project aims to extend the development environment capabilities in two main areas:
+This project aims to extend our development stack capabilities in three main areas:
 </p>
 <ul>
   <li>Add RPI cross-compiling support to Duda Client Manager for web services based in Duda I/O</li>
-  <li>Add Debian auto-packaging support to Duda Client Manager so the web service can be packaged for any Debian/Ubuntu? Linux. It must also support cross -packafing for the RPI so the developer can deploy a web stack for a different architecture with one or two simple commands.</li>
+  <li>Add Debian auto-packaging support to Duda Client Manager so the web service can be packaged for any Debian/Ubuntu Linux. It must also support cross-packaging for the RPI so the developer can deploy a web stack for a different architecture with one or two simple commands.</li>
+  <li>Create a specific C web service based on Duda for the RaspBerry Pi, where it will expose system information such as CPU load, memory, storage and many other relevant information that help to monitorthe whole system.</li>
 </ul>
+<br/>
+<p>
+  Initially is not required to own a RPI board, the mentor who owns one (as well other community members) will work very close with the student to help with testing and general comments for improvement. Take in count that this project involves programming and Debian packaging same time.
+</p>
+
+  <p>
+    <span class="label label-info">Skills required</span> Good knowledge of Python and C, be familiar with cross-compiling toolchains.
+  </p>
 </div>
 
 
