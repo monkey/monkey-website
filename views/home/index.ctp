@@ -49,6 +49,18 @@
       </div>
 
       <div class="row">
+        <div class="span12">
+          <h2>Google Summer of Code 2013</h2>
+                  <p></p>
+	          <p>
+                    Our Organization is applying to be part of Google Summer of Code 2013, for more details about our application proposal, ideas and student
+                    guidelines please refer to our <a href="http://monkey-project.com/gsoc2013">GSoC Section</a>
+ 	          </p>
+        <br>
+          </div>
+      </div>
+
+      <div class="row">
           <div class="span12">
                  <h2>Latest release: v1.1.1 / codename Monkey Summer <small>on Saturday, Aug 18th 2012</small> </h2>
                   <p></p>
