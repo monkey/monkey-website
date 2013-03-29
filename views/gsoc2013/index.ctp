@@ -80,7 +80,7 @@
  <li>Register into our <a href="http://lists.monkey-project.com/listinfo/monkey">Mailing List</a></li>
  <li>Feel free to send an email to the mailing list presenting your self</li>
  <li>Contact us through our IRC channel at irc.freenode.net #monkey
-<li>Read, Improve, Create and Apply for one of our <?=$html->link('Ideas', array('controller' => 'gsoc2013', 'action' => 'Ideas'));?> posted!!!</li>
+<li>Read, Improve, Create and Apply for one of our <?=$html->link('Ideas', array('controller' => 'gsoc2013', 'action' => 'ideas'));?> posted!!!</li>
 <li>Check the <a href="http://monkey-project.com/gsoc2013/template">Monkey Student Application Template</a> and send it to gsoc2013@monkey-project.com, this information
     is confidential and will be shared only with the mentoring team</li>
 <li>On April 22th, Google opens the studen application period, follow the guidelines of <a href="http://google-melange.com">GSoC Site</a> and take your time to continue
