@@ -8,10 +8,7 @@
 	<?=$html->link('Students Template', array('controller' => 'gsoc2013', 'action' => 'template'));?>
 	</p>
 </div>
-<p>
-        <span class="label label-warning">Attention!</span>
-        Our organization is current applying to be part of GSoC 2013. We are NOT an accepted organization yet.
-</p>
+
 <br>
 
 <h2>Student Template</h2>
