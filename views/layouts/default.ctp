@@ -52,7 +52,7 @@
               <div class="span1" style="padding-top: 0.3em;">
                   <? echo $html->image('monkey_head.png'); ?>
               </div>
-              <div class="span8">
+              <div class="span10">
                   <? echo $html->link('Monkey',
                                       array('controller' => '/'),
                                       array('class' => 'brand', 'style' => 'color: #eae8d2;'));
