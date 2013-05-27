@@ -20,9 +20,9 @@
           <div class="row-fluid">
             <div class="span6" style="text-align:center">
                   <a class="btn btn-warning btn-large"
-                     href="http://monkey-project.com/releases/1.1/monkey-1.1.1.tar.gz">
+                     href="http://monkey-project.com/releases/1.2/monkey-1.2.0.tar.gz">
                   <i class="icon-white icon-download-alt"></i>
-                     Download Monkey Summer (v1.1.1)
+                     Download Monkey Web Server (v1.2.0)
                   </a>
             </div>
             <div class="span6" style="text-align:center">
@@ -67,14 +67,14 @@
       <br><br>
       <div class="row">
           <div class="span12">
-                 <h2>Latest release: v1.1.1 / codename Monkey Summer <small>on Saturday, Aug 18th 2012</small> </h2>
+                 <h2>Latest release: v1.2.0 / codename Monkey Expresso <small>on Sunday, May 26th 2013</small> </h2>
                   <p></p>
 	          <p>
                        Monkey project team, is proud to announce the availability of our major
-                       release <i>Monkey HTTP Daemon v1.1.1</i>.
+                       release <i>Monkey HTTP Daemon v1.2.0</i>.
  	          </p>
                   <p>
-        For more details about the release, please refer to the <?=$html->link('official announcement', array('controller' => 'Announcements', 'action' => 'v1.1.1'));?>
+        For more details about the release, please refer to the <?=$html->link('official announcement', array('controller' => 'Announcements', 'action' => 'v1.2.0'));?>
 	or go directly to the <?=$html->link('downloads section', array('controller' => 'downloads'));?>
 	</p>
         <br>
@@ -108,9 +108,9 @@
         </div>
       <div class="span7">
       <pre>
-$ wget http://monkey-project.com/releases/1.1/monkey-1.1.1.tar.gz
-$ tar zxfv monkey-1.1.1.tar.gz
-$ cd monkey-1.1.1
+$ wget http://monkey-project.com/releases/1.2/monkey-1.2.0.tar.gz
+$ tar zxfv monkey-1.2.0.tar.gz
+$ cd monkey-1.2.0
 $ ./configure
 $ make
 $ bin/monkey</pre>

@@ -101,7 +101,7 @@
       <?php echo $content_for_layout; ?>
     <hr>
     <footer>
-        <p>&copy; Copyright 2001 – 2012 / Monkey HTTP Daemon development group</p>
+        <p>&copy; Copyright 2001 – 2013 / Monkey HTTP Daemon development group</p>
       </footer>
    </div> <!-- /container -->
 

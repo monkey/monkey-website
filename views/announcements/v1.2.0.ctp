@@ -5,9 +5,9 @@ $FILES =  "http://monkey-project.com/releases/1.2/";
 
 <div class="hero-unit">
 
-<h1>Draft: Release Notes</h1>
+<h1>Release Notes</h1>
 
-<h2>Monkey HTTP Daemon v<?=$VERSION?> <small>2013-04-25</small></h2>
+<h2>Monkey HTTP Daemon v<?=$VERSION?> <small>2013-05-26</small></h2>
 
 <p>
  Monkey HTTP Daemon is a very Fast and Lightweight Web Server for GNU/Linux. It has been designed to be very
@@ -18,7 +18,7 @@ $FILES =  "http://monkey-project.com/releases/1.2/";
 <h3>Introduction</h3>
 <p>
   Monkey was started on 2001 and after years of development we are very proud to announce the availability of our
-  new major release: <i>Monkey v1.1</i>, codename <b>Summer</b>. This major release reflects our community effort to produce a high qualilty
+  new major release: <i>Monkey v1.2</i>, codename <b>Expresso</b>. This major release reflects our community effort to produce a high qualilty
   web server for embedded devices taking the most of Linux Kernel to hit great performance with low resources usage.
 </p>
 <br>
@@ -54,10 +54,10 @@ We would like to thanks to the following people who have been involved doing cod
 <ul>
   <li>Sonny Karlsson</li>
   <li>Lauri Kasanen</li>
+  <li>Zeying Xie</li>
   <li>Neil Haran</li>
   <li>Denis Mone</li>
   <li>Bjorn Lindgren</li>
-  <li>swpd</li>
   <li>Vincent Cheng</li>
   <li>Curtis Hall</li>
 </ul>
