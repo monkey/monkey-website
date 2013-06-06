@@ -38,7 +38,7 @@ $FILES =  "http://monkey-project.com/releases/1.2/";
 We would like to thanks to the following people who have been involved doing code and bug fixes contributions on this release:
 </p>
 <ul>
-  <li>Doug Sko</li>
+  <li>Doug Prostko</li>
 </ul>
 
 <h3>Join us!</h3>
