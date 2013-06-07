@@ -65,7 +65,7 @@
 </p>
 <div class='row'>
 <ul>
-  <div class='span4'>
+  <div class='span6'>
 
 <strong>Monkey</strong>
 <pre>
@@ -84,7 +84,7 @@ Shortest transaction:           <u>0.00</u>
 </pre>
   </div>
 
-  <div class='span4'>
+  <div class='span6'>
 <strong>Busybox httpd</strong>
 <pre>
 Transactions:                   1426 hits

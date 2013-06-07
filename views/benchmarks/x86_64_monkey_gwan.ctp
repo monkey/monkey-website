@@ -57,7 +57,7 @@
 </p>
 <div class='row'>
 <ul>
-  <div class='span4'>
+  <div class='span6'>
 
 <strong>Monkey v1.1.0-dev</strong>
 <pre>
@@ -76,7 +76,7 @@ Shortest transaction:	        <u>0.00</u>
 </pre>
   </div>
 
-  <div class='span4'>
+  <div class='span6'>
    <strong>GWan 3.3.28</strong>
 <pre>
 Transactions:		       23235 hits

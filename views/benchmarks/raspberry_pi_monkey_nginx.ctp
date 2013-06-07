@@ -57,9 +57,9 @@
 <p>
   After the test over each HTTP server, Siege have provided the following results:
 </p>
-<div class='row'>
+<div class='row-fluid'>
 <ul>
-  <div class='span4'>
+  <div class='span6'>
 
 <strong>Monkey v1.1.0-dev</strong>
 <pre>
@@ -78,7 +78,7 @@ Shortest transaction:           <u>0.19</u>
 </pre>
   </div>
 
-  <div class='span4'>
+  <div class='span6'>
 <strong>NginX 1.3.1</strong>
 <pre>
 Transactions:                    840 hits
