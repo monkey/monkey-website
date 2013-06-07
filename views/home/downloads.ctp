@@ -54,24 +54,28 @@ function release_line($version, $dir)
 ?>
 <div class="hero-unit">
 <h1>Downloads</h1>
+<p>
+        Get the latest stable version of Monkey or stay tuned to our development branch.
+</p>
 </div>
 
+<h3>Stable Release</h3>
 <p>
-The latest stable release version is Monkey <?=$latest?>. If you are already using Monkey, we encourage you to upgrade you version to the latest one
+The latest stable release version is <strong>Monkey v<?=$latest?></strong>. If you are already using Monkey, we encourage you to upgrade you version to the latest one
 available.
 </p>
 <p>
 If you are looking for fun, we would suggest you our development version which is located in the GIT repository.
 </p>
 
-<h2>Stable Release</h2>
 <p>
 <ul>
         <? release_line($latest, $dir); ?>
 </ul>
 </p>
 
-<h2>Development Version</h2>
+<br />
+<h3>Development Version</h3>
 <p>
         Our development is version is hosted in a GIT repository, to clone the repository, please run the following command:
         <ul>
@@ -79,9 +83,10 @@ If you are looking for fun, we would suggest you our development version which i
         </ul>
 </p>
 
-<h2>Older Releases</h2>
-<div class="row">
-  <div class="span6">
+<br />
+<h3>Older Releases</h3>
+<div class="row-fluid">
+  <div class="span8">
      <table class="table">
      <?
        foreach($versions as $version => $dir){

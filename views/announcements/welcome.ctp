@@ -1,99 +1,74 @@
+<?
+
+function version_row($h, $date, $version)
+{
+   ?>
+   <tr><td>
+   <?
+
+   $str = "[".$date."] Monkey HTTP Daemon v".$version;
+   $v   = "v".$version;
+
+   echo $h->link($str,
+                 array('controller' => 'Announcements', 'action' => $v));
+   ?>
+   </td></tr>
+   <?
+}
+?>
+
 <div class="hero-unit">
 <h2>Release Announcements</h2>
   <p>
 	Each product release comes with an detailed announcement covering the changes made from the previous version,
-	please check the following list for more details:
+	please check the above list for more details.
   </p>
 </div>
 
-<div class="row">
-<div class="span4">
+<div class="row-fluid">
+<div class="span5">
 
-<table class='table'>
-<tr><td>
- <?=$html->link('[2013/06/06] Monkey HTTP Daemon v1.2.1', array('controller' => 'Announcements', 'action' => 'v1.2.1'))?>
-</td></tr>
-<tr><td>
- <?=$html->link('[2013/05/26] Monkey HTTP Daemon v1.2.0', array('controller' => 'Announcements', 'action' => 'v1.2.0'))?>
-</td></tr>
-<tr><td>
- <?=$html->link('[2012/08/18] Monkey HTTP Daemon v1.1.1', array('controller' => 'Announcements', 'action' => 'v1.1.1'))?>
-</td></tr>
-<tr><td>
- <?=$html->link('[2012/08/17] Monkey HTTP Daemon v1.1.0', array('controller' => 'Announcements', 'action' => 'v1.1.0'))?>
-</td></tr>
-<tr><td>
- <?=$html->link('[2012/06/15] Monkey HTTP Daemon v1.0.1', array('controller' => 'Announcements', 'action' => 'v1.0.1'))?>
-</td></tr>
-<tr><td>
- <?=$html->link('[2012/06/01] Monkey HTTP Daemon v1.0.0', array('controller' => 'Announcements', 'action' => 'v1.0.0'))?>
-</td></tr>
-<tr><td>
- <?=$html->link('[2012/02/20] Monkey HTTP Daemon v0.33.0', array('controller' => 'Announcements', 'action' => 'v0.33.0'))?>
-</td></tr>
-<tr><td>
- <?=$html->link('[2012/02/09] Monkey HTTP Daemon v0.32.0', array('controller' => 'Announcements', 'action' => 'v0.32.0'))?>
-</td></tr>
-<tr><td>
- <?=$html->link('[2012/01/01] Monkey HTTP Daemon v0.31.0', array('controller' => 'Announcements', 'action' => 'v0.31.0'))?>
-</td></tr>
-<tr><td>
- <?=$html->link('[2012/01/01] Monkey HTTP Daemon v0.30.0', array('controller' => 'Announcements', 'action' => 'v0.30.0'))?>
-</td></tr>
-<tr><td>
- <?=$html->link('[2011/10/21] Monkey HTTP Daemon v0.21.0', array('controller' => 'Announcements', 'action' => 'v0.21.0'))?>
-</td></tr>
-<tr><td>
- <?=$html->link('[2011/10/12] Monkey HTTP Daemon v0.20.3', array('controller' => 'Announcements', 'action' => 'v0.20.3'))?>
-</td></tr>
-<tr><td>
- <?=$html->link('[2011/10/10] Monkey HTTP Daemon v0.20.2', array('controller' => 'Announcements', 'action' => 'v0.20.2'))?>
-</td></tr>
-<tr><td>
- <?=$html->link('[2011/10/03] Monkey HTTP Daemon v0.20.1', array('controller' => 'Announcements', 'action' => 'v0.20.1'))?>
-</td></tr>
-<tr><td>
- <?=$html->link('[2011/10/01] Monkey HTTP Daemon v0.20.0', array('controller' => 'Announcements', 'action' => 'v0.20.0'))?>
-</td></tr>
-<tr><td>
- <?=$html->link('[2011/03/30] Monkey HTTP Daemon v0.13.2', array('controller' => 'Announcements', 'action' => 'v0.13.2'))?>
-</td></tr>
-<tr><td>
- <?=$html->link('[2011/03/07] Monkey HTTP Daemon v0.13.1', array('controller' => 'Announcements', 'action' => 'v0.13.1'))?>
-</td></tr>
-<tr><td>
- <?=$html->link('[2011/02/27] Monkey HTTP Daemon v0.13.0', array('controller' => 'Announcements', 'action' => 'v0.13.0'))?>
-</td></tr>
+<h3>2013</h3>
+<table class="table">
+ <?=version_row($html, "2013/06/06", "1.2.1");?>
+ <?=version_row($html, "2013/05/26", "1.2.0");?>
+</table>
 
-<tr><td>
- <?=$html->link('[2011/01/29] Monkey HTTP Daemon v0.12.2', array('controller' => 'Announcements', 'action' => 'v0.12.2'))?>
-</td></tr>
-<tr><td>
- <?=$html->link('[2011/01/17] Monkey HTTP Daemon v0.12.1', array('controller' => 'Announcements', 'action' => 'v0.12.1'))?>
-</td></tr>
-<tr><td>
- <?=$html->link('[2010/12/31] Monkey HTTP Daemon v0.12.0', array('controller' => 'Announcements', 'action' => 'v0.12.0'))?>
-</td></tr>
-<tr><td>
- <?=$html->link('[2010/07/29] Monkey HTTP Daemon v0.11.1', array('controller' => 'Announcements', 'action' => 'v0.11.1'))?>
-</td></tr>
-<tr><td>
- <?=$html->link('[2010/07/16] Monkey HTTP Daemon v0.11.0', array('controller' => 'Announcements', 'action' => 'v0.11.0'))?>
-</td></tr>
-<tr><td>
- <?=$html->link('[2010/06/23] Monkey HTTP Daemon v0.10.3', array('controller' => 'Announcements', 'action' => 'v0.10.3'))?>
-</td></tr>
-<tr><td>
- <?=$html->link('[2010/06/13] Monkey HTTP Daemon v0.10.2', array('controller' => 'Announcements', 'action' => 'v0.10.2'))?>
-</td></tr>
+<h3>2012</h3>
+<table class="table">
+ <?=version_row($html, "2012/08/18", "1.1.1");?>
+ <?=version_row($html, "2012/08/17", "1.1.0");?>
+ <?=version_row($html, "2012/06/15", "1.0.1");?>
+ <?=version_row($html, "2012/06/01", "1.0.0");?>
+ <?=version_row($html, "2012/02/20", "0.33.0");?>
+ <?=version_row($html, "2012/02/09", "0.32.0");?>
+ <?=version_row($html, "2012/01/01", "0.31.0");?>
+ <?=version_row($html, "2012/01/01", "0.30.0");?>
+</table>
 
-<tr><td>
- <?=$html->link('[2010/04/09] Monkey HTTP Daemon v0.10.1', array('controller' => 'Announcements', 'action' => 'v0.10.1'))?>
-</td></tr>
+<h3>2011</h3>
+<table class="table">
+ <?=version_row($html, "2011/10/21", "0.21.0");?>
+ <?=version_row($html, "2011/10/12", "0.20.3");?>
+ <?=version_row($html, "2011/10/10", "0.20.2");?>
+ <?=version_row($html, "2011/10/03", "0.20.1");?>
+ <?=version_row($html, "2011/10/01", "0.20.0");?>
+ <?=version_row($html, "2011/03/30", "0.13.2");?>
+ <?=version_row($html, "2011/03/07", "0.13.1");?>
+ <?=version_row($html, "2011/02/27", "0.13.0");?>
+ <?=version_row($html, "2011/01/29", "0.12.2");?>
+ <?=version_row($html, "2011/01/17", "0.12.1");?>
+</table>
 
-<tr><td>
- <?=$html->link('[2010/04/05] Monkey HTTP Daemon v0.10.0', array('controller' => 'Announcements', 'action' => 'v0.10.0'))?>
-</td></tr>
+<h3>2010</h3>
+<table class="table">
+ <?=version_row($html, "2010/12/31", "0.12.0");?>
+ <?=version_row($html, "2010/07/29", "0.11.1");?>
+ <?=version_row($html, "2010/07/16", "0.11.0");?>
+ <?=version_row($html, "2010/06/23", "0.10.3");?>
+ <?=version_row($html, "2010/06/13", "0.10.2");?>
+ <?=version_row($html, "2010/04/09", "0.10.1");?>
+ <?=version_row($html, "2010/04/05", "0.10.0");?>
 </table>
 </div>
 </div>

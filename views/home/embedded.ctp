@@ -14,7 +14,7 @@ when they are used, but in other cases they are just sacrificing performance and
 </p>
 </div>
 
-<h2>Extensible</h2>
+<h3>Extensible</h3>
 <p>
 Monkey HTTP Daemon offers a flexible architecture where the core implements the HTTP/1.1 protocol and
 a C plugin interface to extend the core functionalities through the application programming interface (API).
@@ -24,15 +24,17 @@ The C API, allows you to implement your own hooks and create specific behaviors 
 along the HTTP server working cycle, inclusive you can also define your own networking socket interfaces and
 add some encryption layer if required.
 </p>
-
-<h2>License</h2>
+<br />
+<h3>License</h3>
 <p>
-As described in the <a href="/about">about</a> section, Monkey is licensed under the
-<a href="http://www.gnu.org/licenses/gpl-2.0.html">GPLv2</a>. Any core modification or extension added, must be
-respecting the license terms.
+As described in the
+<?=$html->link('about', array('action' => 'about'));?> section, Monkey is licensed under the
+<a href="http://www.gnu.org/licenses/lgpl-2.0.html">LGPLv2</a> plus some additional
+exceptions.
 </p>
 
-<h2>Commercial Support</h2>
+<br />
+<h3>Commercial Support / Consulting</h3>
 <p>
 If you need any specific customization or extend Monkey for your needs,  you can request Monkey core experts availability to
 make your project a success, we offer commercial support for desing and implement a solution for your requirements.

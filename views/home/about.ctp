@@ -15,6 +15,7 @@
 <p>
 <ul>
 	<li>HTTP/1.1 compliant</li>
+        <li>IPv4 & IPv6</li>
 	<li>Virtual Hosts</li>
         <li>Asynchronous networking model (event-driven)</li>
 	<li>Indented configuration</li>
@@ -22,6 +23,8 @@
         <li>C API Interface</li>
         <li>Other features through base plugins:<br>
             <ul>
+                <li>CGI</li>
+                <li>FastCGI</li>
                 <li>SSL</li>
                 <li>Security</li>
                 <li>Log writter</li>
@@ -79,14 +82,14 @@ it specific features. Monkey only requires Linux >= 2.6.29.
 
 <br>
 <h3>Sponsors <small>who support us</small></h3>
-<div class="row">
+<div class="row-fluid">
     <div class="span12">
       <p>
         Monkey is build by volunteers around the world and getting an extra support from OSUOSL.
       </p>
     </div>
 </div>
-<div class="row">
+<div class="row-fluid">
     <div class="span2">
          <a href="http://www.osuosl.org"><img src="osuosl.png" border="0"></a>
     </div>
@@ -100,11 +103,27 @@ it specific features. Monkey only requires Linux >= 2.6.29.
 <br>
 <h3>License <small>legal</small></h3>
 <p>
-  Monkey HTTP Daemon is licensed under the <a href="http://www.gnu.org/licenses/gpl-2.0.html">GNU Public License v2 (GPL2)</a>.
+  Monkey HTTP Daemon is licensed under the <a href="http://www.gnu.org/licenses/lgpl-2.0.html">GNU Library General Public License v2 (LGPLv2)</a>.
 </p>
 <p>
-  In brief: This program is free software; you can redistribute it and/or modify  it under the terms of the GNU General Public
-  License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+  In brief: This program is free software; you can redistribute it and/or modify  it under the terms of the GNU Library General Public
+  License v2 as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+</p>
+<p>Some additional exceptions:
+<ul>
+    <li>When using Monkey in its standalone binary version, you are FREE to link
+    any private or closed plugin. Even your closed code on runtime is linked
+    with Monkey, you don't need to free your code.</li>
+    <li>When using Monkey in its shared library version you are FREE to use and
+    distribute on any way.</li>
+    <li>Besides the exceptions mentioned previously, you cannot link your closed
+    code with a static compiled version of Monkey.</li>
+    <li>You are not allowed to change or hide the original server signature in the
+    HTTP response headers.</li>
+</ul>
+</p>
+For any extra requirement for commercial support or special licenses, please write
+us to <a href="mailto:embedded@monkey-project.com?Subject=Commercial Support Request">embedded@monkey-project.com</a>.
 </p>
 
 <br>

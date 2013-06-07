@@ -49,71 +49,108 @@
   ga('send', 'pageview');
 
 </script>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-         <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
 
-          <div class="row-fluid">
-              <div class="span1" style="padding-top: 0.3em;">
-                  <? echo $html->image('monkey_head.png'); ?>
-              </div>
-              <div class="span10">
-                  <? echo $html->link('Monkey',
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+
+      <div class="row-fluid">
+        <div class="span1">
+        </div>
+          <div class="span1" style="padding-top: 0.3em;">
+            <? echo $html->image('monkey_head.png'); ?>
+          </div>
+          <div class="span8">
+          <? echo $html->link('Monkey',
                                       array('controller' => '/'),
                                       array('class' => 'brand', 'style' => 'color: #eae8d2;'));
                   ?>
 
-                  <div class="nav-collapse collapse">
-                  <ul class="nav">
-                  <li class="">
-                  <? echo $html->link('About', array('controller' => 'home', 'action' => 'about')); ?>
-                  </li>
-                  <li class="">
-                  <? echo $html->link('Documentation', array('controller' => 'documentation/')); ?>
-                  </li>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="">
+                <? echo $html->link('About', array('controller' => 'home', 'action' => 'about')); ?>
+              </li>
+              <li class="">
+                <? echo $html->link('Documentation', array('controller' => 'documentation/')); ?>
+              </li>
 
-                  <li class="">
-                  <? echo $html->link('Community', array('controller' => 'home',
+              <li class="">
+                <? echo $html->link('Community', array('controller' => 'home',
                                                          'action' => 'community'));
                   ?>
-                  </li>
-                  <li class="">
-                  <? echo $html->link('Announcements', array('controller' => 'Announcements',
+              </li>
+              <li class="">
+                <? echo $html->link('Announcements', array('controller' => 'Announcements',
                                                              'action' => 'Welcome'));
                   ?>
-                  </li>
-                  <li class="">
-                  <? echo $html->link('Embedded', array('controller' => 'home',
+              </li>
+              <li class="">
+                <? echo $html->link('Embedded', array('controller' => 'home',
                                                         'action' => 'embedded'));
                   ?>
-                  </li>
-                  <li class="divider-vertical"></li>
+              </li>
+              <li class="divider-vertical"></li>
 
-                  <li class="active">
-                  <? echo $html->link('Donate - support us!', array('controller' => 'Donate')); ?>
-                  </li>
-                  </ul>
-             </div> <!-- end span8 -->
-          </div> <!-- end row fluid -->
+              <li class="active">
+                <? echo $html->link('Donate - support us!', array('controller' => 'Donate')); ?>
+              </li>
+            </ul>
+          </div> <!-- end span8 -->
+        </div> <!-- end row fluid -->
 
-        </div>
       </div>
     </div>
-   </div>
+  </div>
+</div>
 
-   <div class="container">
+<div class="container" style="text-align:center">
+  <br />
+  <div class="row-fluid">
+    <div class="span1">
+    </div>
+    <div class="span8" style="text-align:left">
       <?php $session->flash(); ?>
       <?php echo $content_for_layout; ?>
-    <hr>
-    <footer>
-        <p>&copy; Copyright 2001 – 2013 / Monkey HTTP Daemon development group</p>
-      </footer>
-   </div> <!-- /container -->
+    </div>
+    <div class="span3" style="text-align:left">
+      <br /><br /><br />
+      <h4>Get started</h4>
+      <ul>
+        <li><a href='http://monkey-project.com/downloads'>All Downloads</a></li>
+	<li><a href='http://git.monkey-project.com'>Browse Code</a></li>
+	<li><a href='http://bugs.monkey-project.com'>Bug Tracker</a></li>
+	<li><a href='http://lists.monkey-project.com'>Mailing Lists</a></li>
+        <li><a href='http://blog.monkey-project.com'>Monkeys Blog</a></li>
+      </ul>
+      <h4>Performance</h4>
+      <ul>
+        <li><?=$html->link('Monkey v/s GWan (x86_64)', array('controller' => 'benchmarks', 'action' => 'x86_64_monkey_gwan'));?></li>
+        <li><?=$html->link('Monkey v/s BusyBox (RPI)', array('controller' => 'benchmarks', 'action' => 'raspberry_pi_monkey_busybox'));?></li>
+        <li><?=$html->link('Monkey v/s NginX (RPI)', array('controller' => 'benchmarks', 'action' => 'raspberry_pi_monkey_nginx'));?></li>
+        </ul>
 
+      <h4>Support us!</h4>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="29K2DPL6BLHDL">
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+              </form>
+
+
+    </div> <!-- end span3     -->
+  </div>   <!-- end row       -->
+          <footer>
+            <hr />
+            <p style="text-align:center">&copy; Copyright 2001 – 2013 / Monkey HTTP Daemon development group</p>
+          </footer>
+        </div>
 </body>
 </html>
+

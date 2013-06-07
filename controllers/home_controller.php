@@ -21,9 +21,7 @@ class HomeController extends AppController {
             $this->set('blog_feeds', array());
           }
 
-
-          /* dev branch */
-          //$url = "http://git.monkey-project.com/?p=monkey;a=rss;h=refs/heads/v0.12.0-dev";
+          /* GIT RSS */
           $url = "http://git.monkey-project.com/?p=monkey;a=rss";
           if ($mode) {
             $items = $this->Feed->feed($url);
@@ -32,7 +30,6 @@ class HomeController extends AppController {
           else {
             $this->set('git_feeds', array());
           }
-
 
           /* mailing list */
           $url = "http://monkey-project.com/~edsiper/monkey.xml";
