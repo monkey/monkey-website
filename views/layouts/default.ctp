@@ -50,7 +50,7 @@
 
 </script>
 
-<div class="navbar navbar-fixed-top">
+<div class="navbar navbar-inner">
   <div class="navbar-inner">
     <div class="container">
       <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -110,7 +110,6 @@
 </div>
 
 <div class="container" style="text-align:center">
-  <br />
   <div class="row-fluid">
     <div class="span1">
     </div>
@@ -119,7 +118,6 @@
       <?php echo $content_for_layout; ?>
     </div>
     <div class="span3" style="text-align:left">
-      <br /><br /><br />
       <h4>Get started</h4>
       <ul>
         <li><a href='http://monkey-project.com/downloads'>All Downloads</a></li>
