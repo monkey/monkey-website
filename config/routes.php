@@ -37,6 +37,7 @@
 	Router::connect('/community', array('controller' => 'home', 'action' => 'community'));
 	Router::connect('/documentation', array('controller' => 'documentation', 'action' => 'index'));
 	Router::connect('/developers', array('controller' => 'home', 'action' => 'developers'));
+        Router::connect('/raspberry', array('controller' => 'home', 'action' => 'raspberry'));
 /**
  * ...and connect the rest of 'Pages' controller's urls.
  */

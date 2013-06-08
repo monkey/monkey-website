@@ -70,6 +70,10 @@ class HomeController extends AppController {
 
         function encuentrolinux() {
         }
+
+        function raspberry() {
+        }
+
 }
 
 ?>
