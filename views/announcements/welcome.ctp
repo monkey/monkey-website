@@ -30,6 +30,7 @@ function version_row($h, $date, $version)
 
 <h3>2013</h3>
 <table class="table">
+ <?=version_row($html, "2013/10/15", "1.3.0");?>
  <?=version_row($html, "2013/06/21", "1.2.2");?>
  <?=version_row($html, "2013/06/06", "1.2.1");?>
  <?=version_row($html, "2013/05/26", "1.2.0");?>

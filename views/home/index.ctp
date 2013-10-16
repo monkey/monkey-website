@@ -15,9 +15,9 @@
   <div class="row-fluid" style="text-align:center">
     <div class="span5">
       <a class="btn btn-warning btn-large"
-         href="http://monkey-project.com/releases/1.2/monkey-1.2.2.tar.gz">
+         href="http://monkey-project.com/releases/1.3/monkey-1.3.0.tar.gz">
         <i class="icon-white icon-download-alt"></i>
-        Download Monkey v1.2.2
+        Download Monkey v1.3.0
       </a>
     </div>
     <div class="span3">
@@ -30,40 +30,20 @@
 
 <div class="row-fluid">
   <div class="span11">
-    <h3>Latest release: v1.2.2 (Monkey Expresso)
-      <small>on Friday, Jun 21th 2013</small>
+    <h3>Latest release: v1.3.0 (Golden Monkey)
+      <small>on Thursday, Oct 15th 2013</small>
     </h3>
     <p>
       Monkey project development team, is proud to announce the availability
-      of <i>Monkey v1.2.2</i> release. For more details about it, please refer to the
+      of <i>Monkey v1.3.0</i> release. For more details about it, please refer to the
       <?=$html->link('official announcement',
                      array('controller' => 'Announcements',
-                           'action' => 'v1.2.2'));?>
+                           'action' => 'v1.3.0'));?>
       or go directly to the <?=$html->link('downloads section',
                                            array('controller' => 'downloads'));?>
     </p>
     <hr>
   </div>
-</div>
-
-<div class="row-fluid">
-  <h3>News</h3>
-  <div class="row-fluid">
-    <div class="span2">
-      <?
-         echo $html->image('gsoc2013.png');
-      ?>
-    </div>
-    <div class="span8">
-      <h4>Google Summer of Code 2013</h4>
-      <p>
-        <a href="http://www.google-melange.com/gsoc/org/google/gsoc2013/monkey">Monkey is
-          an <strong>official</strong> mentoring organization</a> for <a href="http://google-melange.com">Google Summer of Code 2013</a>.
-        For more details about our application proposal, ideas and student guidelines please refer to our <a href="http://monkey-project.com/gsoc2013">GSoC Section</a>
-      </p>
-    </div>
-  </div>
-  <hr>
 </div>
 
 <!-- Quick start -->
@@ -75,9 +55,9 @@
       start with the following commands as normal user
     </p>
 
-    <pre>$ wget http://monkey-project.com/releases/1.2/monkey-1.2.2.tar.gz
-$ tar zxfv monkey-1.2.2.tar.gz
-$ cd monkey-1.2.2
+    <pre>$ wget http://monkey-project.com/releases/1.3/monkey-1.3.0.tar.gz
+$ tar zxfv monkey-1.3.0.tar.gz
+$ cd monkey-1.3.0
 $ ./configure
 $ make
 $ bin/monkey</pre>
