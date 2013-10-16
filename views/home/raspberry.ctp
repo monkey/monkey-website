@@ -17,7 +17,7 @@
 <div class="row-fluid">
    <div class="span10">
      <p>
-       <small>Aug 09, 2013 - Updated packages for Monkey v1.2.2</small>
+       <small>Oct 16, 2013 - Updated packages for Monkey v1.3.0</small>
 
        <h3>Support us</h3>
        Donating money to <a href="http://monkey-project.com">Monkey</a> you will be contributing to help to continue
