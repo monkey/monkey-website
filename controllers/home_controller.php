@@ -74,6 +74,9 @@ class HomeController extends AppController {
         function raspberry() {
         }
 
+        function sponsors() {
+        }
+
 }
 
 ?>

@@ -120,7 +120,7 @@
     <div class="span3" style="text-align:left">
       <h4>Get started</h4>
       <ul>
-        <li><a href='http://monkey-project.com/downloads'>All Downloads</a></li>
+        <li><a href='http://monkey-project.com/downloads'>Downloads</a></li>
 	<li><a href='http://git.monkey-project.com'>Browse Code</a></li>
 	<li><a href='http://bugs.monkey-project.com'>Bug Tracker</a></li>
 	<li><a href='http://lists.monkey-project.com'>Mailing Lists</a></li>
@@ -132,7 +132,23 @@
         <li><?=$html->link('Monkey v/s GWan (x86_64)', array('controller' => 'benchmarks', 'action' => 'x86_64_monkey_gwan'));?></li>
         <li><?=$html->link('Monkey v/s BusyBox (RPI)', array('controller' => 'benchmarks', 'action' => 'raspberry_pi_monkey_busybox'));?></li>
         <li><?=$html->link('Monkey v/s NginX (RPI)', array('controller' => 'benchmarks', 'action' => 'raspberry_pi_monkey_nginx'));?></li>
-        </ul>
+      </ul>
+
+      <h4>Our Sponsors</h4>
+      <p>
+        <?=$html->link('Learn more...', array('controller' => '/', 'action' => 'sponsors'));?>
+      </p>
+      <ul>
+        <p>
+        <?=$html->image('sponsors/osuosl.png');?>
+        </p>
+        <p>
+        <?=$html->image('sponsors/rackspace.jpg');?>
+        </p>
+        <p>
+        <?=$html->image('sponsors/google_soc_2013.jpg');?>
+        </p>
+      </ul>
 
       <h4>Support us!</h4>
       <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">

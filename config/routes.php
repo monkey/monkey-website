@@ -38,6 +38,8 @@
 	Router::connect('/documentation', array('controller' => 'documentation', 'action' => 'index'));
 	Router::connect('/developers', array('controller' => 'home', 'action' => 'developers'));
         Router::connect('/raspberry', array('controller' => 'home', 'action' => 'raspberry'));
+        Router::connect('/sponsors', array('controller' => 'home', 'action' => 'sponsors'));
+
 /**
  * ...and connect the rest of 'Pages' controller's urls.
  */
