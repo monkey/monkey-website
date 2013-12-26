@@ -45,7 +45,7 @@ of our mission.
    <p>
        <small>support</small>
        Starting on mid 2013, Rackspace provides our organization from unlimited cloud
-       resources used to support our development environment: build testing, continuos
+       resources used to support our development environment: build testing, continuous
        integration tests and networking benchmarks. All of them do intensive CPU
        and Network usage.
    </p>
@@ -60,7 +60,7 @@ of our mission.
    </div>
    <div class="span10">
    <p>
-   <h3>Google, Summer of code 2O12 & 2013</h3>
+   <h3>Google, Summer of code 2012 & 2013</h3>
        Google Summer of Code is a global program that offers post-secondary student
        developers ages 18 and older stipends to write code for various open source
        software projects. They have worked with open source, free software, and
