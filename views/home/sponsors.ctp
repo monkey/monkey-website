@@ -71,7 +71,7 @@ of our mission.
    </p>
    <p>
        <small>support</small>
-       On 2013 and 2014, the Monkey Project organization have participated into the
+       On 2012 and 2013, the Monkey Project organization have participated into the
        program mentoring different students from around the world who have contributed
        with different core stack functionalities and features.
     </p>
