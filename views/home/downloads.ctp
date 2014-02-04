@@ -82,7 +82,7 @@ If you are looking for fun, we would suggest you our development version which i
 <p>
         Our development is version is hosted in a GIT repository, to clone the repository, please run the following command:
         <ul>
-                <li>git clone git://git.monkey-project.com/monkey</li>
+                <li>git clone https://github.com/monkey/monkey.git</li>
         </ul>
 </p>
 
