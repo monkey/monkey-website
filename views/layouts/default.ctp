@@ -126,6 +126,7 @@
 	<li><a href='http://lists.monkey-project.com'>Mailing Lists</a></li>
         <li><a href='http://blog.monkey-project.com'>Monkeys Blog</a></li>
         <li><a href='http://monkey-project.com/raspberry'>Raspberry Pi</a></li>
+        <li><a href="https://plus.google.com/112232069145693004114" rel="publisher">Google+</a></li>
       </ul>
       <h4>Performance</h4>
       <ul>
