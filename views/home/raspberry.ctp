@@ -1,4 +1,4 @@
-<div class="hero-unit">
+<Div class="hero-unit">
   <div class="row-fluid">
      <div class="span2">
           <?=$html->image('rpi_logo.png');?>
@@ -17,7 +17,7 @@
 <div class="row-fluid">
    <div class="span10">
      <p>
-       <small>Oct 16, 2013 - Updated packages for Monkey v1.3.0</small>
+       <small>Feb 04, 2014 - Updated packages for Monkey v1.4.0</small>
 
        <h3>Support us</h3>
        Donating money to <a href="http://monkey-project.com">Monkey</a> you will be contributing to help to continue
