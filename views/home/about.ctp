@@ -1,5 +1,5 @@
 <div class="hero-unit">
-<h2>About <small> monkey web server</small> </h2>
+<h2>About <small> Monkey HTTP Server</small> </h2>
 <p>
    Monkey is a small, fast and lightweight open source Web Server for GNU/Linux. It has been designed
    with focus in embedded devices, therefore its scalable by nature having a low memory and CPU
@@ -103,21 +103,14 @@ it specific features. Monkey only requires Linux >= 2.6.29.
 <br>
 <h3>License <small>legal</small></h3>
 <p>
-  Monkey HTTP Daemon is licensed under the <a href="http://www.gnu.org/licenses/lgpl-2.0.html">GNU Library General Public License v2 (LGPLv2)</a>.
+  Monkey HTTP Server is licensed under the <a href="http://www.gnu.org/licenses/lgpl-2.0.html">GNU Library General Public License v2 (LGPLv2)</a>.
 </p>
 <p>
   In brief: This program is free software; you can redistribute it and/or modify  it under the terms of the GNU Library General Public
   License v2 as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
 </p>
-<p>Some additional exceptions:
+<p>Additional exception:
 <ul>
-    <li>When using Monkey in its standalone binary version, you are FREE to link
-    any private or closed plugin. Even your closed code on runtime is linked
-    with Monkey, you don't need to free your code.</li>
-    <li>When using Monkey in its shared library version you are FREE to use and
-    distribute on any way.</li>
-    <li>Besides the exceptions mentioned previously, you cannot link your closed
-    code with a static compiled version of Monkey.</li>
     <li>You are not allowed to change or hide the original server signature in the
     HTTP response headers.</li>
 </ul>
@@ -129,10 +122,10 @@ us to <a href="mailto:embedded@monkey-project.com?Subject=Commercial Support Req
 <br>
 <h3>Logo Copyright</h3>
 <p>
-Our Monkey Logo is under the Creative Commons License, you are just allowed to use it to promote Monkey HTTP Daemon project
+Our Monkey Logo is under the Creative Commons License, you are just allowed to use it to promote Monkey HTTP Server project
 without any commercial purpose. FLOSS communities looking for merchandising can write us to require special permissions.
 <br>
 <br>
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png" /></a><br /><span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/StillImage" property="dc:title" rel="dc:type">Monkey HTTP Daemon Logo</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.monkey-project.com" property="cc:attributionName" rel="cc:attributionURL">Eduardo Silva</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 Unported License</a>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png" /></a><br /><span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/StillImage" property="dc:title" rel="dc:type">Monkey HTTP Server Logo</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.monkey-project.com" property="cc:attributionName" rel="cc:attributionURL">Eduardo Silva</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 Unported License</a>
 
 </p>
