@@ -31,7 +31,7 @@
 <div class="row-fluid">
   <div class="span11">
     <h3>Latest release: v1.4.0 (Spider Monkey)
-      <small>on Thursday 04th, Feb 2013</small>
+      <small>on Thursday 04th, Feb 2014</small>
     </h3>
     <p>
       Monkey project development team, is proud to announce the availability
