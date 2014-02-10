@@ -1,6 +1,6 @@
 <?php
 
-class Gsoc2013Controller extends AppController {
+class Gsoc2014Controller extends AppController {
 /**
  * Controller name
  *
