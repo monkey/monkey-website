@@ -102,7 +102,7 @@
            <!-- Left menu -->
            <ul class="nav nav-list">
                <li class="nav-header">
-                  Google Summer of Code 2013
+                  Google Summer of Code 2014
                </li>
                <li>
                   <?=$html->link('Main', array('action' => 'index'));?>

@@ -1,11 +1,11 @@
-<h1>Google Summer of Code 2013: Project Ideas</h1>
+<h1>Google Summer of Code 2014: Project Ideas</h1>
 <div class="gsoc_menu">
 	<p>
-	<?=$html->link('GSoC Main', array('controller' => 'gsoc2013', 'action' => 'index'));?>
+	<?=$html->link('GSoC Main', array('controller' => 'gsoc2014', 'action' => 'index'));?>
 	&nbsp;&nbsp;
-	<?=$html->link('Project Ideas', array('controller' => 'gsoc2013', 'action' => 'ideas'));?>
+	<?=$html->link('Project Ideas', array('controller' => 'gsoc2014', 'action' => 'ideas'));?>
 	&nbsp;&nbsp;
-	<?=$html->link('Students Template', array('controller' => 'gsoc2013', 'action' => 'template'));?>
+	<?=$html->link('Students Template', array('controller' => 'gsoc2014', 'action' => 'template'));?>
 	</p>
 </div>
 
@@ -19,17 +19,465 @@
    </div>
    <div class="span8">
    <p>
-	In Monkey HTTP Daemon Project, we have defined our most highest priorities, the ideas proposed here are not exclusive and they could
+	In Monkey Project, we have defined our most highest priorities, the ideas proposed here are not exclusive and they could
 	be taken as a base for your proposal, you are encouraged to expand them or to propose your own ideas.
    </p>
    <p>
         Feel free to contact us to discuss them, reach us through our
-                <?=$html->link('mailing list', 'http://lists.monkey-project.com/listinfo/monkey');?>, we want to hear about you!
+        <?=$html->link('mailing list', 'http://lists.monkey-project.com/listinfo/monkey');?>, we want to hear about you!
    </p>
    </div>
 </div>
 
 <br><br>
+
+<!-- PROJECT IDEA -->
+<div>
+<p>
+<h3><a name="id1">Memcached Plugin</a></h3>
+<p>
+<ul>
+<li> <strong>Keys</strong> C, Memcache, Key-Value Store</li>
+<li> <strong>Difficulty</strong>Medium</li>
+<li> <strong>Description</strong>
+  <p>
+  <a href="http://memcached.org">Memcached</a> is an open source memory object caching system,
+  or widely known as a Key-Value store. The main goal of this project is to create a
+  <a href="http://monkey-project.com">Monkey</a> plugin that provides fixed REST
+  interfaces that can connect to a Memcached Server and perform different operation to set new
+  keys, retrieve or update values.
+  </p>
+
+  <p>
+  The technical workflow of the implementation, starts by letting the plugin to read a configuration
+  file based on Monkey configuration library schema, where it can load different Memcached instances
+  and configure different settings for the networking behavior such as pooling connections, timeouts,
+  API usage statistics, Virtual Host specifics, etc.
+  </p>
+
+  <p>
+    Once the plugin reads and load the code to manage the configuration, it should set and map the
+    URI's for data handling, a proposed structure (not mandatory) is as follow:
+  </p>
+
+  <code>
+    URL: /instance_name/key_name
+  </code>
+
+  <br /><br />
+  <p>
+    where <i>instance_name</i> represent a Memcached server named in the plugin configuration file, and
+    <i>key_name</i> the name of the target key affected. If the HTTP client perform a GET request, the server
+    should query the Key on the server and return on the body response the key value. If the HTTP client
+    uses a PUT request, it must contain also a body data that should be stored among the key. If the Key already
+    exists on the server, it will be overridden by default. Also the DELETE method can be used to delete a Key
+    from the server.
+  </p>
+
+  <p>
+    An optional interface is proposed to gather statistics from the Memcached server, the structure is as follows:
+  </p>
+  <code>
+    URL: /instance_name/stats
+  </code>
+  <br/><br/>
+
+  <p>
+    The output of the interface is a well formed text/plain with tables showing different server metrics, also the
+    same information should be able to be retrieved but in JSON format when using the following interface:
+  </p>
+
+  <code>
+    URL: /instance_name/stats_json
+  </code>
+  <br /><br />
+
+  <p>
+    The Memcached Plugin involve the following non-exclusive tasks:
+  </p>
+  <ul>
+    <li>
+      Design and map URL HTTP interfaces to access unique Memcached instances.
+    </li>
+    <li>
+      Capabilities to read configuration files.
+    </li>
+    <li>
+      Every Memcached instance configured in the plugin, must support to work
+      under an exclusive Virtual Host context.
+    </li>
+    <li>
+      All core interfaces to manipulate data are based on HTTP methods GET, PUT and DELETE.
+    </li>
+    <li>
+      The implementation <b>must</b> be thread safe and lock free, under no circumstance a
+      running thread may block.
+    </li>
+    <li>
+      All queries and responses being processed with the Memcached server <b>must</b> work
+      in asynchronous mode, that means that the plugin must hook to the Monkey events mechanism
+      based on epoll(7).
+    </li>
+    <li>
+      Besides the statistics that can be provided by the Memcached server, the plugin must support
+      statistics about the plugin it self, such as number of connections, average response time.
+    </li>
+    <li>
+      Load Balancing: In order to provide some load balancing capabilities, the Memcached instances can
+      be grouped in the configuration so the plugin can balance the requests to them based on different
+      algorithms such as Round-Robin, Least connections and First Alive.
+    </li>
+  </ul>
+  <br/>
+  <p>
+    <span class="label label-info">Skills required</span> Medium level of C language, desired experience
+    with some key value store as Memcached or Redis.
+  </p>
+</li>
+</ul>
+</p>
+<br/>
+<!-- END -->
+
+
+<!-- PROJECT IDEA -->
+<div>
+<p>
+<h3><a name="id1">Lua Scripting Support</a></h3>
+<p>
+<ul>
+<li> <strong>Keys</strong> C, Lua, Scripting, Performance, API </li>
+<li> <strong>Difficulty</strong> Medium</li>
+<li> <strong>Description</strong>
+  <p>
+  <a href="http://lua.org">Lua</a> is a powerful scripting and embeddable language, and on
+  <a href="http://monkey-project.com">Monkey Project</a> (HTTP stack) and it's Web
+  Services Framework <a href="http://duda.io">Duda I/O</a>, requires to add some scripting
+  capabilities to perform different administrative tasks and also be able to hook
+  callbacks for different HTTP events across the cycle. So <a href="http://lua.org">Lua</a>
+  fits our needs.
+  </p>
+
+  <p>
+  The implementation of this project starts with the creation of a Monkey Plugin capable
+  to interpret Lua scripts for dynamic content generation. When running Lua scripts everything
+  is must be done through Lua C API, it's <b>not</b> allowed to perform some fork(2) or exec(3)
+  calls as performance is priority on our server stack. Also Lua over CGI/FastCGI is not allowed.
+  </p>
+
+  <p>
+    The Monkey Lua Plugin involve the following non-exclusive tasks:
+  </p>
+  <ul>
+    <li>
+      Design and implement configuration mechnism to instruct the HTTP when to trigger the
+      plugin. All rules must be applied to a Virtual Host context.
+    </li>
+    <li>
+      The implementation must support Timeouts per configuration, a Lua script should not be running
+      forever unless is explicit specified in the configuration file.
+    </li>
+    <li>
+      Basic <i>Status Interface</i> to display plugin memory consumption and general resource usage.
+    </li>
+    <li>
+      As the plugin will require Lua C library as a dependency, the plugin it's in an DISABLED
+      state by default, it can only be enabled through configure script.
+    </li>
+    <li>
+      Monkey core is an event-driven HTTP server, that means that any extension like this should <b>not</b>
+      block any server thread, the plugin should hook to the core events interface as much as possible
+      to distribute load across all requests assigned to the same thread. The mentor will give a detailed
+      explanation about this behavior and guides to accomplish the goals.
+    </li>
+  </ul>
+
+  <br>
+  <p>
+  As a second part of the project, is required to add <a href="http://lua.org">Lua</a> scripting
+  support to our Web Services framework called <a href="http://duda.io">Duda I/O</a>. This last one
+  is a Monkey extension that provide a whole environment to develop scalable web services on top
+  of Monkey. So the <i>Lua + Duda I/O</i> implementation takes places creating a <i>Duda Package</i>.
+  </p>
+
+  <p>
+    Duda Packages are external group of functionalities that developers using Duda stack can load
+    on runtime to perform different tasks, some well known packages are: SQLite, Redis, Key Value Store,
+    Websocket, JSON, etc. To get more details about how packages API looks like and how the code can be
+    integrated, please refer to the following links:
+  </p>
+
+  <ul>
+    <li>API Documentation: <a href="http://duda.io/api">http://duda.io/api</a></li>
+    <li>Packages Sources:  <a href="https://github.com/monkey/duda/tree/master/packages">https://github.com/monkey/duda/tree/master/packages</a></li>
+  </ul>
+  <br>
+
+  <p>
+    The Lua Package involve the following non-exclusive tasks:
+  </p>
+  <ul>
+    <li>Design and propose the API calls for the package.</li>
+    <li>Each API call must be documented as is done for all Duda core, for more details please refer to the link provided above.</li>
+    <li>On rendering a Lua script, the response should not block the worker thread, this is the same approach described in the
+      Monkey Plugin requirement.</li>
+    <li>Gather optional metrics about timings since a Request arrived until the Response was sent.</li>
+    <li>Error handling, redirect to HTTP Client.</li>
+  </ul>
+  <br>
+
+  <p>
+    <span class="label label-info">Skills required</span> be familiar reading any API documentation, Medium level of C language and
+    previous experience using some scripting language (as user).
+  </p>
+</li>
+</ul>
+</p>
+<br/>
+<!-- END -->
+
+
+<!-- PROJECT IDEA -->
+<div>
+<p>
+<h3><a name="id1">Raspberry Pi Dashboard</a></h3>
+<p>
+<ul>
+<li> <strong>Keys</strong> C, GPIO, CPU, Javascript, AngularJS, HTML5</li>
+<li> <strong>Difficulty</strong> Medium</li>
+<li> <strong>Description</strong>
+  <p>
+    The <a href="http://www.raspberrypi.org/">Raspberry Pi</a> (RPI) is a handy ARM board that runs Linux,
+    and for hence we distribute native Monkey packages for it. The goal of this project, is to take Monkey HTTP Server
+    to the next step empowering RPI owners providing a default and built-in <i>Dashboard</i> for the RPI.
+    This Dashboard will allow  to manage different Hardware features such as GPIO and able to retrieve statuses
+    and resource metrics.
+  </p>
+
+  <p>
+  The fist step on this project, is to design the HTTP REST interfaces that will provide system/board information and
+  perform specific actions on it. These interfaces are the core of project and they must be implemented using the
+  <a href="http://monkey-project.com">Monkey</a> framework called <a href="http://duda.io">Duda I/O</a>, all of them
+  are made in C language. Once the REST API is in place, the next step is to develop a Javascript library that can offer
+  to third party people, the ability to communicate to the RPI using this interface. Note that security it's a top
+  priority here.
+  </p>
+
+  <p>
+    Finally when the REST interfaces and the Javascript library can communicate each other, the last phase is to
+    make a Web Graphical Interface (GUI) based on <a href="http://angularjs.org">AngularJS</a> and
+    <a href="http://getbootstrap.com">Twitter Bootstrap</a>. This GUI will have the ability to take the most of the
+    Javascript library and be able to handle every aspect of the RPI and features that the Operating System offers.
+    The project architecture is as follows:
+  </p>
+
+   DRAW HERE
+
+
+
+  <p>
+    Note: most of system and hardware information must be obtained through the procfs and sysfs.
+  </p>
+
+  <p>
+    Raspberry Pi Dashboard involve the following non-exclusive tasks:
+  </p>
+  <ul>
+    <li>
+      Design and implement REST interfaces in C language using Duda I/O stack.
+    </li>
+    <li>
+      REST interfaces must be thread safe and do not use any mutual exlusion or locking mechanism.
+    </li>
+    <li>
+      Implement Javascript library that follow all REST interfaces.
+    </li>
+    <li>
+      Write a Web GUI using AngularJS and Twitter Bootstrap that uses the Javascript library to
+      manage the device.
+    </li>
+    <li>
+      The Dashboard should implement different graphics to describe system resources such as CPU,
+      Memory, Storage, Network, etc.
+    </li>
+  </ul>
+  <br />
+
+  <p>
+    Note: when starting this project is <b>not</b> required to have a Raspberry Pi, but it's suggested
+    to get one after the third week of work, so the student should consider to obtain a RPI model B
+    for further development and testing.
+  </p>
+  <br>
+  <p>
+    <span class="label label-info">Skills required</span> HTTP, Medium knowledge of C and experience with Javascript.
+  </p>
+</li>
+</ul>
+</p>
+<br/>
+<!-- END -->
+
+
+
+<!-- PROJECT IDEA -->
+<div>
+<p>
+<h3><a name="id1">Monkey Shared Library with Python bindings</a></h3>
+<p>
+<ul>
+<li> <strong>Keys</strong> C, Python, API, Shared Library</li>
+<li> <strong>Difficulty</strong> Medium</li>
+<li> <strong>Description</strong>
+  <p>
+  <a href="http://monkey-project.com">Monkey</a> already have the option to be build as a
+  shared library so it can be used as by third party applications that requires an HTTP stack
+  on it. The C library is functional and well documented on man pages. Now the goal of this
+  project is to review the API interface, look for performance improvements and extend it
+  to expose specific Monkey features such as memory statistics and CPU profiling per callback.
+  </p>
+  <p>
+  As a second part of the project, is required to add Python bindings to the library so
+  Python applications can use Monkey stack to serve HTTP. The goal is to expose the same API
+  from the shared library but in Python with well formed classes and methods. Note that documentation
+  for every class and method must be included.
+  </p>
+
+  <p>
+  The success of a shared library besides it's code and API documentation, is the number of simple
+  and good examples describing escenarios where it can be used. So all examples and test cases
+  created should be compatible with Python 2.6 and up. As a reference of the available documentation
+  for the actual API please refer to the following links:
+  </p>
+
+  <ul>
+    <li>API Manpages: <a href="https://github.com/monkey/monkey/tree/master/man">https://github.com/monkey/monkey/tree/master/man</a></li>
+    <li>Library examples:
+      <a href="https://github.com/monkey/monkey/tree/master/tests/lib">https://github.com/monkey/monkey/tree/master/tests/lib</a>
+    </li>
+  </ul>
+  <br />
+
+  <p>
+    The Monkey Shared Library with Python bindings project involve the following non-exclusive tasks:
+  </p>
+  <ul>
+    <li>
+      Read API documentation, understand the scope of every call and write step by step examples to
+      get knowledge about it usage.
+    </li>
+    <li>
+      Perform profiling tests to every hook and gather metrics about resources usage.
+    </li>
+    <li>
+      Extend the API interface to expose different performance metrics to the caller.
+    </li>
+    <li>
+      Create Python bindings for the C library.
+    </li>
+    <li>
+      All bindings must be fulled documented.
+    </li>
+    <li>
+      For each Python interface of the C library, create an example program describing how to use it.
+    </li>
+  </ul>
+
+  <br>
+  <p>
+    <span class="label label-info">Skills required</span> Medium level of C language, be familiar with Python, have some
+    knowledge about Linux profiling tools.
+  </p>
+</li>
+</ul>
+</p>
+<br/>
+<!-- END -->
+
+<!-- PROJECT IDEA -->
+<div>
+<p>
+<h3><a name="id1">Advanced Caching Plugin</a></h3>
+<p>
+<ul>
+<li> <strong>Keys</strong> C, Caching, Lock-free</li>
+<li> <strong>Difficulty</strong> High</li>
+<li> <strong>Description</strong>
+  <p>
+  In some environments with a high load, HTTP servers may need to serve the same information over and over
+  in a short period of time, mostly measured in milliseconds. This project aims to add an advanced caching
+  plugin to the HTTP core capable to save (cache) the outgoing content and keep it in memory for a short period
+  of time until it expire under a specific condition.
+  </p>
+
+  <p>
+  This project aims to focus in an advanced caching mechanism for the HTTP core and it requires to pay special
+  attention to some technical difficulties that need to be addressed:
+  </p>
+  <ul>
+    <li>It must be lock free: no locking or mutual exclusion is allowed.</li>
+    <li>The HTTP server works with a fixed number of running threads, so when a connection arrives it's
+    balanced to the least loaded worker. That means that having an unique Caching area could generate
+    some race conditions and this is not expected as the implementation should be lock-free. Caching
+    areas per worker may be analyzed.</li>
+    <li>
+      Cache lookups should be O(1), so a hashing mechanism is required and to reduce the number of possible
+      collisions, the hash table should support chaining.
+    </li>
+    <li>
+      The plugin must be compatible on x86 and x86_64 architectures (ARM processors included). This is mentioned
+      here as some compiler features that depends on Hardware features such as atomic operations, are not available
+      on all machines.
+    </li>
+  </ul>
+  <br />
+
+  <p>
+    Another required feature for this project, is to provide a simple web interface to keep track of
+    the plugin statistics and also to perform purge operations on demand.
+  </p>
+
+    <li>Cached entries must have counters to control cache hits and misses.
+
+
+  <p>
+    The Monkey Shared Library with Python bindings project involve the following non-exclusive tasks:
+  </p>
+  <ul>
+    <li>
+      Read API documentation, understand the scope of every call and write step by step examples to
+      get knowledge about it usage.
+    </li>
+    <li>
+      Perform profiling tests to every hook and gather metrics about resources usage.
+    </li>
+    <li>
+      Extend the API interface to expose different performance metrics to the caller.
+    </li>
+    <li>
+      Create Python bindings for the C library.
+    </li>
+    <li>
+      All bindings must be fulled documented.
+    </li>
+    <li>
+      For each Python interface of the C library, create an example program describing how to use it.
+    </li>
+  </ul>
+
+  <br>
+  <p>
+    <span class="label label-info">Skills required</span> Medium level of C language, be familiar with Python, have some
+    knowledge about Linux profiling tools.
+  </p>
+</li>
+</ul>
+</p>
+<br/>
+<!-- END -->
+
+
+<!-- PROJECT IDEA -->
 <div>
 <p>
 <h3><a name="id1">SPDY protocol support</a></h3>
@@ -78,207 +526,10 @@
 
 </li>
 </ul>
-
-
 </p>
-
 <br/>
-<div>
-<h3><a name="id2">URI Locations and Handlers</a></h3>
-<p>
-<ul>
-<li> <strong>Keys</strong> C, Networking</li>
-<li> <strong>Difficulty</strong> Medium</li>
-<li> <strong>Description</strong>
-the Monkey core expose a friendly API for plugins creation and for hence extend the server features. The HTTP cycle is split into stages, the STAGE_30 behave like a content handler, so every time a request hits this stage, the plugins handler pass this request to every plugin hooked on that stage, on that moment every plugin determinate if it should manage the request (own it) or just pass. The problem with this design, is that for a simple connection it can pass around each loaded plugin generating overhead. Do not exist a way to instruct the server from a configuration point of view to say which plugin should manage which request.
-
-<br/><br/>
-The project idea is focusing in a solution to the problem described. A new core functionality is proposed to solve this through implementing a mechanism to assign type of requests based in URI Location to specific plugins handlers based in configuration rules. On this way the plugins are not longer in charge to determinate if they should manage the requests or not, everything is handled from the configuration plus reducing the server overhead in the plugin handlers in an order from O(n) to O(1).
-<br/><br/>
-<p>
-Some tasks involved are (but not restricted to):
-</p>
-<ul>
-  <li>Design a new configuration schema for plugins based on STAGE_30</li>
-  <li>Create a test-case plugin that hooks on STAGE_30 and works in the new design mechanism</li>
-  <li>Adapt the plugins handler to support the new model</li>
-  <li>Do performance benchmarks so we can realize how the new design is behaving</li>
-  <li>Migrate all base plugins to this new model</li>
-  <li>Write the Quality Assurance (QA) scripts to verify right behavior and avoid regressions in future releases</li>
-</ul>
-<br>
-  <p>
-    <span class="label label-info">Skills required</span> Good knowledge of C and shared libraries
-  </p>
-</div>
-
-<br/>
-<div>
-<h3><a name="id3">Proxy Reverse</a></h3>
-<p>
-<ul>
-<li> <strong>Keys</strong> C, Networking, Events</li>
-<li> <strong>Difficulty</strong> High</li>
-<li> <strong>Description</strong>
-In HTTP, a proxy reverse is a server feature that allow to redirect incoming connections to backend servers. This project aims to develop a proxy-reverse plugin using the Monkey API. The plugin must understand redirection rules based in a new configuration file and schema to be designed, besides redirection it must support smart connections balancing algorithms that uses as rules and criteria the following entries: workers load, URI type and Virtual Host.
-<br/><br/>
-<p>
-An important security aspect to take in consideration when doing the implementation, is that new connections should not be redirected without perform protocol parsing and validations first. As well for large requests it must be able to queue the received requests and handle the asynchronous events properly, non-blocking is a must.
-</p>
-<p>
-Some tasks involved are (but not restricted to):
-</p>
-<ul>
-  <li>Design a new configuration schema to define proxy reverse rules</li>
-  <li>Make the plugin read the configuration and setup internal structures</li>
-  <li>Start proxying back connection balancing</li>
-  <li>Smart memory management when proxying back large requests</li>
-</ul>
-<br/>
-  <p>
-    <span class="label label-info">Skills required</span> High knowledge of C and Networking and be familiar with communication protocols.
-  </p>
-
-</div>
+<!-- END -->
 
 
-<br/>
-<div>
-<h3><a name="id4">Add MySQL and PostgreSQL extensions to Duda I/O</a></h3>
-<p>
-<ul>
-<li> <strong>Keys</strong> C, Networking, MySQL, PostgreSQL </li>
-<li> <strong>Difficulty</strong> Medium</li>
-<li> <strong>Description</strong>
-the web services framework Duda I/O already support the following databases extensions: Redis, Memcache and SQLite. In order to scale the database support and scope of the framework this project aims to implement extensions (packages) to incorporate native C API to connect to MySQL/MariaDB and PostgreSQL relational databases.
-<br/><br/>
-<p>
-A Duda package is an extension loaded by the web service on-demand, talking about databases, the package expose generic callbacks that works in asynchronous mode to perform remote operations for pushing and query data. These packages can depend of third party libraries that understand the MySQL/MariaDB and PostgreSQL protocols.
-</p>
-<p>
-One of the technical difficulties to face is to handle the asynchronous events properly, this depends of a good understanding of database libraries APIs and evaluate which one of them suits better for the project. The implementation must be fault tolerant and be able to add debugging methods to be used through the web service console.
-</p>
-<p>
-    This project involve the following non-exclusive tasks:
-</p>
-<ul>
-  <li>Evaluate MySQL/MariaDB C libraries available. They must be fully supported by their core developers and work properly in asyncrhonous mode.</li>
-  <li>Implement a basic Duda package and web service to understand how they interact each other</li>
-  <li>Create a basic web service using the Redis Duda API to see how the callbacks are related to the events</li>
-  <li>Implement the MySQL/MariaDB package with dynamic linking of the chosen library</li>
-  <li>Create a demo web service that uses MySQL/MariaDB package to insert and query data</li>
-  <li>Implement the PostgreSQL package with dynamic linking of the chosen library</li>
-  <li>Create a demo web service that uses PostgreSQL packafe to insert and query data</li>
-  <li>Create documentation articles type 'How To' explaining how to create web services using the packages in question</li>
-</ul>
-
-<br/>
-  <p>
-    <span class="label label-info">Skills required</span> Good knowledge of C, experience with MySQL and PostgreSQL databases.
-  </p>
-</div>
 
 
-<br/>
-<div>
-<h3><a name="id5">Caching Filesystem</a></h3>
-<p>
-<ul>
-<li> <strong>Keys</strong> C, Algorithms, Memory </li>
-<li> <strong>Difficulty</strong> Medium</li>
-<li> <strong>Description</strong>
-most of web servers around implements different caching mechanisms and we can see that the logic implemented is hard coded together with the server core. This common scenario expose some limitations from a system administrator point of view: the cache size cannot be changed on fly, its not possible to query the cached data, cannot perform delete operations based on dates, etc.
-<br/><br/>
-<p>
-In order to solve the problems described and propose an agnostic solution, this project aims to contribute in the implementation of a virtual (caching) filesystem based in FUSE. The main goal is to allow to mount a virtual filesystem which re-map an existent directory content, so the web server configures its virtual host document root to this new mount point. Having this virtual file system between the web server document root and the target file system, allows to add a cache layer that can expose an agnostic mechanism to handle cache sizes and collect stats that helps to optimize for different environments and loads.
-</p>
-
-<p>
-This project will not only benefit Monkey, it will do for all other Linux based web servers and optionally any user-space applications that requires a fast and extendable cache implementation. Please refer to the following diagram of the architecture:
-<br/><br />
-  <?=$html->image('caching_filesystem.png')?>
-</p>
-
-
-<p>
-This project involve the following non-exclusive tasks:
-</p>
-<ul>
-    <li>Research caching algorithms</li>
-    <li>Implement basic caching implementation based in a fast-memory allocator (e.g: Tmalloc)</li>
-    <li>Create a FUSE program to mount a virtual host directory and trap the file system calls such as open, read, readdir,  getattr, etc</li>
-    <li>When serving the first file content, start caching the data</li>
-    <li>Implement interface to query the cache content</li>
-    <li>Create a Monkey plugin to gather cache statistics and render them into a HTML page</li>
-</ul>
-
-<br/>
-  <p>
-    <span class="label label-info">Skills required</span> Good knowledge of C and Algorithms, basic understanding of Linux VFS and FUSE.
-  </p>
-</div>
-
-
-<br/>
-<div>
-<h3><a name="id6">Port Monkey stack to OSX and cross compiling environment</a></h3>
-<p>
-<ul>
-<li> <strong>Keys</strong> Linux, OSX, C, Make, Toolchains </li>
-<li> <strong>Difficulty</strong> High</li>
-<li> <strong>Description</strong>
-Our software stack is intentionally Linux dependent and for hence some system calls dependencies exists. Nowadays OSX is widely used in the desktop and is being one of the favorite development environment, so even we continue our Linux focus we will port our stack to OSX for development purposes.
-<br/><br/>
-
-<p>
-This project aims to port the complete Monkey stack (including Duda) to OSX maintaining C as the primary language. We look this port just from a development perspective, so OSX users can develop Monkey extensions and Duda web services in their native environment performing direct deployments in the target Linux hosts.
-</p>
-
-<p>Some technical challenges includes</p>
-<ul>
-  <li>Build system must allow to choose between Linux and OSX</li>
-  <li>Implement a polling layer that allow to hook to the specific operating system polling mechanism, a Monkey compiled on Linux must use epoll(2) and the same code compiled
-    on OSX must use kqueue(2). The core it self is not aware about what is being used, instead it only use a polling layer that works different in background.</li>
-  <li>The abstract polling mechanism must allow to query for events, handle events like: ready for reading, ready for writing, connection close, connection error, connection
-    timeout. As well it must support the sleep feature where a specific file descriptor can be turned off manually until is waked up again (without removing it from the list).</li>
-  <li>Implement cross-compiling Bash or Python scripts that allows to use a cross tool to compile the core, extension and web services for a Linux host. It must also support full deployment of the same dev environment for Linux.</li>
-</ul>
-
-<br/>
-  <p>
-    <span class="label label-info">Skills required</span> Good knowledge of C, system calls of Linux/OSX and toolchains for cross compiling.
-  </p>
-</div>
-
-
-<br/>
-<div>
-<h3><a name="id7">Direct deployment of web services into Raspberry Pi</a></h3>
-<p>
-<ul>
-<li> <strong>Keys</strong> ARM, Debian Packaging, Python, C</li>
-<li> <strong>Difficulty</strong> Medium</li>
-<li> <strong>Description</strong>
-Our Monkey stacks provides a web services C framework that can be deployed on any machine or device based on Embedded Linux. Due to the huge adoption of the Raspberry Pi and internal interest shared about our software components by the community, this project aims to make life easier for developers using the stack into the Raspberry Pi board (based on Raspbian).
-<br/><br/>
-
-<p>
-This project aims to extend our development stack capabilities in three main areas:
-</p>
-<ul>
-  <li>Add RPI cross-compiling support to Duda Client Manager for web services based in Duda I/O</li>
-  <li>Add Debian auto-packaging support to Duda Client Manager so the web service can be packaged for any Debian/Ubuntu Linux. It must also support cross-packaging for the RPI so the developer can deploy a web stack for a different architecture with one or two simple commands.</li>
-  <li>Create a specific C web service based on Duda for the RaspBerry Pi, where it will expose system information such as CPU load, memory, storage and many other relevant information that help to monitorthe whole system.</li>
-</ul>
-<br/>
-<p>
-  Initially is not required to own a RPI board, the mentor who owns one (as well other community members) will work very close with the student to help with testing and general comments for improvement. Take in count that this project involves programming and Debian packaging same time.
-</p>
-
-  <p>
-    <span class="label label-info">Skills required</span> Good knowledge of Python and C, be familiar with cross-compiling toolchains.
-  </p>
-</div>
-
-
-</div>
