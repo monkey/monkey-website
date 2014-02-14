@@ -46,6 +46,15 @@
   </div>
 </div>
 
+<div class="row-fluid">
+   <div class="span3">
+   <?=$html->image('gsoc2014.png');?>
+   </div>
+   <div class="span9">
+
+   </div>
+</div>
+
 <!-- Quick start -->
 <div class="row-fluid">
   <div class="span11">
