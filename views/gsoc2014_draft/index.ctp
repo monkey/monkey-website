@@ -23,7 +23,7 @@
     </div>
     <div class="span8">
     <p>
-        Welcome to the <a href="http://google-melange.com">Google Summer of Code 2013</a>/<a href="http://monkey-project.com">Monkey project page</a>.
+        Welcome to the <a href="http://google-melange.com">Google Summer of Code 2014</a>/<a href="http://monkey-project.com">Monkey project page</a>.
         On this section you will find relevant information about the application process for our organization and specific requirements to take in
         consideration.
     </p>
@@ -56,12 +56,16 @@
 <h2>Important Dates</h2>
 <p>
 <ul>
-    <li>March 29: Mentoring organization application deadline</li>
-    <li>April 08: List of accepted mentoring organizations published on <a href="http://www.google-melange.com">GSoC site</a></li>
-    <li>April 09-12: Would-be student participants discuss application ideas with mentoring organizations</li>
-    <li>April 22: Student application period opens</li>
-    <li>May 03: Student application deadline</li>
-    <li><a href="http://www.google-melange.com/gsoc/document/show/gsoc_program/google/gsoc2014/help_page#2._What_is_the_program_timeline">more details in the official Timeline</a></li>
+    <li>February 14: Mentoring organization application deadline</li>
+    <li>February 24: List of accepted mentoring organizations published on <a href="http://www.google-melange.com">GSoC site</a></li>
+    <li>March 10: Student application period opens</li>
+    <li>March 21: Student application deadline</li>
+    <li>April 21: Accepted student proposals announced on the Google Summer of Code 2014 site.</li>
+    <li>
+      <a href="http://www.google-melange.com/gsoc/document/show/gsoc_program/google/gsoc2014/help_page#2._What_is_the_program_timeline">
+        more details in the official Timeline
+      </a>
+    </li>
 </ul>
 </p>
 
@@ -69,23 +73,24 @@
 
 <h2>How to Apply ?</h2>
 <p>
-  We like proactive people, we encourage you to contact us before the students application program begins, so please check the following items and proceed with them:
+  We like proactive people, we encourage you to contact us before the student application period opens, so please check the following items and proceed with them:
 <br>
 <ul>
  <li>Make sure that you are an elegible student to participate in the program</li>
  <li>Register into our <a href="http://lists.monkey-project.com/listinfo/monkey">Mailing List</a></li>
+ <li>Browse our <a href="http://github.com/monkey">Github repository</a>, check how our code looks like</li>
  <li>Feel free to send an email to the mailing list presenting your self</li>
- <li>Contact us through our IRC channel at irc.freenode.net #monkey
+ <li>Contact us through our IRC channel at irc.freenode.net #monkey</li>
 <li>Read, Improve, Create and Apply for one of our <?=$html->link('Ideas', array('controller' => 'gsoc2014', 'action' => 'ideas'));?> posted!!!</li>
 <li>Check the <a href="http://monkey-project.com/gsoc2014/template">Monkey Student Application Template</a> and send it to gsoc2014@monkey-project.com, this information
     is confidential and will be shared only with the mentoring team</li>
-<li>On April 22th, Google opens the studen application period, follow the guidelines of <a href="http://google-melange.com">GSoC Site</a> and take your time to continue
+<li>On March 10th, Google opens the studen application period, follow the guidelines of <a href="http://google-melange.com">GSoC Site</a> and take your time to continue
 working your proposal.</li>
 </ul>
 </p>
 
 <span class="label label-warning">Attention!</span>
-<p class="text-warning">Students application DEADLINE is May 03th</p>
+<p class="text-warning">Students application DEADLINE is March 21th</p>
 
 <h2>Project Ideas</h2>
 <p>
@@ -104,13 +109,13 @@ you to get in touch with us to talk about them, we want to support good ideas :)
 <p>
 We are always open to ideas and suggestions, please feel free to contact us through our
 <a href='http://lists.monkey-project.com'>Mailing List</a>. If you want a private communication
-you can do it through <font class="email">gsoc2012@monkey-project.com</font>
+you can do it through <font class="email">gsoc2014@monkey-project.com</font>
 <br><br>
 If you prefer, you can also find us on irc.freenode.net #monkey.
 </p>
 
 <h2>Useful Links</h2>
-<li><?=$html->link('Google Summer of Code 2013', 'http://www.google-melange.com');?></li>
+<li><?=$html->link('Google Summer of Code 2014', 'http://www.google-melange.com');?></li>
 <li><?=$html->link('Frequently Asked Questions', 'http://www.google-melange.com/gsoc/document/show/gsoc_program/google/gsoc2014/help_page');?></li>
 
 
