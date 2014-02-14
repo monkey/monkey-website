@@ -114,27 +114,22 @@
                   Project Ideas
                </li>
                <li>
-                  <?=$html->link('SPDY protocol support', array('action' => 'ideas#id1'));?>
+                  <?=$html->link('Memcached Plugin', array('action' => 'ideas#id1'));?>
                </li>
                <li>
-                  <?=$html->link('URI Locations and Handlers', array('action' => 'ideas#id2'));?>
+                  <?=$html->link('SPDY Protocol (v3.1)', array('action' => 'ideas#id2'));?>
                </li>
                <li>
-                  <?=$html->link('Proxy Reverse', array('action' => 'ideas#id3'));?>
+                  <?=$html->link('Lua Scripting Support', array('action' => 'ideas#id3'));?>
                </li>
                <li>
-                  <?=$html->link('Add MySQL and PostgreSQL extensions to Duda I/O' ,
-                                 array('action' => 'ideas#id4'));?>
+                  <?=$html->link('Raspberry Pi Dashboard' , array('action' => 'ideas#id4'));?>
                </li>
                <li>
-                  <?=$html->link('Caching Filesystem', array('action' => 'ideas#id5'));?>
+                  <?=$html->link('Monkey Shared Library with Python bindings', array('action' => 'ideas#id5'));?>
                </li>
                <li>
-                  <?=$html->link('Port Monkey stack to OSX', array('action' => 'ideas#id6'));?>
-               </li>
-               <li>
-                  <?=$html->link('Direct deployment of web services into Raspberry Pi',
-                                 array('action' => 'ideas#id7'));?>
+                  <?=$html->link('Advanced Caching Plugin', array('action' => 'ideas#id6'));?>
                </li>
              </ul>
       </div>

@@ -143,7 +143,7 @@
 <!-- PROJECT IDEA -->
 <div>
 <p>
-<h3><a name="id1">SPDY Protocol (v3.1)</a></h3>
+<h3><a name="id2">SPDY Protocol (v3.1)</a></h3>
 <p>
 <ul>
 <li> <strong>Keys</strong> C, Networking, SPDY, API </li>
@@ -193,7 +193,7 @@
 <!-- PROJECT IDEA -->
 <div>
 <p>
-<h3><a name="id1">Lua Scripting Support</a></h3>
+<h3><a name="id3">Lua Scripting Support</a></h3>
 <p>
 <ul>
 <li> <strong>Keys</strong> C, Lua, Scripting, Performance, API </li>
@@ -290,7 +290,7 @@
 <!-- PROJECT IDEA -->
 <div>
 <p>
-<h3><a name="id1">Raspberry Pi Dashboard</a></h3>
+<h3><a name="id4">Raspberry Pi Dashboard</a></h3>
 <p>
 <ul>
 <li> <strong>Keys</strong> C, GPIO, CPU, Javascript, AngularJS, HTML5</li>
@@ -369,7 +369,7 @@
 <!-- PROJECT IDEA -->
 <div>
 <p>
-<h3><a name="id1">Monkey Shared Library with Python bindings</a></h3>
+<h3><a name="id5">Monkey Shared Library with Python bindings</a></h3>
 <p>
 <ul>
 <li> <strong>Keys</strong> C, Python, API, Shared Library</li>
@@ -443,7 +443,7 @@
 <!-- PROJECT IDEA -->
 <div>
 <p>
-<h3><a name="id1">Advanced Caching Plugin</a></h3>
+<h3><a name="id6">Advanced Caching Plugin</a></h3>
 <p>
 <ul>
 <li> <strong>Keys</strong> C, Caching, Lock-free</li>
