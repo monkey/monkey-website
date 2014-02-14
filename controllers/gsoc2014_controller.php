@@ -1,13 +1,13 @@
 <?php
 
-class Gsoc2014DraftController extends AppController {
+class Gsoc2014Controller extends AppController {
 /**
  * Controller name
  *
  * @var string
  * @access public
  */
-	var $name = 'Gsoc2014Draft';
+	var $name = 'Gsoc2014';
 /**
  * Default helper
  *

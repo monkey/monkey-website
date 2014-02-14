@@ -15,12 +15,13 @@
 
 <div class="row-fluid">
    <div class="span4">
-      <?=$html->image('gsoc2013.png');?>
+      <?=$html->image('gsoc2014.png');?>
    </div>
    <div class="span8">
-   <p>
-	In Monkey Project, we have defined our most highest priorities, the ideas proposed here are not exclusive and they could
-	be taken as a base for your proposal, you are encouraged to expand them or to propose your own ideas.
+     <p>
+       In <a href="http://monkey-project.com">Monkey Project</a> we have defined our most highest priorities, the ideas proposed here are not exclusive and they could
+       be taken as a base for your proposal, you are encouraged to expand them or to propose your own ideas. Take part on this GSoC is not just about coding, it's also
+       about be part of the community and learn how to get involved, your proposal is your first step, write a good opener!.
    </p>
    <p>
         Feel free to contact us to discuss them, reach us through our
@@ -139,6 +140,55 @@
 <br/>
 <!-- END -->
 
+<!-- PROJECT IDEA -->
+<div>
+<p>
+<h3><a name="id1">SPDY Protocol (v3.1)</a></h3>
+<p>
+<ul>
+<li> <strong>Keys</strong> C, Networking, SPDY, API </li>
+<li> <strong>Difficulty</strong> High</li>
+<li> <strong>Description</strong>
+  <p>
+    <a href="http://dev.chromium.org/spdy/">SPDY</a> is an open networking protocol developed by <a href="http://google.com">Google</a> for transporting web content, it's
+    currently being used as the base for the draft of HTTP/2.0. <a href="http://monkey-project.com">Monkey</a> as most of Web Servers,
+    it's based on the <a href="https://www.ietf.org/rfc/rfc2616.txt">HTTP/1.1 spec (RFC2616)</a>
+    and this project aims to provide the required architecture changes to add SPDYv3 and HTTP/2.0 support into the Server core.
+  </p>
+  <p>
+    There is a ongoing work on architecture changes on Monkey that allow to hook different protocol implementations, so the scope of this
+    project should focus on understand the new architecture under development and start implementing SPDY (v3.1). The implementation
+    of the protocol in question must be written from scratch, no third party libraries should be used. It's suggested to start writing a simple
+    library that being hooked to an events interface such as epoll(7) could handle SPDY frames (unpacking and debug).
+  </p>
+  <p>
+    It's important to consider that SPDY is a protocol that allows to multiplex packets and the communication could be bidirectional, so each
+    routine associated to the socket events, should take care to validate, understand and interpret each incoming frame properly before to pass
+    the control to the core HTTP server. More details about the interaction and each required step will be shared by the Project mentor.
+  </p>
+
+  <p>
+    The SPDY project involve the following non-exclusive tasks:
+    <ul>
+      <li>Design a SPDY (server side) handler and implement the protocol basics.</li>
+      <li>Create a standalone SPDY server. It must be very basic mostly to handle the protocol requirements, it will only allow to work
+        with a few multiple connections same time.</li>
+      <li>Merge SPDY base code into Monkey using a logical layer as was done for HTTP previously</li>
+      <li>Adapt configuration schema to make Monkey choose a specific protocol</li>
+      <li>Improve the build system to make optional the inclusion of HTTP or SPDY</li>
+      <li>Extend the quality assurance (QA) framework to perform protocol tests over the SPDY implementation made.</li>
+    </ul>
+  </p>
+
+  <p>
+    <span class="label label-info">Skills required</span> High knowledge of C, etworking and be familiar with communication protocols.
+  </p>
+
+</li>
+</ul>
+</p>
+<br/>
+<!-- END -->
 
 <!-- PROJECT IDEA -->
 <div>
@@ -271,10 +321,6 @@
     The project architecture is as follows:
   </p>
 
-   DRAW HERE
-
-
-
   <p>
     Note: most of system and hardware information must be obtained through the procfs and sysfs.
   </p>
@@ -376,7 +422,7 @@
       Create Python bindings for the C library.
     </li>
     <li>
-      All bindings must be fulled documented.
+      All bindings must be fully documented.
     </li>
     <li>
       For each Python interface of the C library, create an example program describing how to use it.
@@ -426,110 +472,38 @@
     </li>
     <li>
       The plugin must be compatible on x86 and x86_64 architectures (ARM processors included). This is mentioned
-      here as some compiler features that depends on Hardware features such as atomic operations, are not available
-      on all machines.
+      because some compiler features depends on Hardware specifics such as atomic operations, and sometimes
+      they are are not available on all machines.
     </li>
   </ul>
   <br />
 
   <p>
     Another required feature for this project, is to provide a simple web interface to keep track of
-    the plugin statistics and also to perform purge operations on demand.
+    the plugin statistics and also to perform purge operations on demand. The web interface must support
+    the following features:
   </p>
 
-    <li>Cached entries must have counters to control cache hits and misses.
-
-
-  <p>
-    The Monkey Shared Library with Python bindings project involve the following non-exclusive tasks:
-  </p>
   <ul>
-    <li>
-      Read API documentation, understand the scope of every call and write step by step examples to
-      get knowledge about it usage.
-    </li>
-    <li>
-      Perform profiling tests to every hook and gather metrics about resources usage.
-    </li>
-    <li>
-      Extend the API interface to expose different performance metrics to the caller.
-    </li>
-    <li>
-      Create Python bindings for the C library.
-    </li>
-    <li>
-      All bindings must be fulled documented.
-    </li>
-    <li>
-      For each Python interface of the C library, create an example program describing how to use it.
-    </li>
+    <li>Counter for cache hits and misses</li>
+    <li>Memory usage per Cache area (at thread level depending of it implementation)</li>
+    <li>History record for a fixed number of entries, this can be used to generate live graphics</li>
+    <li>On Cache views, a link or button to force a Cache flush (purge)</li>
+    <li>The GUI should provide a special interface to get all statistics formatted in a JSON output</li>
   </ul>
-
   <br>
   <p>
-    <span class="label label-info">Skills required</span> Medium level of C language, be familiar with Python, have some
-    knowledge about Linux profiling tools.
+    Note: The GUI must be developed using <a hreg="http://getbootstrap.com">Twitter Bootstrap</a> and
+    <a href="http://angularjs.org">AngularJS</a>.
+  </p>
+  <p>
+    <span class="label label-info">Skills required</span> Medium level of C language, good understanding
+    of Linux system calls  and algorithms.
   </p>
 </li>
 </ul>
 </p>
 <br/>
 <!-- END -->
-
-
-<!-- PROJECT IDEA -->
-<div>
-<p>
-<h3><a name="id1">SPDY protocol support</a></h3>
-<p>
-<ul>
-<li> <strong>Keys</strong> C, Networking, SPDY, events, API </li>
-<li> <strong>Difficulty</strong> High</li>
-<li> <strong>Description</strong>
-      this project aims to extend the core behavior adding support for the <a href="http://dev.chromium.org/spdy/">SPDY protocol</a>. Even Monkey
-      server is originally written for HTTP, we aim to extend to new protocols as far they improve communication performance between clients and servers.
-  <br/><br/>
-  <p>
-      The target version is SPDY v3, and it must be written from scratch, the only external dependencies allowed are libc and pthreads. Merging this changes into Monkey
-      source code requires to take in count the following technical challenges:
-  </p>
-    <ul>
-      <li>
-        Monkey is a small event-driven core extendable through plugins. The HTTP parser and processor is currently part of the core, it must be moved to a logical layer
-        to allow the inclusion of SPDY support. At the end HTTP and SPDY protocols will be static plugins linked at compile time
-      </li>
-      <li>
-        The SPDY implementation must be based in an event-driven networking mechanism, it must handle file descriptors events such as: read, write, close, timeout and error.
-      </li>
-      <li>
-        Monkey architecture uses a lock-free mechanism when working through different workers (POSIX threads), the implementation must be lock free avoiding the usage of mutexes
-        on runtime.
-      </li>
-    </ul>
-
-    <br/>
-  <p>
-    This project involve the following non-exclusive tasks:
-    <ul>
-      <li>Create logical layer for HTTP, this separation will allow the inclusion of new protocols.</li>
-      <li>Create a standalone SPDY server. It must be very basic mostly to handle the protocol requirements, it will only allow to work with a few multiple connections same time.</li>
-      <li>Merge SPDY base code into Monkey using a logical layer as was done for HTTP previously</li>
-      <li>Adapt configuration schema to make Monkey choose a specific protocol</li>
-      <li>Improve the build system to make optional the inclusion of HTTP or SPDY</li>
-      <li>Extend the quality assurance (QA) framework to perform protocol tests over the SPDY implementation made.</li>
-    </ul>
-  </p>
-
-  <p>
-    <span class="label label-info">Skills required</span> High knowledge of C and Networking and be familiar with communication protocols.
-  </p>
-
-</li>
-</ul>
-</p>
-<br/>
-<!-- END -->
-
-
 
 
