@@ -60,7 +60,36 @@ thread epoll(7) interface.
 <p>
 Each server thread runs in an infinite loop using the epoll(7) interface, so the main process is able to register a file descriptor
 or socket inside this events interface, so on that moment the thread takes care to read the HTTP request, parse, validate and
-perform some action.
+perform some action. We can say that Monkey process does the load balancing with the help of a fixed number of threads. As the core
+runs in asynchronous sockets, each thread is capable to handle thousands of connections.
 </p>
 
-</ul>
+<h2>Suggested steps for Students</h2>
+
+<p>
+<b>1.</b>
+Make sure you understand how GIT works, if you dont know, take some time to research about GIT and create an account
+on <a href="http://github.com">github.com</a>, as this would be your main site for work.
+</p>
+
+<p>
+<b>2.</b>
+We expect your main development environment is a Linux system, we assume you have done development on it before. If you
+don't, go for it now.
+</p>
+
+<p>
+<b>3.</b>
+Get Monkey sources from our GIT repository, configure and compile it as normal user, run it and make sure to understand
+what each configuration key from conf/monkey.conf do.
+</p>
+
+<p>
+<b>4.</b>
+At this point you have realized that Monkey configuration is a bit special. All our configuration is <i>indented</i>, that
+means that if you break the indentation the server will not start. This is done on this way to force the sysadmin to have
+a clear and human-readable configuration. The configuration handle three specific terms: Sections, Keys and Values. A Section
+it's a main entry in the configuration and is recognized because is inside brackets, e.g: [Server]. So every line under that
+section is a Key with a specific value and the indentation rule is: every key under a section must be indented. Also note that
+commented lines are also indented.
+</p>
