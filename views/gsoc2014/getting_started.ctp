@@ -19,5 +19,20 @@ and for hence you will be able to improve the quality of your Student proposal.
 </p>
 
 <p>
-Before to apply is required that you learn (or know) what Monkey and Duda I/O are
+Before to apply is required that you learn (or know) what Monkey and Duda I/O are, and also always keep
+in mind that <strong>everything</strong> done my Monkey Project have a strong focus on high performance, 
+low resource usage, High End Servers and Embedded.
+
 </p>
+
+<h3>Monkey HTTP Server</h3>
+<p>
+the title describe it self, Monkey is a fully featured HTTP server for Linux, 
+it's written in C language. It's core is pretty small and also expose a flexible API so the 
+main behavior can be extended. There are plugins for different needs such as: SSL, Directory Listing,
+Security, CGI, FastCGI, Log Writer, etc.
+</p>
+<p>
+Internally it uses an event-driven model to handle multiple connection  under the same thread, this concept is also known as Asynchronous sockets. 
+
+</ul>
