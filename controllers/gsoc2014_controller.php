@@ -54,11 +54,12 @@ class Gsoc2014Controller extends AppController {
         }
 
         function ideas() {
-
         }
 
         function template() {
+        }
 
+        function getting_started() {
         }
 
 	function beforeFilter() {
