@@ -121,3 +121,64 @@ Monkey requires a plugin that provide a transport layer, which plugin are those 
 Configure and build Monkey in SSL mode.
 </p>
 
+<p>
+<b>9.</b>
+Read about Monkey internals here:
+<a href="http://swpd.github.io/blog/2013/05/18/monkey-http-daemon-internals/">
+  http://swpd.github.io/blog/2013/05/18/monkey-http-daemon-internals/
+</a>
+</p>
+
+<p>
+<b>10.</b>
+Read this old presentation about Monkey, a bit outdated but architecture things are
+pretty much the same:
+<a href="http://www.slideshare.net/startechconf/eduardo-silva-monkey-httpserver-everywhere">
+  http://www.slideshare.net/startechconf/eduardo-silva-monkey-httpserver-everywhere
+</a>
+</p>
+
+<p>
+<b>11.</b>
+Dig into Monkey Plugin API, understand HTTP stages and their callbacks, e.g: _mkp_init(), _mkp_exit(),
+_mkp_core_prctx(), _mkp_core_thctx(), _mkp_stage_10(), _mkp_stage_20(), _mkp_stage_30(), _mkp_stage_40(),
+_mkp_stage_50().
+</p>
+
+<p>
+<b>12.</b>
+Go into <a href="http://duda.io">Duda I/O</a> site, download <i>DudaC</i> and <i>duda-examples</i> from
+our <a href="http://github.com/monkey">Github Monkey</a> repository. Then start building each duda-example
+service.
+</p>
+
+<p>
+<b>13.</b>
+Go into <a href="http://duda.io">Duda I/O</a> site, download <i>DudaC</i> and <i>duda-examples</i> from
+our <a href="http://github.com/monkey">Github Monkey</a> repository. Then start building each duda-example
+service. Make sure you can access each one through the proper URL.
+</p>
+
+
+<p>
+<b>14.</b>
+After you have built the duda-examples, go into your home user directory ~/.dudac and check what is there.
+</p>
+
+<p>
+<b>15.</b>
+A Duda I/O Web service is configured inside a Monkey Virtual Host definition, check your self what is the
+location and what content you are able to find.
+</p>
+
+<p>
+<b>16.</b>
+For a Duda I/O service, how you would change the Monkey setup to alter the number of workers ?, which
+configuration file you should touch ?.
+</p>
+
+<p>
+<b>17.</b>
+Write your own Duda I/O web service to make something simple and cool.
+</p>
+
