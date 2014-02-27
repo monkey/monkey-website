@@ -149,36 +149,50 @@ _mkp_stage_50().
 <b>12.</b>
 Go into <a href="http://duda.io">Duda I/O</a> site, download <i>DudaC</i> and <i>duda-examples</i> from
 our <a href="http://github.com/monkey">Github Monkey</a> repository. Then start building each duda-example
-service.
-</p>
-
-<p>
-<b>13.</b>
-Go into <a href="http://duda.io">Duda I/O</a> site, download <i>DudaC</i> and <i>duda-examples</i> from
-our <a href="http://github.com/monkey">Github Monkey</a> repository. Then start building each duda-example
 service. Make sure you can access each one through the proper URL.
 </p>
 
 
 <p>
-<b>14.</b>
+<b>13.</b>
 After you have built the duda-examples, go into your home user directory ~/.dudac and check what is there.
 </p>
 
 <p>
-<b>15.</b>
+<b>14.</b>
 A Duda I/O Web service is configured inside a Monkey Virtual Host definition, check your self what is the
 location and what content you are able to find.
 </p>
 
 <p>
-<b>16.</b>
+<b>15.</b>
 For a Duda I/O service, how you would change the Monkey setup to alter the number of workers ?, which
 configuration file you should touch ?.
 </p>
 
 <p>
-<b>17.</b>
+<b>16.</b>
 Write your own Duda I/O web service to make something simple and cool.
+</p>
+
+<h3>Final</h3>
+
+<p>
+We tried to explain in general overview what our Organization software does and how it works,
+but also suggested steps so you as a Student can prepare your self in a better way to deliver
+a high quality proposal. If you know how things works, you will now how to make your project.
+</p>
+
+<p>
+Working for our Organization you will get a lot of support from the mentors team, but also
+before to ask everything we appreciate your research effort. Participating on Monkey is an exciting
+opportunity because you will lead to learn non-common things: the server side, threading, sockets,
+polling, protocols, performance and others.
+</p>
+
+<p>
+If for some reason you feel scared or have doubts about if you can manage to make this, just relax
+and trust in the mentors, our goal is not just to meassure your performance, is to guide you
+to reach your objectives and help you in the best way possible, you are not alone :) .
 </p>
 
