@@ -19,6 +19,12 @@ and for hence you will be able to improve the quality of your Student proposal.
 </p>
 
 <p>
+It's good to mention that our Organization focus on help you to achieve your goals, we care a lot about
+our students on all ways possible, we want you have a great experience participating on GSoC & Monkey,
+besides we can think and work like Monkeys, our mentors are exceptional humans.
+</p>
+
+<p>
 Before to apply is required that you learn (or know) what Monkey and Duda I/O are, and also always keep
 in mind that <strong>everything</strong> done my Monkey Project have a strong focus on high performance,
 low resource usage, High End Servers and Embedded.
@@ -196,3 +202,6 @@ and trust in the mentors, our goal is not just to meassure your performance, is 
 to reach your objectives and help you in the best way possible, you are not alone :) .
 </p>
 
+<p>
+Are you ready to join us... ?
+</p>
