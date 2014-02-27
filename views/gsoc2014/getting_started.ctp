@@ -85,11 +85,39 @@ what each configuration key from conf/monkey.conf do.
 </p>
 
 <p>
-<b>4.</b>
-At this point you have realized that Monkey configuration is a bit special. All our configuration is <i>indented</i>, that
+Note: At this point you have realized that Monkey configuration is a bit special. All our configuration is <i>indented</i>, that
 means that if you break the indentation the server will not start. This is done on this way to force the sysadmin to have
 a clear and human-readable configuration. The configuration handle three specific terms: Sections, Keys and Values. A Section
 it's a main entry in the configuration and is recognized because is inside brackets, e.g: [Server]. So every line under that
 section is a Key with a specific value and the indentation rule is: every key under a section must be indented. Also note that
 commented lines are also indented.
 </p>
+
+<p>
+<b>4.</b>
+Inside Monkey sources, run the <i>./configure</i> script with the <i>--help</i> argument, now start getting familiarized with
+the options <i>trace</i>, <i>debug</i> and <i>linux-trace</i>. Understand each one, compile the server with each key enabled and
+see how they can help you in you development cycle.
+</p>
+
+<p>
+<b>5.</b>
+Dig into Monkey sources, check what src/ and plugins/ directories are. Now investigate how on configuring (./configure) time you can
+enable or disable a plugin.
+</p>
+
+<p>
+<b>6.</b>
+You will see a few files inside each plugins sources like: MANDATORY, OPTIONAL and EXPERIMENTAL. What do they do ?, Who uses those files ?.
+</p>
+
+<p>
+<b>7.</b>
+Monkey requires a plugin that provide a transport layer, which plugin are those ?.
+</p>
+
+<p>
+<b>8.</b>
+Configure and build Monkey in SSL mode.
+</p>
+
