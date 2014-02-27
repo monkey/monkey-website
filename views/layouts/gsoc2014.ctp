@@ -107,6 +107,7 @@
                <li>
                   <?=$html->link('Main', array('action' => 'index'));?>
                   <?=$html->link('Project Ideas', array('action' => 'ideas'))?>
+                  <?=$html->link('Getting Started', array('action' => 'getting_started'))?>
                   <?=$html->link('Student Template', array('action' => 'template'))?>
                </li>
 

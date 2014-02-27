@@ -7,6 +7,8 @@
 	&nbsp;&nbsp;
 	<?=$html->link('Project Ideas', array('controller' => 'gsoc2014', 'action' => 'ideas'));?>
 	&nbsp;&nbsp;
+	<?=$html->link('Getting Started', array('controller' => 'gsoc2014', 'action' => 'getting_started'));?>
+	&nbsp;&nbsp;
 	<?=$html->link('Students Template', array('controller' => 'gsoc2014', 'action' => 'template'));?>
 	</p>
 </div>
@@ -103,6 +105,10 @@ you to get in touch with us to talk about them, we want to support good ideas :)
 <p>
 	We have built a Student Template which must be sent to us once you have sent your GSoC application. The template is located
 	in <?=$html->link('gsoc2014/template', array('controller' => 'gsoc2014', 'action' => 'template'));?>
+</p>
+<p>
+        Also we made a special section for YOU, check our
+        <?=$html->link('gsoc2014/getting_started', array('controller' => 'gsoc2014', 'action' => 'getting_started'));?> page.
 </p>
 
 <h2>Contact us !</h2>

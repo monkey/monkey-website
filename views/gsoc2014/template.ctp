@@ -5,6 +5,8 @@
 	&nbsp;&nbsp;
 	<?=$html->link('Project Ideas', array('controller' => 'gsoc2014', 'action' => 'ideas'));?>
 	&nbsp;&nbsp;
+        <?=$html->link('Getting Started', array('controller' => 'gsoc2014', 'action' => 'getting_started'));?>
+	&nbsp;&nbsp;
 	<?=$html->link('Students Template', array('controller' => 'gsoc2014', 'action' => 'template'));?>
 	</p>
 </div>
