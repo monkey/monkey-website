@@ -46,14 +46,25 @@
   </div>
 </div>
 
+
 <div class="row-fluid">
    <div class="span3">
    <?=$html->image('gsoc2014.png');?>
    </div>
    <div class="span9">
-
+   <h3>Monkey project is applying for Google Summer of Code 2014</h3>
+   <p>
+   Our organization have participated successfully on 2011 and 2012 GSoC editions, and this year we are even more motivated as we have really cool projects where students could choose and apply to make the HTTP ecosystem even better.
+   </p>
+   <p>
+   For more details about GSoC and Monkey Organization, please refer to the following link:
+   <ul>
+   <a href="http://monkey-project.com/gsoc2014">http://monkey-project.com/gsoc2014</a>
+   </ul>
+   </p>
    </div>
 </div>
+<hr>
 
 <!-- Quick start -->
 <div class="row-fluid">
