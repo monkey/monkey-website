@@ -84,7 +84,7 @@
  <li>Feel free to send an email to the mailing list presenting your self</li>
  <li>Contact us through our IRC channel at irc.freenode.net #monkey</li>
 <li>Read, Improve, Create and Apply for one of our <?=$html->link('Ideas', array('controller' => 'gsoc2014', 'action' => 'ideas'));?> posted!!!</li>
-<li>Check the <a href="http://monkey-project.com/gsoc2014/template">Monkey Student Application Template</a> and send it to gsoc2014@monkey-project.com, this information
+<li>Check the <a href="http://monkey-project.com/gsoc2014/template">Monkey Student Application Template</a> and send it to gsoc2014@lists.monkey-project.com, this information
     is confidential and will be shared only with the mentoring team</li>
 <li>On March 10th, Google opens the studen application period, follow the guidelines of <a href="http://google-melange.com">GSoC Site</a> and take your time to continue
 working your proposal.</li>
@@ -115,7 +115,7 @@ you to get in touch with us to talk about them, we want to support good ideas :)
 <p>
 We are always open to ideas and suggestions, please feel free to contact us through our
 <a href='http://lists.monkey-project.com'>Mailing List</a>. If you want a private communication
-you can do it through <font class="email">gsoc2014@monkey-project.com</font>
+you can do it through <font class="email">gsoc2014@lists.monkey-project.com</font>
 <br><br>
 If you prefer, you can also find us on irc.freenode.net #monkey.
 </p>
