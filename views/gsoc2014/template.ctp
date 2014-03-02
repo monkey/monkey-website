@@ -24,7 +24,7 @@
      <span class="label label-warning">Mandatory</span>
      We want to know more about you, so as part of the application process for our organization, please
      please fill the following form and send us back each question/answer by email to
-     <a href="mailto:gsoc2014@lists.monkey-project.com">gsoc2014@lists.monkey-project.com</a>.
+     <a href="mailto:gsoc@monkey-project.com">gsoc@monkey-project.com</a>.
    </p>
    <p>
 
