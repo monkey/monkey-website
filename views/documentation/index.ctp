@@ -6,6 +6,18 @@
 </div>
 
 <div class="row-fluid">
+  <h3>Documentation under development</h3>
+  <p>
+     In the following link you will find the updated documentation for Monkey Server, 
+     it have been rewritten from scratch in Markdown format, as of now the available information
+     belongs to the incoming Monkey v1.5 release:
+  </p>  
+  <p>
+    <a href="http://monkey-project.com/documentation_dev">http://monkey-project.com/documentation_dev</a>
+  </p> 
+</div>
+
+<div class="row-fluid">
 <div class="span4">
    <h3>Administration</h3>
    <p>
