@@ -7,7 +7,7 @@ $FILES =  "http://monkey-project.com/releases/1.5/";
 
 <h1>Release Notes</h1>
 
-<h2>Monkey HTTP Server v<?=$VERSION?> <small>2014-05-12</small></h2>
+<h2>Monkey HTTP Server v<?=$VERSION?> <small>2014-05-25</small></h2>
 <p>
   Monkey HTTP Server is a very Fast and Lightweight Web Server for GNU/Linux. It has been
   designed to be very scalable with low memory and CPU consumption, the perfect solution for
@@ -31,6 +31,8 @@ $FILES =  "http://monkey-project.com/releases/1.5/";
 <ul>
   <li>License: Monkey Core and Plugins are now under the Apache License v2.0</li>
   <li>Virtual Host: built-in support for configurable HTTP redirection</li>
+  <li>FastCGI: fix event close</li>
+  <li>Core: event handler fix when removing closed connection</li>
   <li>Auth: rewrite of mk_passwd Python tool in C</li>
   <li>SSL: Enable session cache</li>
   <li>Core: add support Linux SO_REUSEPORT, Kernel balancing mode</li>
