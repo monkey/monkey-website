@@ -18,10 +18,8 @@ $FILES =  "http://monkey-project.com/releases/1.5/";
 <h3>Introduction</h3>
 <p>
   We are very proud to announce the availability of a new major release <i>Monkey v1.5.0</i>,
-  codename <b>UNKNOWN</b>. This major release delivers a new memory handler based on
-  Jemalloc, extra debugging mechanism based on Linux Trace Toolkit (LTTng), outstanding
-  performance improvements through the new Vhost File Descriptor Table which allows to share
-  opened file descriptors, experimental Proxy Reverse, SSL improvements and many others.
+  codename <b>Emperor Tamarin</b>. This major release comes with license changes, Yocto Project support,
+  fixes in the core event handler, kernel load balancing, plugins improvements, upgraded memory allocator and much more!
 </p>
 <br>
 
