@@ -12,7 +12,7 @@
     documenatation you are looking for aligns with your Monkey version:
   </p>
   <p>
-    <li><a href="http://monkey-project.com/documentation/1.5/"v1.5: Monkey HTTP Server</a></li>
+    <li><a href="http://monkey-project.com/documentation/1.5/">v1.5: Monkey HTTP Server</a></li>
   </p>
 </div>
 
