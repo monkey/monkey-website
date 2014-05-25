@@ -89,7 +89,7 @@ Please consider to read the following link as an additional resource of help whe
 
 <ul>
 <li>
-<a href="http://www.booki.cc/gsocstudentguide/">
+<a href="http://en.flossmanuals.net/gsocstudentguide/">
        Google Summer of Code Student Guide
 </a>
 </li>
