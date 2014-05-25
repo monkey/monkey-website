@@ -1,6 +1,6 @@
 <div class="hero-unit">
 
-<h2>Monkey for embedded</h2>
+<h2>Monkey for Embedded Linux</h2>
 
 <p>
 Monkey is a Fast and Lightweight HTTP Server for GNU/Linux, for embedded devices is the best option available
@@ -29,8 +29,7 @@ add some encryption layer if required.
 <p>
 As described in the
 <?=$html->link('about', array('action' => 'about'));?> section, Monkey is licensed under the
-<a href="http://www.gnu.org/licenses/lgpl-2.0.html">LGPLv2</a> plus some additional
-exceptions.
+<a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License v2.0</a>.
 </p>
 
 <br />
@@ -41,7 +40,7 @@ make your project a success, we offer commercial support for desing and implemen
 <br>
 <p>
 For more details about the commercial support, contact us to
-<a href="mailto:embedded@monkey-project.com?Subject=Commercial Support Request">embedded@monkey-project.com</a>.
+<a href="mailto:eduardo@monkey.io?Subject=Commercial Support Request">eduardo@monkey.io</a>.
 </p>
 
 <br><br>

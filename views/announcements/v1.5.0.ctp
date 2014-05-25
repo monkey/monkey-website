@@ -9,7 +9,7 @@ $FILES =  "http://monkey-project.com/releases/1.5/";
 
 <h2>Monkey HTTP Server v<?=$VERSION?> <small>2014-05-12</small></h2>
 <p>
-  Monkey HTTP Server is a very Fast and Lightweight Web Server for GNU/Linux. It has been 
+  Monkey HTTP Server is a very Fast and Lightweight Web Server for GNU/Linux. It has been
   designed to be very scalable with low memory and CPU consumption, the perfect solution for
   High Demand Production Servers and Embedded Devices. Made for ARM, x86 and x86_64.
 </p>
@@ -17,9 +17,9 @@ $FILES =  "http://monkey-project.com/releases/1.5/";
 
 <h3>Introduction</h3>
 <p>
-  We are very proud to announce the availability of a new major release <i>Monkey v1.5.0</i>, 
-  codename <b>UNKNOWN</b>. This major release delivers a new memory handler based on 
-  Jemalloc, extra debugging mechanism based on Linux Trace Toolkit (LTTng), outstanding 
+  We are very proud to announce the availability of a new major release <i>Monkey v1.5.0</i>,
+  codename <b>UNKNOWN</b>. This major release delivers a new memory handler based on
+  Jemalloc, extra debugging mechanism based on Linux Trace Toolkit (LTTng), outstanding
   performance improvements through the new Vhost File Descriptor Table which allows to share
   opened file descriptors, experimental Proxy Reverse, SSL improvements and many others.
 </p>

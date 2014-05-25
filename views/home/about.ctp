@@ -56,11 +56,12 @@ compiler version used, the binary size could be around 60KB and 300KB in runtime
 with the sources:
 
 <ul>
+        <li>CGI: Common Gateway Interface</li>
+        <li>FastCGI: Fast CGI</li>
         <li>Liana: networking communication layer</li>
 	<li>Cheetah! Shell: Yes!, Monkey has a shell!</li>
 	<li>Directory Listing</li>
         <li>Security: access restriction to the service by network address, subnets and request filters</li>
-	<li>Palm</li>
 </ul>
 </p>
 
@@ -103,20 +104,11 @@ it specific features. Monkey only requires Linux >= 2.6.29.
 <br>
 <h3>License <small>legal</small></h3>
 <p>
-  Monkey HTTP Server is licensed under the <a href="http://www.gnu.org/licenses/lgpl-2.0.html">GNU Library General Public License v2 (LGPLv2)</a>.
+  Monkey HTTP Server is under the tems of the <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License v2.0</a>.
 </p>
 <p>
-  In brief: This program is free software; you can redistribute it and/or modify  it under the terms of the GNU Library General Public
-  License v2 as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
-</p>
-<p>Additional exception:
-<ul>
-    <li>You are not allowed to change or hide the original server signature in the
-    HTTP response headers.</li>
-</ul>
-</p>
 For any extra requirement for commercial support or special licenses, please write
-us to <a href="mailto:embedded@monkey-project.com?Subject=Commercial Support Request">embedded@monkey-project.com</a>.
+us to <a href="mailto:eduardo@monkey.io?Subject=Commercial Support Request">eduardo@monkey.io</a>.
 </p>
 
 <br>
@@ -127,5 +119,4 @@ without any commercial purpose. FLOSS communities looking for merchandising can 
 <br>
 <br>
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png" /></a><br /><span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/StillImage" property="dc:title" rel="dc:type">Monkey HTTP Server Logo</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.monkey-project.com" property="cc:attributionName" rel="cc:attributionURL">Eduardo Silva</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 Unported License</a>
-
 </p>

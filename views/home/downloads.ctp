@@ -1,6 +1,7 @@
 <?
 /* release  => directory */
-$versions = array('1.4.0'  => '1.4',
+$versions = array('1.5.0'  => '1.5',
+                  '1.4.0'  => '1.4',
                   '1.3.0'  => '1.3',
                   '1.2.2'  => '1.2',
                   '1.2.1'  => '1.2',
@@ -45,10 +46,9 @@ function release_line($version, $dir)
             </td>
             <td>
 		<a href="<?=$site."releases/".$dir?>/monkey-<?=$version?>.tar.gz">monkey-<?=$version?>.tar.gz</a>
-            <code><a href="<?=$site?>Announcements/v<?=$version?>">Announcement</a></code>
+                  <code><a href="<?=$site?>Announcements/v<?=$version?>">Announcement</a></code>
                   <code><a href="<?=$site?>releases/<?=$dir?>/ChangeLog-<?=$version?>.txt">ChangeLog</a></code>
                   <code><a href="<?=$site?>releases/<?=$dir?>/monkey-<?=$version?>.tar.gz.md5">MD5</a></code>
-
 	    </td>
         </tr>
         <?

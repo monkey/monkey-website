@@ -1,5 +1,5 @@
 <div class="hero-unit">
-      <h2>Documentation <small>how to's</small><h2>
+      <h2>Official Documentation <small>all you want to know</small><h2>
       <p>
           We are migrating and improving our documentation, daily updates, stay tuned!
       </p>
@@ -8,13 +8,13 @@
 <div class="row-fluid">
   <h3>Documentation under development</h3>
   <p>
-     In the following link you will find the updated documentation for Monkey Server, 
+     In the following link you will find the updated documentation for Monkey Server,
      it have been rewritten from scratch in Markdown format, as of now the available information
      belongs to the incoming Monkey v1.5 release:
-  </p>  
+  </p>
   <p>
     <a href="http://monkey-project.com/documentation_dev">http://monkey-project.com/documentation_dev</a>
-  </p> 
+  </p>
 </div>
 
 <div class="row-fluid">
