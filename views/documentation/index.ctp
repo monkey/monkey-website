@@ -15,5 +15,3 @@
     <li><a href="http://monkey-project.com/documentation/1.5/">v1.5: Monkey HTTP Server</a></li>
   </p>
 </div>
-
-</div>
