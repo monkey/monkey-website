@@ -121,8 +121,8 @@
       <h4>Get started</h4>
       <ul>
         <li><a href='http://monkey-project.com/downloads'>Downloads</a></li>
-	<li><a href='http://git.monkey-project.com'>Browse Code</a></li>
-	<li><a href='http://bugs.monkey-project.com'>Bug Tracker</a></li>
+	<li><a href='https://github.com/monkey/monkey'>Browse Code</a></li>
+	<li><a href='https://github.com/monkey/monkey/issues'>Bug Tracker</a></li>
 	<li><a href='http://lists.monkey-project.com'>Mailing Lists</a></li>
         <li><a href='http://blog.monkey-project.com'>Monkeys Blog</a></li>
         <li><a href='http://monkey-project.com/raspberry'>Raspberry Pi</a></li>

@@ -11,7 +11,7 @@ class HomeController extends AppController {
           $mode = 1; /* Production = 1 ; Development = 0; */
 
           /* news */
-          $url = "http://blog.monkey-project.com/?feed=rss";
+          $url = "http://blog.monkey-project.com/rss/";
 
           if ($mode) {
             $items = $this->Feed->feed($url);
@@ -22,7 +22,7 @@ class HomeController extends AppController {
           }
 
           /* GIT RSS */
-          $url = "http://git.monkey-project.com/?p=monkey;a=rss";
+          $url = "https://github.com/monkey/monkey/commits/master.atom";
           if ($mode) {
             $items = $this->Feed->feed($url);
             $this->set('git_feeds', $items);

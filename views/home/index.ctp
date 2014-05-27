@@ -122,7 +122,8 @@ $ bin/monkey</pre>
        ?>
     </p>
     <p>
-      <a class="btn" href="http://git.monkey-project.com/?p=monkey;a=shortlog;h=refs/heads/master">               View details &raquo;</a></p>
+      <a class="btn" href="https://github.com/monkey/monkey">
+               View details &raquo;</a></p>
   </div>
 
   <div class="span4">
