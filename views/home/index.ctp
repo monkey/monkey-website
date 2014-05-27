@@ -105,7 +105,7 @@ $ bin/monkey</pre>
          }
       ?>
     </p>
-    <p><a class="btn" href="http://blog.monkey-project.com">View details &raquo;</a></p>
+    <p><a class="btn" href="http://git.monkey-project.com/?p=monkey;a=shortlog;h=refs/heads/master">               View details &raquo;</a></p>
   </div>
   <div class="span4">
     <h3>Development Branch</h3>
