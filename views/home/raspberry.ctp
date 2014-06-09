@@ -58,22 +58,23 @@
      <ul>
        <pre>$ curl -i http://raspberry_ip:2001/</pre>
      </ul>
-     <h2>Upgrading from v1.4 to 1.5</h2>
+     <br>
+     <h3>Upgrading from v1.4 to 1.5</h3>
      <p>
         If you are upgrading from Monkey v1.4, note that packages structure have changed so you will need first
    to remove any previous Monkey package before to install the new version:
      </p>
      <ul>
         <pre># apt-get remove monkey  \
-                   monkey-logger      \ 
-                   monkey-dirlisting  \
-                   monkey-cgi         \
-                   monkey-fastcgi     \
-                   monkey-mandril     \
-                   monkey-cheetah     \
-                   monkey-auth        \
-                   monkey-polarssl    \
-                   libmonkey</pre>
+                 monkey-logger      \ 
+                 monkey-dirlisting  \
+                 monkey-cgi         \
+                 monkey-fastcgi     \
+                 monkey-mandril     \
+                 monkey-cheetah     \
+                 monkey-auth        \
+                 monkey-polarssl    \
+                 libmonkey</pre>
      </ul>
      <br>
      <h3>Secure Socket Layer (SSL)</h3>
