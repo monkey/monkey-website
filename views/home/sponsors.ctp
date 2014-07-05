@@ -10,19 +10,15 @@ of our mission.
 
 <div class="row-fluid">
    <div class="span2">
-        <?=$html->image('sponsors/osuosl.png');?>
+        <?=$html->image('sponsors/monkey_software_logo.png');?>
    </div>
    <div class="span10">
    <p>
        <h3>Monkey Software</h3>
        <a href="http://monkey.io">Monkey Software</a> is the company that push forward the development of
-       Monkey HTTP Server and Duda I/O stack, it offers commercial support and custom
+       <a href="http://monkey-project.com">Monkey HTTP Server</a> and
+       <a href="http://duda.io">Duda I/O stack</a>, it offers commercial support and custom
        development for real time Cloud services and Embedded integration.
-   </p>
-   <p>
-       <small>support</small>
-       The OSU OSL provides our primary server infrastructure to host main web sites,
-       mailing lists, GIT repositories and databases for internal use.
    </p>
    </div>
 </div>
