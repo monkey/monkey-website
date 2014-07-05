@@ -141,6 +141,9 @@
       </p>
       <ul>
         <p>
+        <?=$html->image('sponsors/monkey_software_logo.png');?>
+        </p>
+        <p>
         <?=$html->image('sponsors/osuosl.png');?>
         </p>
         <p>
@@ -169,4 +172,3 @@
         </div>
 </body>
 </html>
-

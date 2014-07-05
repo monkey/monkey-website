@@ -14,6 +14,26 @@ of our mission.
    </div>
    <div class="span10">
    <p>
+       <h3>Monkey Software</h3>
+       <a href="http://monkey.io">Monkey Software</a> is the company that push forward the development of
+       Monkey HTTP Server and Duda I/O stack, it offers commercial support and custom
+       development for real time Cloud services and Embedded integration.
+   </p>
+   <p>
+       <small>support</small>
+       The OSU OSL provides our primary server infrastructure to host main web sites,
+       mailing lists, GIT repositories and databases for internal use.
+   </p>
+   </div>
+</div>
+
+<br><br>
+<div class="row-fluid">
+   <div class="span2">
+        <?=$html->image('sponsors/osuosl.png');?>
+   </div>
+   <div class="span10">
+   <p>
        <h3>OSU Open Source Lab</h3>
        The Open Source Lab is a nonprofit organization working for the advancement of
        open source technologies.
