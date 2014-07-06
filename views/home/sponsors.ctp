@@ -10,7 +10,9 @@ of our mission.
 
 <div class="row-fluid">
    <div class="span2">
+        <a href="http://monkey.io">
         <?=$html->image('sponsors/monkey_software_logo.png');?>
+        </a>
    </div>
    <div class="span10">
    <p>

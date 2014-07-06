@@ -141,7 +141,9 @@
       </p>
       <ul>
         <p>
+        <a href="http://monkey.io">
         <?=$html->image('sponsors/monkey_software_logo.png');?>
+        </a>
         </p>
         <p>
         <?=$html->image('sponsors/osuosl.png');?>
