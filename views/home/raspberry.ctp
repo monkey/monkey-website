@@ -17,7 +17,7 @@
 <div class="row-fluid">
    <div class="span10">
      <p>
-       <small>Feb 04, 2014 - Updated packages for Monkey v1.4.0</small>
+       <small>Jul 19, 2014 - Updated packages for Monkey v1.5.2</small>
 
        <h3>Support us</h3>
        Donating money to <a href="http://monkey-project.com">Monkey</a> you will be contributing to help to continue
@@ -66,7 +66,7 @@
      </p>
      <ul>
         <pre># apt-get remove monkey  \
-                 monkey-logger      \ 
+                 monkey-logger      \
                  monkey-dirlisting  \
                  monkey-cgi         \
                  monkey-fastcgi     \
