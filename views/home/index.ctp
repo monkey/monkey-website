@@ -15,9 +15,9 @@
   <div class="row-fluid" style="text-align:center">
     <div class="span5">
       <a class="btn btn-warning btn-large"
-         href="http://monkey-project.com/releases/1.5/monkey-1.5.4.tar.gz">
+         href="http://monkey-project.com/releases/1.5/monkey-1.5.5.tar.gz">
         <i class="icon-white icon-download-alt"></i>
-        Download Monkey v1.5.4
+        Download Monkey v1.5.5
       </a>
     </div>
     <div class="span3">
@@ -30,15 +30,15 @@
 
 <div class="row-fluid">
   <div class="span11">
-    <h3>Latest release: v1.5.4 (Emperor Tamarin)
+    <h3>Latest release: v1.5.5 (Emperor Tamarin)
       <small>on Thursday 16th, Oct 2014</small>
     </h3>
     <p>
       Monkey project development team, is proud to announce the availability
-      of <i>Monkey v1.5.4</i> release. For more details about it, please refer to the
+      of <i>Monkey v1.5.5</i> release. For more details about it, please refer to the
       <?=$html->link('official announcement',
                      array('controller' => 'Announcements',
-                           'action' => 'v1.5.4'));?>
+                           'action' => 'v1.5.5'));?>
       or go directly to the <?=$html->link('downloads section',
                                            array('controller' => 'downloads'));?>
     </p>
@@ -75,9 +75,9 @@
       start with the following commands as normal user
     </p>
 
-    <pre>$ wget http://monkey-project.com/releases/1.5/monkey-1.5.4.tar.gz
-$ tar zxfv monkey-1.5.4.tar.gz
-$ cd monkey-1.5.4
+    <pre>$ wget http://monkey-project.com/releases/1.5/monkey-1.5.5.tar.gz
+$ tar zxfv monkey-1.5.5.tar.gz
+$ cd monkey-1.5.5
 $ ./configure
 $ make
 $ bin/monkey</pre>
