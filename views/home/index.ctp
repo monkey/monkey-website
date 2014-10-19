@@ -31,7 +31,7 @@
 <div class="row-fluid">
   <div class="span11">
     <h3>Latest release: v1.5.5 (Emperor Tamarin)
-      <small>on Thursday 16th, Oct 2014</small>
+      <small>on Thursday 18th, Oct 2014</small>
     </h3>
     <p>
       Monkey project development team, is proud to announce the availability
