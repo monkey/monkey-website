@@ -169,7 +169,7 @@
   </div>   <!-- end row       -->
           <footer>
             <hr />
-            <p style="text-align:center">&copy; Copyright 2001 – 2014 / Monkey HTTP Daemon development group</p>
+            <p style="text-align:center">&copy; Copyright 2001 – 2015 / Monkey HTTP Daemon development group</p>
           </footer>
         </div>
 </body>
