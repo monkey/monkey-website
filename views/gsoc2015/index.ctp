@@ -1,15 +1,15 @@
 <div class="gsoc">
 
-<h1>Google Summer of Code 2014</h1>
+<h1>Google Summer of Code 2015</h1>
 <div class="gsoc_menu">
 	<p>
-	<?=$html->link('GSoC Main', array('controller' => 'gsoc2014', 'action' => 'index'));?>
+	<?=$html->link('GSoC Main', array('controller' => 'gsoc2015', 'action' => 'index'));?>
 	&nbsp;&nbsp;
-	<?=$html->link('Project Ideas', array('controller' => 'gsoc2014', 'action' => 'ideas'));?>
+	<?=$html->link('Project Ideas', array('controller' => 'gsoc2015', 'action' => 'ideas'));?>
 	&nbsp;&nbsp;
-	<?=$html->link('Getting Started', array('controller' => 'gsoc2014', 'action' => 'getting_started'));?>
+	<?=$html->link('Getting Started', array('controller' => 'gsoc2015', 'action' => 'getting_started'));?>
 	&nbsp;&nbsp;
-	<?=$html->link('Students Template', array('controller' => 'gsoc2014', 'action' => 'template'));?>
+	<?=$html->link('Students Template', array('controller' => 'gsoc2015', 'action' => 'template'));?>
 	</p>
 </div>
 
@@ -20,12 +20,12 @@
 <div class="row-fluid">
     <div class="span4">
 	<?
-		echo $html->image('gsoc2014.png');
+		echo $html->image('gsoc2015.png');
 	?>
     </div>
     <div class="span8">
     <p>
-        Welcome to the <a href="http://google-melange.com">Google Summer of Code 2014</a>/<a href="http://monkey-project.com">Monkey project page</a>.
+        Welcome to the <a href="http://google-melange.com">Google Summer of Code 2015</a>/<a href="http://monkey-project.com">Monkey project page</a>.
         On this section you will find relevant information about the application process for our organization and specific requirements to take in
         consideration.
     </p>
@@ -55,22 +55,6 @@
 </p>
 </div>
 
-<h2>Important Dates</h2>
-<p>
-<ul>
-    <li>February 14: Mentoring organization application deadline</li>
-    <li>February 24: List of accepted mentoring organizations published on <a href="http://www.google-melange.com">GSoC site</a></li>
-    <li>March 10: Student application period opens</li>
-    <li>March 21: Student application deadline</li>
-    <li>April 21: Accepted student proposals announced on the Google Summer of Code 2014 site.</li>
-    <li>
-      <a href="http://www.google-melange.com/gsoc/document/show/gsoc_program/google/gsoc2014/help_page#2._What_is_the_program_timeline">
-        more details in the official Timeline
-      </a>
-    </li>
-</ul>
-</p>
-
 <br>
 
 <h2>How to Apply ?</h2>
@@ -83,8 +67,8 @@
  <li>Browse our <a href="http://github.com/monkey">Github repository</a>, check how our code looks like</li>
  <li>Feel free to send an email to the mailing list presenting your self</li>
  <li>Contact us through our IRC channel at irc.freenode.net #monkey</li>
-<li>Read, Improve, Create and Apply for one of our <?=$html->link('Ideas', array('controller' => 'gsoc2014', 'action' => 'ideas'));?> posted!!!</li>
-<li>Check the <a href="http://monkey-project.com/gsoc2014/template">Monkey Student Application Template</a> and send it to gsoc@monkey-project.com, this information
+<li>Read, Improve, Create and Apply for one of our <?=$html->link('Ideas', array('controller' => 'gsoc2015', 'action' => 'ideas'));?> posted!!!</li>
+<li>Check the <a href="http://monkey-project.com/gsoc2015/template">Monkey Student Application Template</a> and send it to gsoc@monkey-project.com, this information
     is confidential and will be shared only with the mentoring team</li>
 <li>On March 10th, Google opens the studen application period, follow the guidelines of <a href="http://google-melange.com">GSoC Site</a> and take your time to continue
 working your proposal.</li>
@@ -96,7 +80,7 @@ working your proposal.</li>
 
 <h2>Project Ideas</h2>
 <p>
-Our pool of project ideas is found at <?=$html->link('gsoc2014/ideas', array('controller' => 'gsoc2014', 'action' => 'ideas'));?>. Most
+Our pool of project ideas is found at <?=$html->link('gsoc2015/ideas', array('controller' => 'gsoc2015', 'action' => 'ideas'));?>. Most
 of the items published here are not exclusive, please feel free to apply with your own ideas, we love creative people!. Also we encourage
 you to get in touch with us to talk about them, we want to support good ideas :)
 </p>
@@ -104,11 +88,11 @@ you to get in touch with us to talk about them, we want to support good ideas :)
 <h2>Information for Students</h2>
 <p>
 	We have built a Student Template which must be sent to us once you have sent your GSoC application. The template is located
-	in <?=$html->link('gsoc2014/template', array('controller' => 'gsoc2014', 'action' => 'template'));?>
+	in <?=$html->link('gsoc2015/template', array('controller' => 'gsoc2015', 'action' => 'template'));?>
 </p>
 <p>
         Also we made a special section for YOU, check our
-        <?=$html->link('gsoc2014/getting_started', array('controller' => 'gsoc2014', 'action' => 'getting_started'));?> page.
+        <?=$html->link('gsoc2015/getting_started', array('controller' => 'gsoc2015', 'action' => 'getting_started'));?> page.
 </p>
 
 <h2>Contact us !</h2>
@@ -121,8 +105,8 @@ If you prefer, you can also find us on irc.freenode.net #monkey.
 </p>
 
 <h2>Useful Links</h2>
-<li><?=$html->link('Google Summer of Code 2014', 'http://www.google-melange.com');?></li>
-<li><?=$html->link('Frequently Asked Questions', 'http://www.google-melange.com/gsoc/document/show/gsoc_program/google/gsoc2014/help_page');?></li>
+<li><?=$html->link('Google Summer of Code 2015', 'http://www.google-melange.com');?></li>
+<li><?=$html->link('Frequently Asked Questions', 'http://www.google-melange.com/gsoc/document/show/gsoc_program/google/gsoc2015/help_page');?></li>
 
 
 </div>

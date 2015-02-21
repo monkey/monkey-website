@@ -1,13 +1,13 @@
-<h1>Google Summer of Code 2014: Student Template</h1>
+<h1>Google Summer of Code 2015: Student Template</h1>
 <div class="gsoc_menu">
 	<p>
-	<?=$html->link('GSoC Main', array('controller' => 'gsoc2014', 'action' => 'index'));?>
+	<?=$html->link('GSoC Main', array('controller' => 'gsoc2015', 'action' => 'index'));?>
 	&nbsp;&nbsp;
-	<?=$html->link('Project Ideas', array('controller' => 'gsoc2014', 'action' => 'ideas'));?>
+	<?=$html->link('Project Ideas', array('controller' => 'gsoc2015', 'action' => 'ideas'));?>
 	&nbsp;&nbsp;
-        <?=$html->link('Getting Started', array('controller' => 'gsoc2014', 'action' => 'getting_started'));?>
+        <?=$html->link('Getting Started', array('controller' => 'gsoc2015', 'action' => 'getting_started'));?>
 	&nbsp;&nbsp;
-	<?=$html->link('Students Template', array('controller' => 'gsoc2014', 'action' => 'template'));?>
+	<?=$html->link('Students Template', array('controller' => 'gsoc2015', 'action' => 'template'));?>
 	</p>
 </div>
 
@@ -17,7 +17,7 @@
 
 <div class="row-fluid">
    <div class="span4">
-      <?=$html->image('gsoc2014.png');?>
+      <?=$html->image('gsoc2015.png');?>
    </div>
    <div class="span8">
    <p>
