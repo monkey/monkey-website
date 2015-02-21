@@ -115,22 +115,16 @@
                   Project Ideas
                </li>
                <li>
-                  <?=$html->link('Memcached Plugin', array('action' => 'ideas#id1'));?>
+                  <?=$html->link('Logger: syslog, logstash & fluentd', array('action' => 'ideas#id1'));?>
                </li>
                <li>
-                  <?=$html->link('SPDY Protocol (v3.1)', array('action' => 'ideas#id2'));?>
+                  <?=$html->link('Port to Real Time Operating System', array('action' => 'ideas#id2'));?>
                </li>
                <li>
-                  <?=$html->link('Lua Scripting Support', array('action' => 'ideas#id3'));?>
+                  <?=$html->link('Memcached Plugin', array('action' => 'ideas#id3'));?>
                </li>
                <li>
-                  <?=$html->link('Raspberry Pi Dashboard' , array('action' => 'ideas#id4'));?>
-               </li>
-               <li>
-                  <?=$html->link('Monkey Shared Library with Python bindings', array('action' => 'ideas#id5'));?>
-               </li>
-               <li>
-                  <?=$html->link('Advanced Caching Plugin', array('action' => 'ideas#id6'));?>
+                  <?=$html->link('iOS Support' , array('action' => 'ideas#id4'));?>
                </li>
              </ul>
       </div>
