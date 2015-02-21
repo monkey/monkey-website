@@ -1,6 +1,6 @@
 <?php
 
-class Gsoc2014Controller extends AppController {
+class Gsoc2015Controller extends AppController {
 /**
  * Controller name
  *
@@ -33,7 +33,7 @@ class Gsoc2014Controller extends AppController {
 
 		$count = count($path);
 		if (!$count) {
-			$this->redirect('/gsoc2014/');
+			$this->redirect('/gsoc2015/');
 		}
 		$page = $subpage = $title = null;
 
