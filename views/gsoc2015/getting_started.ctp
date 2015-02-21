@@ -1,11 +1,11 @@
-<h1>Google Summer of Code 2014: Getting Started</h1>
+<h1>Google Summer of Code 2015: Getting Started</h1>
 <div class="gsoc_menu">
 	<p>
-	<?=$html->link('GSoC Main', array('controller' => 'gsoc2014', 'action' => 'index'));?>
+	<?=$html->link('GSoC Main', array('controller' => 'gsoc2015', 'action' => 'index'));?>
 	&nbsp;&nbsp;
-	<?=$html->link('Project Ideas', array('controller' => 'gsoc2014', 'action' => 'ideas'));?>
+	<?=$html->link('Project Ideas', array('controller' => 'gsoc2015', 'action' => 'ideas'));?>
 	&nbsp;&nbsp;
-	<?=$html->link('Students Template', array('controller' => 'gsoc2014', 'action' => 'template'));?>
+	<?=$html->link('Students Template', array('controller' => 'gsoc2015', 'action' => 'template'));?>
 	</p>
 </div>
 
