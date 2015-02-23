@@ -75,9 +75,6 @@ working your proposal.</li>
 </ul>
 </p>
 
-<span class="label label-warning">Attention!</span>
-<p class="text-warning">Students application DEADLINE is March 21th</p>
-
 <h2>Project Ideas</h2>
 <p>
 Our pool of project ideas is found at <?=$html->link('gsoc2015/ideas', array('controller' => 'gsoc2015', 'action' => 'ideas'));?>. Most
