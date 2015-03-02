@@ -28,6 +28,11 @@ function version_row($h, $date, $version)
 <div class="row-fluid">
 <div class="span5">
 
+<h3>2015</h3>
+<table class="table">
+ <?=version_row($html, "2015/03/02", "1.5.6");?>
+</table>
+
 <h3>2014</h3>
 <table class="table">
  <?=version_row($html, "2014/10/18", "1.5.5");?>

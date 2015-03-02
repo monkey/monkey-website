@@ -15,9 +15,9 @@
   <div class="row-fluid" style="text-align:center">
     <div class="span5">
       <a class="btn btn-warning btn-large"
-         href="http://monkey-project.com/releases/1.5/monkey-1.5.5.tar.gz">
+         href="http://monkey-project.com/releases/1.5/monkey-1.5.6.tar.gz">
         <i class="icon-white icon-download-alt"></i>
-        Download Monkey v1.5.5
+        Download Monkey v1.5.6
       </a>
     </div>
     <div class="span3">
@@ -30,15 +30,15 @@
 
 <div class="row-fluid">
   <div class="span11">
-    <h3>Latest release: v1.5.5 (Emperor Tamarin)
-      <small>on Thursday 18th, Oct 2014</small>
+    <h3>Latest release: v1.5.6 (Emperor Tamarin)
+      <small>on Monday 02th, Mar 2015</small>
     </h3>
     <p>
       Monkey project development team, is proud to announce the availability
-      of <i>Monkey v1.5.5</i> release. For more details about it, please refer to the
+      of <i>Monkey v1.5.6</i> release. For more details about it, please refer to the
       <?=$html->link('official announcement',
                      array('controller' => 'Announcements',
-                           'action' => 'v1.5.5'));?>
+                           'action' => 'v1.5.6'));?>
       or go directly to the <?=$html->link('downloads section',
                                            array('controller' => 'downloads'));?>
     </p>
@@ -46,24 +46,6 @@
   </div>
 </div>
 
-
-<div class="row-fluid">
-   <div class="span3">
-   <?=$html->image('gsoc2014.png');?>
-   </div>
-   <div class="span9">
-   <h3>Monkey is part of Google Summer of Code 2014</h3>
-   <p>
-   Our organization have participated successfully on 2011 and 2012 GSoC editions, and this year we are even more motivated as we have really cool projects where students could choose and apply to make the HTTP ecosystem even better.
-   </p>
-   <p>
-   For more details about GSoC and Monkey Organization, please refer to the following link:
-   <ul>
-   <a href="http://monkey-project.com/gsoc2014">http://monkey-project.com/gsoc2014</a>
-   </ul>
-   </p>
-   </div>
-</div>
 <hr>
 
 <!-- Quick start -->
@@ -71,13 +53,13 @@
   <div class="span11">
     <h3>Start with Monkey in less than 30 seconds</h3>
     <p>
-      Make sure your are in a Linux box running a Kernel version >= 2.6.29, if you are set, you can
+      Make sure your are in a Linux box running a Kernel version >= 2.6.32, if you are set, you can
       start with the following commands as normal user
     </p>
 
-    <pre>$ wget http://monkey-project.com/releases/1.5/monkey-1.5.5.tar.gz
-$ tar zxfv monkey-1.5.5.tar.gz
-$ cd monkey-1.5.5
+    <pre>$ wget http://monkey-project.com/releases/1.5/monkey-1.5.6.tar.gz
+$ tar zxfv monkey-1.5.6.tar.gz
+$ cd monkey-1.5.6
 $ ./configure
 $ make
 $ bin/monkey</pre>
