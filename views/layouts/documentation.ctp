@@ -27,7 +27,7 @@
 <head>
 	<?php echo $html->charset(); ?>
 	<title>
-                Monkey HTTP Daemon - Documentation:
+                Monkey HTTP Server - Documentation:
                 <?php echo $title_for_layout; ?>
 	</title>
 	<?php

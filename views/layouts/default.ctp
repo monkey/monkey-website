@@ -27,7 +27,7 @@
 <head>
 	<?php echo $html->charset(); ?>
 	<title>
-		Monkey HTTP Daemon - A Fast and Lightweight HTTP Server for GNU/Linux -
+		Monkey HTTP Server - A Fast and Lightweight HTTP Server for Linux and Embedded Linux -
 		<?php echo $title_for_layout; ?>
 	</title>
 	<?php
