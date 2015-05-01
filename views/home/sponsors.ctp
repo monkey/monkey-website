@@ -17,10 +17,36 @@ of our mission.
    <div class="span10">
    <p>
        <h3>Monkey Software</h3>
-       <a href="http://monkey.io">Monkey Software</a> is the company that push forward the development of
-       <a href="http://monkey-project.com">Monkey HTTP Server</a> and
-       <a href="http://duda.io">Duda I/O stack</a>, it offers commercial support and custom
-       development for real time Cloud services and Embedded integration.
+       <a href="http://monkey.io">Monkey Software</a> offers consultancy services and support
+       for Monkey technology products: <a href="http://monkey-project.com">Monkey HTTP Server</a> and
+       <a href="http://duda.io">Duda I/O stack</a>.
+   </p>
+   </div>
+</div>
+
+<div class="row-fluid">
+   <div class="span2">
+        <a href="http://treasuredata.com">
+        <?=$html->image('sponsors/treasure_data_logo.png');?>
+        </a>
+   </div>
+   <div class="span10">
+   <p>
+       <h3>Treasure Data</h3>
+       The Big Data analytics company <a href="http://www.treasuredata.com">Treasure Data</a>, is a strong
+       supporter of Open Source technologies, they are behind many projects used as part of their core
+       business such as
+       <a href="http://fluentd.org">Fluentd</a>, <a href="http://embulk.org">Embulk</a> and
+       <a href="http://msgpack.org">MessagePack</a> within others.
+   </p>
+   <p>
+       Being <i>Embedded Linux</i> and <i>IoT</i> strategic areas for <a href="http://www.treasuredata.com">Treasure Data</a>,
+       especially on networking and data collection, HTTP plays a big role so Treasure Data is officially supporting
+       the development of <a href="http://monkey-project.com">Monkey</a> to handle special needs of the incoming solutions.
+   </p>
+   <p>
+     <a href="http://www.treasuredata.com">Treasure Data</a> also hired <a href="http://edsiper.linuxchile.cl">Eduardo Silva</a>,
+     the main core developer of <a href="http://monkey-project.com">Monkey</a>.
    </p>
    </div>
 </div>
@@ -78,7 +104,7 @@ of our mission.
    </div>
    <div class="span10">
    <p>
-   <h3>Google, Summer of code 2012 & 2013</h3>
+   <h3>Google, Summer of code 2012, 2013 & 2014</h3>
        Google Summer of Code is a global program that offers post-secondary student
        developers ages 18 and older stipends to write code for various open source
        software projects. They have worked with open source, free software, and
@@ -89,7 +115,7 @@ of our mission.
    </p>
    <p>
        <small>support</small>
-       On 2012 and 2013, the Monkey Project organization have participated into the
+       On 2012, 2013 and 2014, the Monkey Project organization have participated into the
        program mentoring different students from around the world who have contributed
        with different core stack functionalities and features.
     </p>
