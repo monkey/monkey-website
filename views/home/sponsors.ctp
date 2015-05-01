@@ -42,7 +42,7 @@ of our mission.
    <p>
        Being <i>Embedded Linux</i> and <i>IoT</i> strategic areas for <a href="http://www.treasuredata.com">Treasure Data</a>,
        especially on networking and data collection, HTTP plays a big role so Treasure Data is officially supporting
-       the development of <a href="http://monkey-project.com">Monkey</a> to handle special needs of the incoming solutions.
+       the development of <a href="http://monkey-project.com">Monkey</a> to handle special needs for the incoming solutions.
    </p>
    <p>
      <a href="http://www.treasuredata.com">Treasure Data</a> also hired <a href="http://edsiper.linuxchile.cl">Eduardo Silva</a>,

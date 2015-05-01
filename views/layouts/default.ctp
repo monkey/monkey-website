@@ -146,6 +146,11 @@
         </a>
         </p>
         <p>
+        <a href="http://www.treasuredata.com">
+        <?=$html->image('sponsors/treasure_data_logo.png');?>
+        </a>
+        </p>
+        <p>
         <?=$html->image('sponsors/osuosl.png');?>
         </p>
         <p>
